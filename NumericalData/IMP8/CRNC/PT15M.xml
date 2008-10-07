@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<Spase xmlns="http://www.spase-group.org/data/schema">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
 <Version>1.3.0</Version>
 <NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/IMP8/UChi/PT15M</ResourceID>
+   <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/PT15M</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP 8 U.Chicago Charged Particle Instrument (CPI) 15-min counts, etc., for computing count rates and fluxes</ResourceName>
-      <ReleaseDate>2008-09-02T00:00:00</ReleaseDate>
+      <ResourceName>IMP 8 U.Chicago Cosmic Ray and Nuclear Composition (CRNC) 15-min counts</ResourceName>
+      <ReleaseDate>2008-10-07T17:56:58Z</ReleaseDate>
       <Description> 
         This 15-min-resolution data set consists of 5 count rates from the Low Energy Telescope, 
         8 count rates for the main telescope (MT), 4 counts of pulse height analyzed events in each of 4 MT 
@@ -27,6 +27,7 @@
         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/particles_uchi/15min_asci/voldesc.sfd</URL>
          <Description>Detailed documentation file about experiment and data</Description>
       </InformationURL>
+      <PriorID>spase://VEPO/NumericalData/IMP8/UChi/PT15M</PriorID>
    </ResourceHeader>
    <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
