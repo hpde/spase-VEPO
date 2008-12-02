@@ -27,14 +27,10 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
-                <URL>
-                    http://voyager.gsfc.nasa.gov
-                </URL>
+                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <URL>
-                    http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt
-                </URL>
+                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -42,9 +38,7 @@
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
-                <URL>
-                    http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour
-                </URL>
+                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour</URL>
             </AccessURL>
             <Format>Text</Format> 
         </AccessInformation>
