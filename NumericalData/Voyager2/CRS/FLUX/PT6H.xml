@@ -36,7 +36,7 @@
             <Format>Text</Format> 
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager2/CRS</InstrumentID> 
-        <MeasurementType>ChargedParticleFlux</MeasurementType>
+        <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
                 <StartDate>1977-08-22T00:00:00</StartDate> 
