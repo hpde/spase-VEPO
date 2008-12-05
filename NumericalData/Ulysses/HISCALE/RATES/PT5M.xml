@@ -2,11 +2,11 @@
   <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
    <Version>1.3.0</Version>
    <NumericalData>
-     <ResourceID>spase://VHO/NumericalData/Ulysses/HISCALE/RATES/PT5M</ResourceID>
+     <ResourceID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/PT5M</ResourceID>
      <ResourceHeader>
        <ResourceName>5-min-Averaged Ulysses/HISCALE Count Rates</ResourceName>
        <AlternateName>HISCALE-RAT-5m</AlternateName>
-       <ReleaseDate>2008-11-10T21:24:50Z</ReleaseDate>
+       <ReleaseDate>2008-12-05T21:57:55Z</ReleaseDate>
        <Description>5-min-averaged count rates from the LEMS30, LEFS60, LEMS120, LEFS150 and CA60 detectors of the Ulysses/HISCALE instrument.</Description>
        <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
        <Contact>
@@ -23,8 +23,8 @@
            (CSV) files, and how those files can be accessed.
          </Description>
        </InformationURL>
-       <AssociationID>spase://VHO/NumericalData/Ulysses/HISCALE/RATES/PT1H</AssociationID>
-       <AssociationID>spase://VHO/NumericalData/Ulysses/HISCALE/RATES/P1D</AssociationID>
+       <AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/PT1H</AssociationID>
+       <AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/P1D</AssociationID>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://VHO/Repository/Ulysses/HISCALE</RepositoryID>

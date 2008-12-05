@@ -13,7 +13,7 @@
             <ResourceName>
                 Voyager-1 CRS Cruise Mode 6-hour averages
             </ResourceName>
-            <ReleaseDate>2008-09-15T00:00:00Z</ReleaseDate>
+            <ReleaseDate>2008-12-05T21:52:14Z</ReleaseDate>
             <Description>
                 6-hour averages of selected fluxes
             </Description>
@@ -32,7 +32,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NSSDC</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/NSSDC</RepositoryID>
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
