@@ -37,7 +37,7 @@
 		   COSPIN High Energy Telescope (HET), and caveats for their use
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericData/Ulysses/COSPIN/HET/Rates/PT10M</AssociationID>
+       <AssociationID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Rates/PT10M</AssociationID>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://VEPO/Repository/UDS</RepositoryID>
@@ -605,7 +605,7 @@
            <Name>FP Year</Name>
            <Index>1</Index>
            <ValidMin>90.000</ValidMin>
-           <ValidMax>90.99999</ValidMax>
+           <ValidMax>108.99999</ValidMax>
            <FillValue>Null</FillValue>
          </Element>
          <Element>
