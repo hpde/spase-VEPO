@@ -37,7 +37,7 @@
 		   COSPIN High Energy Telescope (HET), and caveats for their use
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Rates/PT10M</AssociationID>
+       <AssociationID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Sectored-Rates/PT10M</AssociationID>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://VEPO/Repository/UDS</RepositoryID>
