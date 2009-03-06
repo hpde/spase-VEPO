@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns="http://www.spase-group.org/data/schema">
+    <Version>1.3.4</Version>
+    <NumericalData>
+        <ResourceID>spase://VEPO/NumericalData/Pioneer10/GTT/PT1H</ResourceID>
+        <ResourceHeader>
+            <ResourceName>Pioneer 10 GTT 1-Hour Count Rates</ResourceName>
+            <ReleaseDate>2009-02-11T00:00:00</ReleaseDate>
+            <Description>Hourly count rates from U. Iowa Geiger Tube Telescope (GTT)
+                carried on Pioneer 10.  There are five rates: electrons > 0.06 MeV plus protons
+                > 25 MeV; e > 5 MeV plus p > 30 MeV; e >0.55 MeV plus p > 6.6 MeV; e > 21 MeV
+                plus p > 80 MeV; e > 31 MeV plus p > 80 MeV.  The data are ftp-accessible in
+                annual ASCII files and via FTPBrowser.  The hourly averages were computed at
+                NSSDC from 15-min data still offline (as of Feb. 2009).</Description>
+            <Acknowledgement>Please acknowledge the PI, the late James A. VanAllen,
+                and the GSFC Space Physics Data Facility.</Acknowledgement>
+            <Contact>
+                <PersonID>spase://SMWG/Person/James.A.Van.Allen</PersonID>
+                <Role>PrincipalInvestigator</Role>
+            </Contact>
+            <Contact>
+                <PersonID>spase://SMWG/Person/Bruce.A.Randall</PersonID>
+                <Role>GeneralContact</Role>
+            </Contact>
+            <InformationURL>
+                <Name>Pioneer page at U.Iowa</Name>
+                <URL>http://www-pw.physics.uiowa.edu/pioneer/</URL>
+            </InformationURL>
+            <InformationURL>
+                <Name>Readme at SPDF</Name>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer10/particle/gtt/ip_1hour_ascii/p10gtthr_fmt.txt</URL>
+            </InformationURL>
+        </ResourceHeader>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>FTPBrowser</Name>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/p10_part_gtt_1h.html</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>ASCII ftp site at SPDF</Name>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer10/particle/gtt/</URL>
+            </AccessURL>
+            <Format>Text</Format>
+            <DataExtent>
+                <Quantity>6</Quantity>
+                <Units>MB</Units>
+            </DataExtent>
+            <Acknowledgement>Please acknowledge the PI, the late James A. VanAllen,
+                and the GSFC Space Physics Data Facility</Acknowledgement>
+        </AccessInformation>
+        <InstrumentID>spase://SMWG/Instrument/Pioneer10/JCP</InstrumentID>
+        <MeasurementType>EnergeticParticles</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>1972-03-03T00:00:00</StartDate>
+                <StopDate>1991-06-30T00:00:00</StopDate>
+                <Note>A limited amount of later data may become available.</Note>
+            </TimeSpan>
+            <Cadence>PT1H</Cadence>
+        </TemporalDescription>
+        <ObservedRegion>Heliosphere.Outer</ObservedRegion>
+        <Parameter>
+            <Name>Count rate, electrons > 0.06 MeV</Name>
+            <ParameterKey>Column07</ParameterKey>
+            <Description>Hourly count rate of electrons > 0.06 MeV and protons > 25 MeV</Description>
+            <Cadence>PT1H</Cadence>
+            <Units>cps</Units>
+            <Particle>
+                <ParticleType>Electron</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.06</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>25</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+        </Parameter>
+        <Parameter>
+            <Name>Count rate, electrons > 5 MeV and protons > 30 MeV</Name>
+            <ParameterKey>Column08</ParameterKey>
+            <Description>Hourly count rate of electrons > 5 MeV and protons > 30 MeV</Description>
+            <Cadence>PT1H</Cadence>
+            <Units>cps</Units>
+            <Particle>
+                <ParticleType>Electron</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>5</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+        </Parameter>
+        <Parameter>
+            <Name>Count rate, electrons > 0.55 MeV and protons > 6.6 Mev</Name>
+            <ParameterKey>Column09</ParameterKey>
+            <Description>Hourly count rate of electrons > 0.55 MeV and protons > 6.6 MeV</Description>
+            <Cadence>PT1H</Cadence>
+            <Units>cps</Units>
+            <Particle>
+                <ParticleType>Electron</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.55</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>6.6</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+        </Parameter>
+        <Parameter>
+            <Name>Count rate, electrons > 21 MeV and protons > 80 MeV</Name>
+            <ParameterKey>Column10</ParameterKey>
+            <Description>Hourly count rate of electrons > 21 MeV plus protons > 80 MeV</Description>
+            <Cadence>PT1H</Cadence>
+            <Units>cps</Units>
+            <Particle>
+                <ParticleType>Electron</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>21</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>80</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+        </Parameter>
+        <Parameter>
+            <Name>Count rate, electrons > 31 MeV and protons > 80 MeV</Name>
+            <ParameterKey>Column11</ParameterKey>
+            <Description>Hourly count rate of electrons > 31 MeV and protons > 80 MeV</Description>
+            <Cadence>PT1H</Cadence>
+            <Units>cps</Units>
+            <Particle>
+                <ParticleType>Electron</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>31</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleQuantity>CountRate</ParticleQuantity>
+                <EnergyRange>
+                    <Low>80</Low>
+                    <High>Infinity</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
+        </Parameter>
+    </NumericalData>
+</Spase>
