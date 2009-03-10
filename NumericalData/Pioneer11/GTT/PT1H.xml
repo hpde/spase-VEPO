@@ -51,7 +51,7 @@
             <Acknowledgement>Please acknowledge the PI, the late James A. VanAllen,
                 and the GSFC Space Physics Data Facility</Acknowledgement>
         </AccessInformation>
-        <InstrumentID>spase://SMWG/Instrument/Pioneer11/JCP</InstrumentID>
+        <InstrumentID>spase://SMWG/Instrument/Pioneer11/GTT</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
