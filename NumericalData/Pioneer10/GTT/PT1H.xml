@@ -5,7 +5,7 @@
         <ResourceID>spase://VEPO/NumericalData/Pioneer10/GTT/PT1H</ResourceID>
         <ResourceHeader>
             <ResourceName>Pioneer 10 GTT 1-Hour Count Rates</ResourceName>
-            <ReleaseDate>2009-02-11T00:00:00</ReleaseDate>
+            <ReleaseDate>2009-03-12T00:00:00</ReleaseDate>
             <Description>Hourly count rates from U. Iowa Geiger Tube Telescope (GTT)
                 carried on Pioneer 10.  There are five rates: electrons > 0.06 MeV plus protons
                 > 25 MeV; e > 5 MeV plus p > 30 MeV; e >0.55 MeV plus p > 6.6 MeV; e > 21 MeV
@@ -51,7 +51,7 @@
             <Acknowledgement>Please acknowledge the PI, the late James A. VanAllen,
                 and the GSFC Space Physics Data Facility</Acknowledgement>
         </AccessInformation>
-        <InstrumentID>spase://SMWG/Instrument/Pioneer10/JCP</InstrumentID>
+        <InstrumentID>spase://SMWG/Instrument/Pioneer10/GTT</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
