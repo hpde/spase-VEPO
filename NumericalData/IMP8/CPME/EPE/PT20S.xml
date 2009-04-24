@@ -38,19 +38,19 @@ scientist, and Stamatios Krimigis, original CPME PI, all of JHU/APL, and also
 NSSDC and/or SPDF if accessing data via FTPBrowser or nssdcftp, or JHU/APL if
 accessing data from APL.</Acknowledgement>
       <Contact>
-         <PersonID>Robert.B.Decker</PersonID>
+         <PersonID>spase://SMWG/Person/Robert.B.Decker</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
-         <PersonID>Donald.J.Williams</PersonID>
+         <PersonID>spase://SMWG/Person/Donald.J.Williams</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
-         <PersonID>Stamatios.M.Krimigis</PersonID>
+         <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
          <Role>GeneralContact</Role>
       </Contact>
       <Contact>
-         <PersonID>Natalia.E.Papitashvili</PersonID>
+         <PersonID>spase://SMWG/Person/Natalia.E.Papitashvili</PersonID>
          <Role>GeneralContact</Role>
       </Contact>
       <InformationURL>
