@@ -88,7 +88,7 @@
        <Format>Text</Format>
        <Acknowledgement>C. Lopate, University of New Hampshire</Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://VEPO/Instrument/NeutronMonitor/Huancayo</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/NeutronMonitor/Huancayo</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>
