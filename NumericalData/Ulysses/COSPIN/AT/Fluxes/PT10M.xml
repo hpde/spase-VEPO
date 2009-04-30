@@ -139,7 +139,7 @@
        <Encoding>ZIP</Encoding>
        <Acknowledgement>Dr. Silvia Dalla, University of Central Lancashire, UK</Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/AT</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>
