@@ -41,7 +41,7 @@ Institure, Lindau</Acknowledgement>
       <Acknowledgement>Please acknowledge the P.I., Erhard Keppler of MPI/Lindau 
 and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
    </AccessInformation>
-   <InstrumentID>spase://SMWG/Instrument/Helios1/E8</InstrumentID>
+   <InstrumentID>spase://SMWG/Instrument/Helios2/E8</InstrumentID>
    <MeasurementType>EnergeticParticles</MeasurementType>
    <TemporalDescription>
       <TimeSpan>
