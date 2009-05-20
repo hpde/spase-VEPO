@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
    <Version>1.3.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/AT/Fluxes/PT10M</ResourceID>
@@ -59,7 +57,7 @@
            the data in the subdirectory. 
            Each subdirectory contains daily ascii files with naming convention ucosatNrYYDOY.uly where 
            N and YY are as above, and DOY is the three digit day of year (Jan. 1 = 1).  
-           Each file contains nominally 10-minute averages of the COSPIN/AT spin-averaged and sectored
+           Each file contains nominally 1-minute averages of the COSPIN/AT spin-averaged and sectored
            fluxes based on counting rates which respond primarily to protons and helium nuclei.  
            Electron response is strongly suppressed by discriminator thresholds set on the 30 micron 
            thick front detector, D1, which is required to fire for all events registered by the counting 
@@ -70,17 +68,11 @@
            For each AT, the data are presented in the following format, where channels are named as in 
            Table 5 of Simpson et al. (1992) and the energy ranges are given in MeV (not MeV/n). 
            Energies listed are in the frame of the spacecraft.  In the range of energies measured by 
-           the AT telescopes, the solar wind speed is not completely negligible compared to the particle
-           speed.  Thus there may be a significant difference (up to several percent depending on the 
-           direction of incidence of the particles relative to the solar wind velocity vector) between the 
-           particle energies measured in the spacecraft frame compared to the energies that would be 
-           measured for the same particles the solar wind frame. This produces a Compton-Getting anisotropy
-           which must be taken into account in transforming anisotropies observed in the spacecraft frame 
-           back into the solar wind frame (Dalla and Balogh, 2000, Ann. Geophys. 18, 277-284; Ipavich, 1974, 
-           Geophys. Res. Lett., 1, 149-152).
-           Telescope AT1 points at 60 degrees to the spacecraft spin axis and telescope AT2 points at 
-           145 degrees to the spacecraft spin axis.  The Ulysses spacecraft spin axis is maintained 
-           within 1 degree of earth-pointing at all times.   
+           the AT telescopes, the energy shifts resulting from convection of the nuclei by the 
+           solar wind are significant, and for study of anisotropies in the solar wind frame, appropriate
+           corrections are necessary.  Telescope AT1 points at 60 degrees to the spacecraft spin axis 
+           and telescope AT2 points at 145 degrees to the spacecraft spin axis.  The Ulysses spacecraft 
+           spin axis is maintained within 1 degree of earth-pointing at all times.   
            --------------------------------------------------------------------
 	   Field  Fortran	Definition		Protons		Helium
 	          Format				(MeV)		(MeV)
@@ -200,7 +192,7 @@
        </Support>
      </PhysicalParameter>
      <PhysicalParameter>
-       <Name>COSPIN/0.7-0.9 MeV Proton Spin-Averaged Flux based on counting rate A1_N</Name>
+       <Name>COSPIN/ATN 0.7-0.9 MeV Proton Spin-Averaged Flux based on counting rate A1_N</Name>
        <ParameterKey>Column_6</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged flux based on counting rate A1_N responding 
@@ -231,7 +223,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/0.9-1.3 MeV Proton Spin-Averaged Flux based on counting rate A2_N</Name>
+       <Name>COSPIN/ATN 0.9-1.3 MeV Proton Spin-Averaged Flux based on counting rate A2_N</Name>
        <ParameterKey>Column_7</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged flux based on counting rate A2_N responding 
@@ -262,7 +254,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/1.3-2.2 MeV Proton Spin-Averaged Flux based on Counting Rate A3_N</Name>
+       <Name>COSPIN/ATN 1.3-2.2 MeV Proton Spin-Averaged Flux based on Counting Rate A3_N</Name>
        <ParameterKey>Column_8</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged based on counting rate A3_N responding 
@@ -293,7 +285,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/2.2-3.6 MeV Proton Spin-Averaged Flux based on Counting Rate A4_N</Name>
+       <Name>COSPIN/ATN 2.2-3.6 MeV Proton Spin-Averaged Flux based on Counting Rate A4_N</Name>
        <ParameterKey>Column_9</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged flux based on counting rate A4_N responding 
@@ -323,7 +315,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/3.6-6.5 MeV Proton Spin-Averaged flux based on Counting Rate A5_N</Name>
+       <Name>COSPIN/ATN 3.6-6.5 MeV Proton Spin-Averaged flux based on Counting Rate A5_N</Name>
        <ParameterKey>Column_10</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged flux based on counting rate A5_N responding 
@@ -354,7 +346,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/3.0-7.5 MeV Helium Spin-Averaged flux based on Counting Rate A38_N</Name>
+       <Name>COSPIN/ATN 3.0-7.5 MeV Helium Spin-Averaged flux based on Counting Rate A38_N</Name>
        <ParameterKey>Column_11</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged flux based on counting rate A38_N responding 
@@ -384,7 +376,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/7.5-12.0 MeV Helium Spin-Averaged Counting Rate (A39_N)</Name>
+       <Name>COSPIN/ATN 7.5-12.0 MeV Helium Spin-Averaged Counting Rate (A39_N)</Name>
        <ParameterKey>Column_12</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged counting rate responding 
@@ -414,7 +406,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/12.0-26.0 MeV Helium Spin-Averaged Flux based on Counting Rate A40_N</Name>
+       <Name>COSPIN/ATN 12.0-26.0 MeV Helium Spin-Averaged Flux based on Counting Rate A40_N</Name>
        <ParameterKey>Column_13</ParameterKey>
        <Description>
           Nominal 10-minute average ATN spin-averaged flux based on counting rate A40_N responding 
@@ -444,7 +436,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/HET 10-Minute Average Sectored Proton flux based on 
+       <Name>COSPIN/ATN  10-Minute Average Sectored Proton flux based on 
        Counting Rate A3_NS</Name>
        <ParameterKey>Columns_14-21</ParameterKey>
        <Description>
@@ -552,7 +544,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/HET 10-Minute Average Sectored Proton Fluxes based on Counting Rate 
+       <Name>COSPIN/ATN 10-Minute Average Sectored Proton Fluxes based on Counting Rate 
         A4_NS</Name>
        <ParameterKey>Columns_22-29</ParameterKey>
        <Description>
@@ -659,7 +651,7 @@
      </PhysicalParameter>
 
      <PhysicalParameter>
-       <Name>COSPIN/HET 10-Minute Average Sectored Proton Fluxes based on 
+       <Name>COSPIN/ATN 10-Minute Average Sectored Proton Fluxes based on 
              Counting Rate A5_NS</Name>
        <ParameterKey>Columns_30-37</ParameterKey>
        <Description>
