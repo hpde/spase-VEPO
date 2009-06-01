@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd"
+ xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd"
  xmlns="http://www.spase-group.org/data/schema">
-   <Version>1.3.0</Version>
+   <Version>2.0.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/LET/RATES/PT10M</ResourceID>
      <ResourceHeader>
@@ -68,7 +68,7 @@
        <Cadence>PT10M</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Time for the record</Name>
        <ParameterKey>Time_PG1</ParameterKey>
        <Description>Time for the record given in year, day of year, hour, min, and seconds.
@@ -110,8 +110,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 0.9-1.2 MeV Proton Spin-Averaged Fluxes (L1)</Name>
        <ParameterKey>L1</ParameterKey>
        <Description>10-minute average LET spin-averaged proton fluxes between 0.9 and 1.2 MeV</Description>
@@ -127,10 +127,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>0.9</Low>
@@ -138,9 +137,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.2-3.0 MeV Proton Spin-Averaged Fluxes (L2)</Name>
        <ParameterKey>L2</ParameterKey>
        <Description>10-minute average LET spin-averaged proton fluxes between 1.2 and 3.0 MeV</Description>
@@ -151,10 +149,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.2</Low>
@@ -162,9 +159,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Spin-Averaged Fluxes (L3)</Name>
        <ParameterKey>L3</ParameterKey>
        <Description>10-minute average LET spin-averaged proton fluxes between 1.8 and 3.8 MeV</Description>
@@ -174,10 +170,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -185,9 +180,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 1 (L4)</Name>
        <ParameterKey>L4</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 1 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -197,10 +191,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -208,9 +201,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 2 (L5)</Name>
        <ParameterKey>L5</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 2 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -220,10 +212,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -231,9 +222,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 3 (L6)</Name>
        <ParameterKey>L6</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 3 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -243,10 +233,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -254,9 +243,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 4 (L7)</Name>
        <ParameterKey>L7</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 4 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -266,10 +254,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -277,9 +264,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 5 (L8)</Name>
        <ParameterKey>L8</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 5 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -289,10 +275,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -300,9 +285,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 6 (L9)</Name>
        <ParameterKey>L9</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 6 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -312,10 +296,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -323,9 +306,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 7 (L10)</Name>
        <ParameterKey>L10</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 7 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -335,10 +317,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -346,9 +327,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.8-3.8 MeV Proton Fluxes in Spin Sector 8 (L11)</Name>
        <ParameterKey>L11</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 8 (of 8) between 1.8 and 3.8 MeV</Description>
@@ -358,10 +338,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.8</Low>
@@ -369,9 +348,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Spin-Averaged Fluxes (L12)</Name>
        <ParameterKey>L12</ParameterKey>
        <Description>10-minute average LET spin-averaged proton fluxes between 3.8 and 8.0 MeV</Description>
@@ -381,10 +359,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -392,9 +369,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 1 (L13)</Name>
        <ParameterKey>L13</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 1 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -404,10 +380,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -415,9 +390,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 2 (L14)</Name>
        <ParameterKey>L14</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 2 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -427,10 +401,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -438,9 +411,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 3 (L15)</Name>
        <ParameterKey>L15</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 3 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -450,10 +422,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -461,9 +432,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 4 (L16)</Name>
        <ParameterKey>L16</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 4 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -473,10 +443,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -484,9 +453,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 5 (L17)</Name>
        <ParameterKey>L17</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 5 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -496,10 +464,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -507,9 +474,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 6 (L18)</Name>
        <ParameterKey>L18</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 6 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -519,10 +485,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -530,9 +495,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 7 (L19)</Name>
        <ParameterKey>L19</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 7 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -542,10 +506,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -553,9 +516,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.8-8.0 MeV Proton Fluxes in Spin Sector 8 (L20)</Name>
        <ParameterKey>L20</ParameterKey>
        <Description>10-minute average LET proton fluxes in spin sector 8 (of 8) between 3.8 and 8.0 MeV</Description>
@@ -565,10 +527,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.8</Low>
@@ -576,9 +537,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 8.0-19.0 MeV Proton Spin-Averaged Fluxes (L21)</Name>
        <ParameterKey>L21</ParameterKey>
        <Description>10-minute average LET spin-averaged proton fluxes between 8.0 and 19.0 MeV</Description>
@@ -594,10 +554,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>8.0</Low>
@@ -605,9 +564,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.0-5.0 MeV/n Alpha Spin-Averaged Fluxes (L22)</Name>
        <ParameterKey>L22</ParameterKey>
        <Description>10-minute average LET spin-averaged alpha fluxes between 1.0 and 5.0 MeV/n</Description>
@@ -618,10 +576,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.0</Low>
@@ -629,9 +586,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.9-3.7 MeV/n Alpha Spin-Averaged Fluxes (L23)</Name>
        <ParameterKey>L23</ParameterKey>
        <Description>10-minute average LET spin-averaged alpha fluxes between 1.9 and 3.7 MeV/n</Description>
@@ -641,10 +597,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.9</Low>
@@ -652,9 +607,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.7-8.4 MeV/n Alpha Spin-Averaged Fluxes (L24)</Name>
        <ParameterKey>L24</ParameterKey>
        <Description>10-minute average LET spin-averaged alpha fluxes between 3.7 and 8.4 MeV/n</Description>
@@ -664,10 +618,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.7</Low>
@@ -675,9 +628,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 8.4-19.0 MeV/n Alpha Spin-Averaged Fluxes (L25)</Name>
        <ParameterKey>L25</ParameterKey>
        <Description>10-minute average LET spin-averaged alpha fluxes between 8.4 and 19.0 MeV/n</Description>
@@ -691,10 +643,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>8.4</Low>
@@ -702,9 +653,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 1.9-4.9 MeV/n Li, Be and B Spin-Averaged Fluxes (L26)</Name>
        <ParameterKey>L26</ParameterKey>
        <Description>10-minute average LET spin-averaged Li, Be and B fluxes between 1.9 and 4.9 MeV/n</Description>
@@ -715,10 +665,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.9</Low>
@@ -726,9 +675,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 4.9-26.0 MeV/n Li, Be and B Spin-Averaged Fluxes (L27)</Name>
        <ParameterKey>L27</ParameterKey>
        <Description>10-minute average LET spin-averaged Li, Be and B fluxes between 4.9 and 26.0 MeV/n</Description>
@@ -739,10 +687,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>4.9</Low>
@@ -750,9 +697,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 2.6-7.1 MeV/n C, N and O Spin-Averaged Fluxes (L28)</Name>
        <ParameterKey>L28</ParameterKey>
        <Description>10-minute average LET spin-averaged C, N and O fluxes between 2.6 and 7.1 MeV/n</Description>
@@ -762,10 +708,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>2.6</Low>
@@ -773,9 +718,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 7.1-39.0 MeV/n C, N and O Spin-Averaged Fluxes (L29)</Name>
        <ParameterKey>L29</ParameterKey>
        <Description>10-minute average LET spin-averaged C, N and O fluxes between 7.1 and 39.0 MeV/n</Description>
@@ -785,10 +729,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>7.1</Low>
@@ -796,9 +739,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 3.0-9.0 MeV/n Z GE 10 Spin-Averaged Fluxes (L30)</Name>
        <ParameterKey>L30</ParameterKey>
        <Description>10-minute average LET spin-averaged Z GE 10 fluxes between 3.0 and 9.0 MeV/n</Description>
@@ -808,10 +750,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.0</Low>
@@ -819,9 +760,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 9.0-50.0 MeV/n 10 LE Z LE 20 Spin-Averaged Fluxes (L31)</Name>
        <ParameterKey>L31</ParameterKey>
        <Description>10-minute average LET spin-averaged 10 LE Z LE 20 fluxes between 9.0 and 50.0 MeV/n</Description>
@@ -831,10 +771,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>9.0</Low>
@@ -842,9 +781,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 12.0-75.0 MeV/n Z GE 20 Spin-Averaged Fluxes (L32)</Name>
        <ParameterKey>L32</ParameterKey>
        <Description>10-minute average LET spin-averaged Z GE 20 fluxes between 12.0 and 75.0 MeV/n</Description>
@@ -854,10 +792,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>12.0</Low>
@@ -865,9 +802,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average 0.3-1.0 MeV Electron Spin-Averaged Fluxes (L33)</Name>
        <ParameterKey>L33</ParameterKey>
        <Description>10-minute average LET spin-averaged electron fluxes between 0.3 and 1.0 MeV</Description>
@@ -878,12 +814,11 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
            <ParticleType>AlphaParticle</ParticleType>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>0.3</Low>
@@ -891,9 +826,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average D1 Detector Counting Rate (L34)</Name>
        <ParameterKey>L34</ParameterKey>
        <Description>10-minute average LET D1 detector counting rate</Description>
@@ -904,18 +838,16 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
            <ParticleType>AlphaParticle</ParticleType>
            <ParticleType>Ion</ParticleType>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average D2 Detector Counting Rate (L35)</Name>
        <ParameterKey>L35</ParameterKey>
        <Description>10-minute average LET D2 detector counting rate</Description>
@@ -926,18 +858,16 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
            <ParticleType>AlphaParticle</ParticleType>
            <ParticleType>Ion</ParticleType>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average D3 Detector Counting Rate (L36)</Name>
        <ParameterKey>L36</ParameterKey>
        <Description>10-minute average LET D3 detector counting rate</Description>
@@ -948,18 +878,16 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
            <ParticleType>AlphaParticle</ParticleType>
            <ParticleType>Ion</ParticleType>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average D4 Detector Counting Rate (L37)</Name>
        <ParameterKey>L37</ParameterKey>
        <Description>10-minute average LET D4 detector counting rate</Description>
@@ -970,18 +898,16 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
            <ParticleType>AlphaParticle</ParticleType>
            <ParticleType>Ion</ParticleType>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/LET 10-Minute Average D5 Detector Counting Rate (L38)</Name>
        <ParameterKey>L38</ParameterKey>
        <Description>10-minute average LET D5 detector counting rate</Description>
@@ -992,16 +918,14 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-999</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
            <ParticleType>AlphaParticle</ParticleType>
            <ParticleType>Ion</ParticleType>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
    </NumericalData>
   </Spase>

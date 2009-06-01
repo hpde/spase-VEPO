@@ -5,17 +5,15 @@
     http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
     <Version>2.0.0</Version> 
 <!-- Is index subelement of Structure element 0-based? -->
-<!-- Can duplicate Name subelements of Parameter element -->
+<!-- Can duplicate Name subelements of PhysicalParameter element -->
 <!-- exist in a NumericalData resource --> 
     <NumericalData>
-           <ResourceID>spase://VEPO/NumericalData/Voyager1/CRS/FLUX/PT6H</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/Voyager1/CRS/FLUX/PT15M</ResourceID> 
         <ResourceHeader>
-            <ResourceName>
-                Voyager-1 CRS Cruise Mode 6-hour averages
-            </ResourceName>
-            <ReleaseDate>2008-12-05T21:52:14Z</ReleaseDate>
+            <ResourceName>Voyager-1 CRS Cruise Mode 15-minute averages</ResourceName>
+            <ReleaseDate>2009-05-20T00:00:00Z</ReleaseDate>
             <Description>
-                6-hour averages of selected fluxes
+                15-minute averages of selected fluxes
             </Description>
             <Acknowledgement>
                 Please acknowledge the Voyager CRS team
@@ -25,30 +23,33 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
-                 <URL>http://voyager.gsfc.nasa.gov</URL>
+                <URL>
+                    http://voyager.gsfc.nasa.gov
+                </URL>
             </InformationURL>
             <InformationURL>
-                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt</URL>
+                <URL>
+                    http://voyager.gsfc.nasa.gov/archive/voyager-1
+                </URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/NSSDC</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/VOYCRS</RepositoryID>
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
-                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour</URL>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT15M</URL>
             </AccessURL>
             <Format>Text</Format> 
         </AccessInformation>
-<!-- not yet registered with SMWG -->
         <InstrumentID>spase://SMWG/Instrument/Voyager1/CRS</InstrumentID> 
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
-                <StartDate>1977-09-05T00:00:00</StartDate> 
-                <StopDate>2007-01-01T00:00:00</StopDate> 
+                <StartDate>1977-09-07T00:00:00</StartDate> 
+                <StopDate>2008-09-01T00:00:00</StopDate> 
             </TimeSpan>
-            <Cadence>PT6H</Cadence> 
+            <Cadence>PT15M</Cadence> 
         </TemporalDescription>
         <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
         <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
@@ -56,10 +57,10 @@
         <Parameter>
             <Name>Time</Name>
             <Description>
-                ISO 8601 formatted UT of start of 6 hour interval
+                ISO 8601 formatted UT of start of 15 minute interval
             </Description>
-            <ValidMin>1977-09-05T00:00:00</ValidMin>
-            <ValidMax>2007-01-01T00:00:00</ValidMax>
+            <ValidMin>1977-09-07T00:00:00</ValidMin>
+            <ValidMax>2008-09-01T00:00:00</ValidMax>
             <FillValue>-1.0E31</FillValue> 
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity> 
@@ -68,7 +69,6 @@
 <!-- parameter section -->
         <Parameter>
             <Name>4.2 - 6 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX1</ParameterKey> 
             <Description>
                 Helium4 flux derived from A-stopping 2 dimensional
                 analysis, high gain data from HET-II
@@ -87,16 +87,16 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>4.2</Low> 
-                        <High>6.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType> 
+                <Qualifier>Differential</Qualifier> 
+                <ParticleQuantity>NumberFlux</ParticleQuantity> 
+                <EnergyRange>
+                    <Low>4.2</Low> 
+                    <High>6.0</High> 
+                    <Units>MeV/nucleon</Units> 
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>6 - 42 MeV/nucleon Helium Flux</Name> 

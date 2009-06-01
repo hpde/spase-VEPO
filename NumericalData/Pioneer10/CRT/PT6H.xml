@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
-<Spase xmlns="http://www.spase-group.org/data/schema">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd"
+  xmlns="http://www.spase-group.org/data/schema">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VEPO/NumericalData/Pioneer10/CRT/PT6H</ResourceID>
     <ResourceHeader>
@@ -58,7 +60,7 @@
       <Cadence>PT6H</Cadence>
     </TemporalDescription>
     <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Proton Flux 3.45-5.15 MeV</Name>
       <Description>This flux is obtained from LET-I and is derived from pulse height data using R11A for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV)</Units>
@@ -66,10 +68,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>3.45</Low>
@@ -77,9 +78,8 @@
             <Units>MeV</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Proton Flux 30.55-56.47 MeV</Name>
       <Description>This flux is obtained from HET and is derived from pulse height data using R1 for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV)</Units>
@@ -87,10 +87,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>30.55</Low>
@@ -98,9 +97,8 @@
             <Units>MeV</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Proton Flux 120.7-227.3 MeV</Name>
       <Description>This flux is obtained from HET and is derived from pulse height data using R2 for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV)</Units>
@@ -108,10 +106,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>120.7</Low>
@@ -119,9 +116,8 @@
             <Units>MeV</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Helium Flux 3.44-4.97 MeV/n</Name>
       <Description>This flux is obtained from LET-1 and is derived from pulse height data using R11B for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV/n)</Units>
@@ -129,10 +125,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>AlphaParticle</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>3.44</Low>
@@ -140,9 +135,8 @@
             <Units>MeV/n</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Helium Flux 10.03-21.7 MeV/n</Name>
       <Description>This flux is obtained from LET-1 and is derived from pulse height data using R11B for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV/n)</Units>
@@ -150,10 +144,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>AlphaParticle</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>10.03</Low>
@@ -161,9 +154,8 @@
             <Units>MeV/n</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Helium Flux 30.67-56.7 MeV/n</Name>
       <Description>This flux is obtained from HET and is derived from pulse height data using R2B for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV/n)</Units>
@@ -171,10 +163,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>AlphaParticle</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>30.67</Low>
@@ -182,9 +173,8 @@
             <Units>MeV/n</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Helium Flux 112.7-413 MeV/n</Name>
       <Description>This flux is obtained from HET and is derived from pulse height data using R3A for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV/n)</Units>
@@ -192,10 +182,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>AlphaParticle</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>112.7</Low>
@@ -203,9 +192,8 @@
             <Units>MeV/n</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Electron Flux 2-6 MeV </Name>
       <Description>This flux is obtained from HET and is derived from pulse height data using R1 for normalization</Description>
       <Units>particles/(cm**2 sec ster MeV/n)</Units>
@@ -213,10 +201,9 @@
         <Size>1</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>2</Low>
@@ -224,9 +211,8 @@
             <Units>MeV/n</Units>
           </EnergyRange>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Poisson uncertainties in fluxes </Name>
       <Description>These are the Poisson uncertainties in the eight fluxes named above as scalars.  In the data records, each immediately follows the flux it refers to.</Description>
       <Units>particles/(cm**2 sec ster MeV/n)</Units>
@@ -234,17 +220,15 @@
         <Size>8</Size>
       </Structure>
       <FillValue>-1.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Proton</ParticleType>
           <ParticleType>AlphaParticle</ParticleType>
           <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Uncertainty</ParticleQualifier>
+          <Qualifier>Uncertainty</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Count rates</Name>
       <Description>These are 28 6-hour-averaged count rates corresponding to various telescope sensors singly and in coincidence, and, for some, for various levels of energy deposition in sensors.  The documentation cited above gives conditions for each rate: which sensors, which species (one or more), etc. </Description>
       <Units>particles/sec</Units>
@@ -252,17 +236,15 @@
         <Size>28</Size>
       </Structure>
       <FillValue>0.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Proton</ParticleType>
           <ParticleType>AlphaParticle</ParticleType>
           <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
+          <Qualifier>Average</Qualifier>
           <ParticleQuantity>Counts</ParticleQuantity>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Count rate uncertainties</Name>
       <Description>These are Poisson uncertainties in each of the above-identified 28 6-hour-averaged count rates corresponding to various telescope sensors singly and in coincidence, and, for some, for various levels of energy deposition in sensors.  The documentation cited above gives conditions for each rate: which sensors, which species (one or more), etc.  The uncertainty for each count rate immediately follows that count rate in the data records. </Description>
       <Units>particles/sec</Units>
@@ -270,15 +252,13 @@
         <Size>28</Size>
       </Structure>
       <FillValue>-1.000000e+00</FillValue>
-      <Measured>
         <Particle>
           <ParticleType>Proton</ParticleType>
           <ParticleType>AlphaParticle</ParticleType>
           <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Uncertainty</ParticleQualifier>
+          <Qualifier>Uncertainty</Qualifier>
           <ParticleQuantity>Counts</ParticleQuantity>
         </Particle>
-      </Measured>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

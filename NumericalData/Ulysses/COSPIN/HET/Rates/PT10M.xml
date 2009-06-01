@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-   <Version>1.3.0</Version>
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+   <Version>2.0.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Rates/PT10M</ResourceID>
      <ResourceHeader>
@@ -37,7 +38,9 @@
 		   COSPIN High Energy Telescope (HET), and caveats for their use
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Sectored-Rates/PT10M</AssociationID>
+       <Association>
+         <AssociationID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Sectored-Rates/PT10M</AssociationID>
+       </Association>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://VEPO/Repository/UDS</RepositoryID>
@@ -78,7 +81,7 @@
        <Cadence>PT10M</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Interval Start Time</Name>
        <ParameterKey>Time_PG1</ParameterKey>
        <Description>
@@ -127,8 +130,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 5-14 MeV Proton Spin-Averaged Counting Rate (H1)</Name>
        <ParameterKey>H1</ParameterKey>
        <Description>
@@ -150,10 +153,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>5</Low>
@@ -161,9 +163,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 14-19 MeV Proton Spin-Averaged Counting Rate (H2)</Name>
        <ParameterKey>H2</ParameterKey>
        <Description>
@@ -187,10 +188,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>14</Low>
@@ -198,9 +198,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 24-31 MeV Proton Spin-Averaged Counting Rate (H3)</Name>
        <ParameterKey>H3</ParameterKey>
        <Description>
@@ -223,10 +222,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>24</Low>
@@ -234,9 +232,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 34-69 MeV Proton Spin-Averaged Counting Rates (H4)</Name>
        <ParameterKey>H4</ParameterKey>
        <Description>
@@ -258,10 +255,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>34</Low>
@@ -269,9 +265,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 68-92 MeV Proton Spin-Averaged Counting Rates (H5)</Name>
        <ParameterKey>H5</ParameterKey>
        <Description>
@@ -298,10 +293,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>68</Low>
@@ -309,9 +303,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 1-3 MeV Electron Spin-Averaged Counting Rates (H6)</Name>
        <ParameterKey>H6</ParameterKey>
        <Description>
@@ -335,10 +328,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1</Low>
@@ -346,9 +338,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 5-10 MeV Electron Spin-Averaged Counting Rates (H7)</Name>
        <ParameterKey>H7</ParameterKey>
        <Description>
@@ -366,10 +357,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>5</Low>
@@ -377,9 +367,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 3-5 MeV Electron Spin-Averaged Counting Rates (H8)</Name>
        <ParameterKey>H8</ParameterKey>
        <Description>
@@ -397,10 +386,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>3</Low>
@@ -408,9 +396,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET >92 MeV Proton Spin-Averaged Counting Rates (H9)</Name>
        <ParameterKey>H9</ParameterKey>
        <Description>
@@ -436,10 +423,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>92</Low>
@@ -447,9 +433,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>
           COSPIN/HET 26-36 MeV/n (for Carbon) Heavy Ion (Z>2) Spin-Averaged Counting Rates
          (H10)
@@ -469,10 +454,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>26</Low>
@@ -480,9 +464,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>
           COSPIN/HET 44-127 MeV/n (for Carbon) Heavy Ion (Z>2) Spin-Averaged Counting Rates
          (H11)
@@ -503,10 +486,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>44</Low>
@@ -514,9 +496,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>
           COSPIN/HET 127-173 MeV/n (for Carbon) Heavy Ion (Z>2) Spin-Averaged Counting Rates
          (H12)
@@ -547,10 +528,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>127</Low>
@@ -558,9 +538,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>
           COSPIN/HET >173 MeV/n (for Carbon) Heavy Ion (Z>2) Spin-Averaged Counting Rates
           (H13)
@@ -577,10 +556,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>173</Low>
@@ -588,9 +566,8 @@
              <Units>MeV/n</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>Floating Point Time for the record</Name>
        <ParameterKey>FP_Time</ParameterKey>
        <Description>
@@ -619,7 +596,7 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
+     </Parameter>
     </NumericalData>
 </Spase>
 

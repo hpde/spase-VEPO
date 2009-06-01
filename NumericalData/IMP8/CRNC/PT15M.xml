@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-<Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+<Version>2.0.0</Version>
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/PT15M</ResourceID>
    <ResourceHeader>
@@ -62,7 +63,7 @@
    </TemporalDescription>
    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
    <Caveats>Data must be processed to obtain count rates and fluxes.  Note that records with no data have spacecraft ID = 0 in first word.</Caveats>
-   <PhysicalParameter>
+   <Parameter>
       <Name>Coincidence mode counts</Name>
       <Description>A set of 13 counts of events corresponding various telescope coincidence modes and discriminator levels</Description>
       <Cadence>PT15M</Cadence>
@@ -70,7 +71,6 @@
          <Size>13</Size>
          <Description> A set of 13 counts of events corresponding various telescope coincidence modes and discriminator levels.  Counts are due to a mix of protons and alpha particles identified below plus 0.7-50 MeV electrons.</Description>
       </Structure>
-      <Measured>
          <Particle>
             <ParticleType>Proton</ParticleType>
             <ParticleType>AlphaParticle</ParticleType>
@@ -81,9 +81,8 @@
                <Units>MeV per n</Units>
             </EnergyRange>
          </Particle>
-      </Measured>
-   </PhysicalParameter>
-   <PhysicalParameter>
+   </Parameter>
+   <Parameter>
       <Name>Count accumulation durations</Name>
       <Description>A set of 13 accumulation durations (in seconds) corresponding to the 13 coincidence mode counts described above</Description>
       <Cadence>PT15M</Cadence>
@@ -95,8 +94,8 @@
       <Support>
       <SupportQuantity>Other</SupportQuantity>
       </Support>
-   </PhysicalParameter>
-   <PhysicalParameter>
+   </Parameter>
+   <Parameter>
       <Name>Counts of events pulse height analyzed</Name>
       <Description>A set of 4 counts of events pulse height analyzed in various coincidence modes for this interval for the CPI main telescope</Description>
       <Cadence>PT15M</Cadence>
@@ -104,7 +103,6 @@
          <Size>4</Size>
          <Description> A set of 4 counts of events pulse height analyzed in various coincidence modes for this interval.  Counts are due to a mix of protons and alpha particles identified below plus 0.7-50 MeV electrons.</Description>
       </Structure>
-      <Measured>
          <Particle>
             <ParticleType>Proton</ParticleType>
             <ParticleType>AlphaParticle</ParticleType>
@@ -115,9 +113,8 @@
                <Units>MeV per n</Units>
             </EnergyRange>
          </Particle>
-      </Measured>
-   </PhysicalParameter>
-   <PhysicalParameter>
+   </Parameter>
+   <Parameter>
       <Name>Box counts for specific species</Name>
       <Description>A set of 27 counts in E-dE/dx boxes corresponding to known species and energy ranges.  In particular, there are 9 proton counts with energy ranges between 11.24-12.62 MeV and 74.50-94.78 MeV plus 2 proton counts aggregated over subsets of the 9, 10 alpha particle counts with energy ranges between 10.90-12.89 MeV/n and 84.32-94.81 MeV/n plus 2 alpha particle counts aggregated over subsets of the 10, 3 electron boxes at 0.7-2.0 MeV, 2.0-12 MeV, and 12-50 MeV, and one CNO box at ~25-250 MeV/n</Description>
       <Caveats>Data and companion documentation (algorithms, geometric factors, etc.) enable calculation of count rates and fluxes</Caveats>
@@ -126,7 +123,6 @@
          <Size>27</Size>
          <Description>A set of 27 box counts as described above</Description>
       </Structure>
-      <Measured>
          <Particle>
             <ParticleType>Proton</ParticleType>
             <ParticleType>AlphaParticle</ParticleType>
@@ -137,7 +133,6 @@
                <Units>MeV per n</Units>
             </EnergyRange>
          </Particle>
-      </Measured>
-   </PhysicalParameter>
+   </Parameter>
 </NumericalData>
 </Spase>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-   <Version>1.3.0</Version>
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+   <Version>2.0.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/AT/Fluxes/PT10M</ResourceID>
      <ResourceHeader>
@@ -141,7 +142,7 @@
        <Cadence>PT10M</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Interval Start Time</Name>
        <ParameterKey>Columns 1-5</ParameterKey>
        <Description>
@@ -190,8 +191,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/ATN 0.7-0.9 MeV Proton Spin-Averaged Flux based on counting rate A1_N</Name>
        <ParameterKey>Column_6</ParameterKey>
        <Description>
@@ -208,10 +209,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>0.7</Low>
@@ -219,10 +219,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 0.9-1.3 MeV Proton Spin-Averaged Flux based on counting rate A2_N</Name>
        <ParameterKey>Column_7</ParameterKey>
        <Description>
@@ -239,10 +238,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>0.9</Low>
@@ -250,10 +248,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 1.3-2.2 MeV Proton Spin-Averaged Flux based on Counting Rate A3_N</Name>
        <ParameterKey>Column_8</ParameterKey>
        <Description>
@@ -270,10 +267,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.3</Low>
@@ -281,10 +277,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 2.2-3.6 MeV Proton Spin-Averaged Flux based on Counting Rate A4_N</Name>
        <ParameterKey>Column_9</ParameterKey>
        <Description>
@@ -300,10 +295,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>2.2</Low>
@@ -311,10 +305,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 3.6-6.5 MeV Proton Spin-Averaged flux based on Counting Rate A5_N</Name>
        <ParameterKey>Column_10</ParameterKey>
        <Description>
@@ -331,10 +324,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.6</Low>
@@ -342,10 +334,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 3.0-7.5 MeV Helium Spin-Averaged flux based on Counting Rate A38_N</Name>
        <ParameterKey>Column_11</ParameterKey>
        <Description>
@@ -361,10 +352,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.0</Low>
@@ -372,10 +362,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 7.5-12.0 MeV Helium Spin-Averaged Counting Rate (A39_N)</Name>
        <ParameterKey>Column_12</ParameterKey>
        <Description>
@@ -391,10 +380,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>7.5</Low>
@@ -402,10 +390,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 12.0-26.0 MeV Helium Spin-Averaged Flux based on Counting Rate A40_N</Name>
        <ParameterKey>Column_13</ParameterKey>
        <Description>
@@ -421,10 +408,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+35</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>12.0</Low>
@@ -432,10 +418,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN  10-Minute Average Sectored Proton flux based on 
        Counting Rate A3_NS</Name>
        <ParameterKey>Columns_14-21</ParameterKey>
@@ -529,10 +514,9 @@
              <FillValue>-1.000E+35</FillValue>
           </Element>
        </Structure>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>1.3</Low>
@@ -540,10 +524,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 10-Minute Average Sectored Proton Fluxes based on Counting Rate 
         A4_NS</Name>
        <ParameterKey>Columns_22-29</ParameterKey>
@@ -636,10 +619,9 @@
              <FillValue>-1.000E+35</FillValue>
           </Element>
        </Structure>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>2.2</Low>
@@ -647,10 +629,9 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>COSPIN/ATN 10-Minute Average Sectored Proton Fluxes based on 
              Counting Rate A5_NS</Name>
        <ParameterKey>Columns_30-37</ParameterKey>
@@ -744,10 +725,9 @@
              <FillValue>-1.000E+35</FillValue>
           </Element>
        </Structure>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>3.6</Low>
@@ -755,8 +735,7 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
     </NumericalData>
 </Spase>
 

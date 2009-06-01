@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd"
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd"
  xmlns="http://www.spase-group.org/data/schema">
-   <Version>1.3.0</Version>
+   <Version>2.0.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/PH_Fluxes/P1D</ResourceID>
      <ResourceHeader>
@@ -87,7 +87,7 @@
        <Cadence>P1D</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Inner</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Time for the record</Name>
        <ParameterKey>Time_PG1</ParameterKey>
        <Description>
@@ -117,8 +117,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 39-70 MeV Proton Flux</Name>
        <ParameterKey>H4PFlx</ParameterKey>
        <Description>
@@ -139,10 +139,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>39</Low>
@@ -150,9 +149,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 39-70 MeV Proton Flux Statistical Error</Name>
        <ParameterKey>H4PFlxStatErr</ParameterKey>
        <Description>
@@ -167,10 +165,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>StandardDeviation</ParticleQualifier>
+           <Qualifier>StandardDeviation</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>39</Low>
@@ -178,9 +175,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 71-94 MeV Proton Flux</Name>
        <ParameterKey>H5PFlx</ParameterKey>
        <Description>
@@ -201,10 +197,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>71</Low>
@@ -212,9 +207,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 71-94 MeV Proton Flux Statistical Error</Name>
        <ParameterKey>H5PFlxStatErr</ParameterKey>
        <Description>
@@ -229,10 +223,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>StandardDeviation</ParticleQualifier>
+           <Qualifier>StandardDeviation</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>71</Low>
@@ -240,9 +233,8 @@
              <Units>MeV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 39-71 MeV/nucleon Helium Flux</Name>
        <ParameterKey>H4HeFlx</ParameterKey>
        <Description>
@@ -265,10 +257,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>39</Low>
@@ -276,9 +267,8 @@
              <Units>MeV/nucleon</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 39-71 MeV/nucleon Helium Flux Statistical Error</Name>
        <ParameterKey>H4HeFlxStatErr</ParameterKey>
        <Description>
@@ -293,10 +283,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>StandardDeviation</ParticleQualifier>
+           <Qualifier>StandardDeviation</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>39</Low>
@@ -304,9 +293,8 @@
              <Units>MeV/nucleon</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 72-95 MeV/nucleon Helium Flux</Name>
        <ParameterKey>H5HeFlx</ParameterKey>
        <Description>
@@ -327,10 +315,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>72</Low>
@@ -338,9 +325,8 @@
              <Units>MeV/nucleon</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>COSPIN/HET 72-95 MeV/nucleon Helium Flux Statistical Error</Name>
        <ParameterKey>H5HeFlxStatErr</ParameterKey>
        <Description>
@@ -355,10 +341,9 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1.000E+00</FillValue>
-       <Measured>
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>StandardDeviation</ParticleQualifier>
+           <Qualifier>StandardDeviation</Qualifier>
            <ParticleQuantity>NumberFlux</ParticleQuantity>
            <EnergyRange>
              <Low>72</Low>
@@ -366,8 +351,7 @@
              <Units>MeV/nucleon</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+     </Parameter>
     </NumericalData>
 </Spase>
 
