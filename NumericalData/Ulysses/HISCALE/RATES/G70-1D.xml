@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
    <Version>2.0.0</Version>
    <NumericalData>
-     <ResourceID>spase://VEPO/NumericData/Ulysses/HISCALE/RATES/G70-1D</ResourceID>
+     <ResourceID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/G70-1D</ResourceID>
      <ResourceHeader>
        <ResourceName>Daily-Averaged HISCALE LEFS60 Count Rates</ResourceName>
        <AlternateName>HISCALE-PG70-1D</AlternateName>
@@ -25,9 +25,9 @@
            (CSV) files, and how those files can be accessed.
          </Description>
        </InformationURL>
-       <Association><AssociationID>spase://VEPO/NumericData/Ulysses/HISCALE/RATES/G70-5M</AssociationID></Association>
-       <Association><AssociationID>spase://VEPO/NumericData/Ulysses/HISCALE/RATES/G70-12S</AssociationID></Association>
-       <Association><AssociationID>spase://VEPO/NumericData/Ulysses/HISCALE/RATES/G70-1H</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/G70-5M</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/G70-12S</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/G70-1H</AssociationID></Association>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
