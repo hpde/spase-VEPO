@@ -9,20 +9,27 @@
        <ResourceName>Hourly-Averaged HISCALE LEMS30 Count Rates</ResourceName>
        <AlternateName>HISCALE-PG71-1H</AlternateName>
        <ReleaseDate>2007-11-06T00:00:00.000</ReleaseDate>
-       <Description>Hourly-averaged sectored count rates from LEMS30 - Channels P1, P2, P3, P4, P5, P6, P7, and P8.</Description>
+       <Description>
+         Hourly-averaged sectored count rates from LEMS30 - Channels P1, P2, P3, P4, P5, P6, P7, and P8.
+       
+         The HISCALE instrument contains the Low-Energy Magnetic Spectrometers (LEMS), the Low-Energy Foil 
+         Spectrometers (LEFS) and the Composition Aperture (CA). There is a LEMS detector at 30 degrees from
+         the spacecraft spin axis and a second at 120 degrees.  LEFS is positioned at 60 degrees from the 
+         spacecraft spin axis with a second LEFS detector at 150 degrees.  The CA detector is positioned at
+         60 degrees from the spacecraft spin axis.  The parameter descriptions of this document reference the
+         detectors by their acronyms and angle from the spacecraft spin axis, i.e. LEMS30, LEMS120, LEFS60, LEFS150, 
+         and CA60.
+       </Description>
        <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
        <Contact>
          <PersonID>spase://SMWG/Person/Thomas.P.Armstrong</PersonID>
          <Role>DataProducer</Role>
        </Contact>
        <InformationURL>
-         <Name>Explaination of HISCALE print-groups and CSV file nomenclature.</Name>
-         <URL>http://data.ftecs.com/archive/ulysses_hiscale/Explanations/must%20read/explanation-csv-files.html</URL>
+         <Name>Overview of HISCALE data contents</Name>
+         <URL>http://vho.nasa.gov/vxo/documents/HISCALE.html</URL>
          <Description>
-           The Explanation.html page at Fundamental Technologies describes how the
-           numeric data from the Ulysses HISCALE instrument are divided into different
-           print-groups, the nomenclature of the ASCII-based comma-separated variable
-           (CSV) files, and how those files can be accessed.
+           A table summarizing the contents of HISCALE data available via the VHO/VEPO
          </Description>
        </InformationURL>
        <Association><AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/RATES/G71-5M</AssociationID></Association>
