@@ -77,7 +77,7 @@
        <Acknowledgement>R.B. McKibben, University of New Hampshire 
        </Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/HET</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>

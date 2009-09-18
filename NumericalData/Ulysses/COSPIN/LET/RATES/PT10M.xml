@@ -58,7 +58,7 @@
        <Encoding>ZIP</Encoding>
        <Acknowledgement>R.G. Marsden, ESA/ESTEC</Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/LET</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>

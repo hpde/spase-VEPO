@@ -122,7 +122,7 @@
       <Encoding>ASCII</Encoding>
       <Acknowledgement>R.B. McKibben, Space Science Center, University of New Hampshire</Acknowledgement>
     </AccessInformation>
-    <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/HET</InstrumentID>
     <MeasurementType>InstrumentStatus</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

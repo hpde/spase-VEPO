@@ -97,7 +97,7 @@
        <Encoding>ZIP</Encoding>
        <Acknowledgement>J.D. Anglin, HIA/NRC, Ottawa, Canada</Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/HFT</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>

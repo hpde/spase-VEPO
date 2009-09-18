@@ -52,7 +52,7 @@
        <Encoding>None</Encoding>
        <Acknowledgement>B. Heber, CAU Kiel</Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/KET</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>
