@@ -6,18 +6,43 @@
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/FullResolution/Rates/Omni1</ResourceID>
      <ResourceHeader>
        <ResourceName>
-         Counts and coverages for the High Energy Telescope (HET) spin-averaged coincidence counting rates H1-H9
+         Ulysses/COSPIN/HET readout by readout counts and accumulation times for spin-averaged counting 
+         rates H1-H9.
        </ResourceName>
-       <AlternateName>
-         Full Resolution COSPIN HET Spin-averaged counting rates for Protons and electrons
-       </AlternateName>
-       <ReleaseDate>
-         2009-07-31T00:00:00.000
-       </ReleaseDate>
+       <ReleaseDate>2009-09-24T00:00:00.000</ReleaseDate>
        <Description>
-          Counts and coverages (ms) for each readout of the COSPIN HET coincidence counting rates H1 - H9.  These counting 
-          rates respond primarily to protons (H1-H5, H9) in various energy ranges above about 5 MeV and to electrons 
-          (H6-H8) with energies between about 1 MeV and 10 MeV.
+           A directory containing daily ftp-downloadable files containing readout-by-readout listings of 
+           the counts accumulated in the H1-H9 spin-averaged counting rates. These counting rates respond 
+           primarily to protons (H1-H5, H9) in the approximate energy ranges 5.4-14, 14-19, 24-31, 34-68,
+           68-92, and >92 MeV, respectively, and to electrons (H6-8) in the very approximate energy ranges 
+           1-3, 5-10, and 3-5 MeV, respectively.
+           The naming convention for the daily files is uly_het_full_rat_omni1_YYYDDD.txt, where YYY 
+           indicates the three-digit year since 1900 (e.g. YYY=090 for 1990, and YYY=102 for 2002) and 
+           DDD indicates the three digit day of year (Jan. 1 = 1).
+           In each file, following a detailed description of the format, the data consist of a
+           listing of counts accumulated in the H1-H9 spin-averaged counting  rates during the intervals 
+           between successive readouts, organized into columns as described below.
+           The first 4 columns give the start time of the counting rate accumulation period as
+           fractional year (to 12 decimal places) and as  year since 1900, day of year, and ms
+           of day at the start of the accumulation, followed by 1 column giving the duration of
+           the accumulation period in milli-seconds (it is the same for all 9 rates), and 9
+           columns giving the counts accumulated in that period for each rate.  All fields
+           except for the fractional year are in integer format.
+           Each line contains data for one single readout of the rates H1-H9, and all readouts
+           where at least one of the rates has a non-fill value are included.  Where fill
+           does occur it is indicated by -1.
+           Since the accumulation period for each readout is forced to include an integral number
+           of spacecraft spins in order to produce pure spin-averaged measurements, the lengths of
+           the accumulation periods vary in a cyclic manner as the period of the telemetry cycle
+           beats with the spacecraft spin period.  All counting rates in this file are read out
+           twice per spacecraft format.  At the most common science telemetry bit rate (2048 bps)
+           this corresponds to an average interval between readouts of 16 seconds.  Thus, with a
+           typical 5 rpm spacecraft spin rate the accumulation intervals vary in a repeating cycle of
+           12, 12, 24, 12, 12, 24, 12, etc. seconds.  At lower bit rates the average interval is
+           equal to 16x(2048/BR) seconds and the cycle automatically adjusts to produce this average
+           accumulation.
+           No noise-removal or despiking has been done, so caution must be used in interpreting isolated 
+           large increases or decreases in the counting rates.
        </Description>
        <Acknowledgement>
          Please acknowledge the Lead HET Investigator and COSPIN P.I., Dr. R. Bruce McKibben
@@ -53,7 +78,7 @@
            COSPIN/HET User Notes
          </Name>
          <URL>
-           http://helio.estec.esa.nl/ulysses/archive/cospin_het_usernotes.html
+           http://helio.estec.esa.nl/ulysses/archive/het_usernotes.pdf
          </URL>
          <Description>
            Identification of data channels archived and brief discussion of data structure
@@ -88,35 +113,8 @@
          <Name>Ulysses COSPIN/HET Full Resolution Spin-Average (Omni1) Counting Rate Data</Name>
          <URL>ftp://www.rssd.esa.int/pub/ulysses/COSPIN/HET/omni1</URL>
          <Description>
-           Parent directory containing daily ftp-downloadable files with naming convention 
-           uly_het_full_rat_omni1_YYYDDD.txt, where YYY indicates the three-digit year since 1900 
-           (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD indicates the three digit day of 
-           year (Jan. 1 = 1). 
-           In each file, following a detailed description of the format, the data consist of a
-           readout by readout listing of counts accumulated in the H1-H9 spin-averaged counting
-           rates.  
-           The first 4 columns give the start time of the counting rate accumulation period as 
-           fractional year (to 12 decimal places) and as  year since 1900, day of year, and ms 
-           of day at the start of the accumulation, followed by 1 column giving the duration of 
-           the accumulation period in milli-seconds (it is the same for all 9 rates), and 9 
-           columns giving the counts accumulated in that period for each rate.  All fields 
-           except for the fractional year are in integer format.
-           Each line contains data for one single readout of the rates H1-H9, and all readouts 
-           where at least one of the rates has a non-fill value are included.  Where fill 
-           does occur it is indicated by -1. 
-           Since the accumulation period for each readout is forced to include an integral number 
-           of spacecraft spins in order to produce pure spin-averaged measurements, the lengths of 
-           the accumulation periods vary in a cyclic manner as the period of the telemetry cycle 
-           beats with the spacecraft spin period.  All counting rates in this file are read out 
-           twice per spacecraft format.  At the most common science telemetry bit rate (2048 bps) 
-           this corresponds to an average interval between readouts of 16 seconds.  Thus, with a 
-           typical 5 rpm spacecraft spin rate the accumulation intervals vary in a repeating cycle of 
-           12, 12, 24, 12, 12, 24, 12, etc. seconds.  At lower bit rates the average interval is 
-           equal to 16x(2048/BR) seconds and the cycle automatically adjusts to produce this average 
-           accumulation. 
-           No noise-removal or despiking has been done, so caution must be used in
-           interpreting isolated large increases or decreases in the counting rates.
-        </Description>
+           Parent directory containing daily downloadable files with the format described below
+         </Description>
        </AccessURL>
        <Format>Text</Format>
        <Encoding>ASCII</Encoding>
@@ -129,12 +127,10 @@
          <StartDate>1990-10-22T00:00:00.000</StartDate>
          <StopDate>2009-06-29T23:59:59.000</StopDate>
        </TimeSpan>
-       <Cadence>P1D</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
      <Parameter>
        <Name>Interval Start Time</Name>
-       <ParameterKey>Columns 1-4</ParameterKey>
        <Description>
           Nominal Start Time for the average given in decimal year, 
           integer year, day of year, and milli-secnds of day.
@@ -145,6 +141,7 @@
          <Element>
            <Name>Decimal Year</Name>
 	   <Index>1</Index>
+           <ParameterKey>Column_1</ParameterKey>
            <ValidMin>1990</ValidMin>
            <ValidMax>2009</ValidMax>
            <FillValue>0.00000000000</FillValue>
@@ -152,6 +149,7 @@
          <Element>
            <Name>year</Name>
            <Index>2</Index>
+           <ParameterKey>Column_2</ParameterKey>
            <ValidMin>1990</ValidMin>
            <ValidMax>2009</ValidMax>
            <FillValue>0</FillValue>
@@ -159,6 +157,7 @@
          <Element>
            <Name>day</Name>
            <Index>3</Index>
+           <ParameterKey>Column_3</ParameterKey>
            <ValidMin>1</ValidMin>
            <ValidMax>366</ValidMax>
            <FillValue>0</FillValue>
@@ -166,6 +165,7 @@
          <Element>
            <Name>msec</Name>
            <Index>4</Index>
+           <ParameterKey>Column_4</ParameterKey>
            <ValidMin>0</ValidMin>
            <ValidMax>86400000</ValidMax>
            <FillValue>0</FillValue>
@@ -193,9 +193,9 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-    </Parameter>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H01</Name>
        <ParameterKey>Column_6</ParameterKey>
        <Description>
@@ -211,22 +211,19 @@
            rays from the RTG.
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>counts</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Proton</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>5.4</Low>
-             <High>14</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Proton</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>5.4</Low>
+           <High>14</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H02</Name>
        <ParameterKey>Column_7</ParameterKey>
        <Description>
@@ -242,22 +239,19 @@
            against electrons, and thus also against RTG-induced background.
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Proton</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>14</Low>
-             <High>19</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Proton</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>14</Low>
+           <High>19</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H03</Name>
        <ParameterKey>Column_8</ParameterKey>
        <Description>
@@ -275,22 +269,19 @@
            may in some circumstances make significant contributions to the counting rate.
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Proton</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>24</Low>
-             <High>31</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Proton</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>24</Low>
+           <High>31</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H04</Name>
        <ParameterKey>Column_9</ParameterKey>
        <Description>
@@ -308,22 +299,19 @@
            may in some circumstances make significant contributions to the counting rate.
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Proton</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>34</Low>
-             <High>68</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Proton</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>34</Low>
+           <High>68</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter> 
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H05</Name>
        <ParameterKey>Column_10</ParameterKey>
        <Description>
@@ -348,22 +336,19 @@
            of 1991.  
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Proton</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>68</Low>
-             <High>92</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Proton</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>68</Low>
+           <High>92</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H06</Name>
        <ParameterKey>Column_11</ParameterKey>
        <Description>
@@ -381,22 +366,19 @@
            in the telescope. 
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Electron</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>1</Low>
-             <High>3</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Electron</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>1</Low>
+           <High>3</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H07</Name>
        <ParameterKey>Column_12</ParameterKey>
        <Description>
@@ -415,22 +397,19 @@
            counting rate by the presence of the RTG. 
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Electron</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>5</Low>
-             <High>10</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Electron</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>5</Low>
+           <High>10</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H08</Name>
        <ParameterKey>Column_13</ParameterKey>
        <Description>
@@ -449,22 +428,19 @@
            counting rate by the presence of the RTG. 
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Electron</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>3</Low>
-             <High>5</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Electron</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>3</Low>
+           <High>5</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
 
-      <Parameter>
+     <Parameter>
        <Name>COSPIN/HET H09</Name>
        <ParameterKey>Column_14</ParameterKey>
        <Description>
@@ -488,20 +464,17 @@
            than for derivation of an accurate integral flux.  
        </Caveats>
        <Cadence>PT12S</Cadence>
-       <Units>(counts)</Units>
-       <ValidMin>0.0</ValidMin>
-       <ValidMax>1.00E+06</ValidMax>
        <FillValue>-1</FillValue>
-         <Particle>
-           <ParticleType>Electron</ParticleType>
-           <ParticleQuantity>Counts</ParticleQuantity>
-           <EnergyRange>
-             <Low>92</Low>
-             <High>1.0E+14</High>
-             <Units>MeV</Units>
-           </EnergyRange>
-         </Particle>
-      </Parameter>
+       <Particle>
+         <ParticleType>Electron</ParticleType>
+         <ParticleQuantity>Counts</ParticleQuantity>
+         <EnergyRange>
+           <Low>92</Low>
+           <High>1.0E+14</High>
+           <Units>MeV</Units>
+         </EnergyRange>
+       </Particle>
+     </Parameter>
    </NumericalData>
    </Spase>
 

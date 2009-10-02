@@ -8,15 +8,59 @@
       <ResourceName>
         High Energy Telescope Pulse Height Analyzed Events
       </ResourceName>
-      <AlternateName>
-        Full Resolution COSPIN HET PHA Events
-      </AlternateName>
-      <ReleaseDate>
-        2009-08-11T00:00:00.000
-      </ReleaseDate>
+      <ReleaseDate>2009-09-24T00:00:00.000</ReleaseDate>
       <Description>
-        Listing, event by event, of all relevant paramaters for every non-zero pulse height analyzed event
-        from the Ulysses COSPIN HET.
+        A directory containing daily ftp-downloadable files containing full information for
+        every non-zero HET pulse-height event returned in telemetry, including raw channels 
+        and discriminator states, the energy deposits corresponding to the channels, and certain
+        derived quantities including particle charge and trajectory through the telescope.
+        Pulse height analysis is performed for electrons and nuclei with penetrating power 
+        equivalent to that of protons with energy greater than 14 MeV.  
+        The naming convention of the files is uly_het_full_pha_YYYDDD.txt, where YYY indicates 
+        the three-digit year since 1900 (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD 
+        indicates the three digit day of year (Jan. 1 = 1). 
+        At the start of each file there isa detailed description of the format, in which each 
+        event is represented by a line with 54 columns that provide complete information 
+        about the event.
+        The first 4 columns give the time of the opening of the window in which the event 
+        was recorded as fractional year (to 12 decimal places) and as  year since 1900, 
+        day of year, and ms of day.  At the most common science telemetry rate, 2048 bps, 
+        six events are collected in every 32 second telemetry format.  Because of the large
+        geometrical factor of the telescope, almost every available pha slot contains an
+        event.  Since far more events are recorded in the telescope than can be returned
+        as pha events in the telemetry, only a sample of the events incident on the telescope
+        can be sent down as pha events.  
+        With the pha data for an event, the particle's charge, mass, kinetic energy, and 
+        trajectory through the telescope can be determined.  While most of the nuclei incident 
+        on the HET are protons, a three-level priority system selects events for pulse-height
+        analyis and return in the telemetry so as to assure capture of almost all of the
+        relatively rare heavy element nuclei that stop in the telescope.  The lowest priority 
+        (P3) events are those that satisfy the most basic criteria for being an analyzable event, 
+        as determined by the combination of discriminators on various detectors in the telescope 
+        that fire.  A higher priority (P2) is given to events that stop in the telescope, and the
+        highest priority (P1) is given to events that stop in the telescope and that are identified 
+        as heavy  nuclei by the size of their energy deposits in the detectors.  
+        The highest priority event that occurs in each window for accumulation of pha events
+        is selected for inclusion in the telemetry data returned to the ground.  Thus, in large 
+        solar energetic particle events with abundant heavy nuclei, few protons may be included 
+        in the pha events transmitted via telemetry.  The counting rates, however, count every 
+        event, and in such cases it can usually be assumed the counting rates that respond to 
+        protons are dominated by the proton flux.
+        Absolute fluxes for individual elements may be derived by identifying pha events that 
+        would contribute to counting rates (i.e. that have the same discriminator configuration as
+        one of the counting rates) and determining the ratio between events counted by the rate
+        and returned in telemetry during a given interval.  Appropriate counting rates exist 
+        that match each of the three pha priority states.  The priority levels corresponding to the 
+        counting rates are listed in Table 7 of Simpson et al. (Astron. Astrophys., 92, 365-399, 1972).  
+          *** N.B. Three corrections are necessary in Table 7 of Simpson et al. (1972). *** 
+           1) The (H) discrimator logic should include the discriminator K6H orred with the other 
+              seven discriminators listed.  
+           2) the middle term of the P2 (medium priority) logic should include D4 as well as
+              D1, D2, and D6 as required detectors.
+           3) Because of an error in the logic design counting rate H3, listed as responding to 
+              P3 (lowest priority) events, also includes P2 events which satisfy the first term 
+              in the P2 logic.  Thus H3 should not be used for deriving absolute fluxes of P3 
+              events from PHA data.
       </Description>
       <Acknowledgement>
         Please acknowledge the Lead HET Investigator and COSPIN P.I., Dr. R. Bruce McKibben
@@ -53,7 +97,7 @@
           COSPIN/HET User Notes
         </Name>
         <URL>
-          http://helio.estec.esa.nl/ulysses/archive/cospin_het_usernotes.html
+          http://helio.estec.esa.nl/ulysses/archive/het_usernotes.pdf
         </URL>
         <Description>
           Identification of data channels archived and brief discussion of data structure
@@ -87,35 +131,7 @@
         <Name>Ulysses COSPIN/HET Complete Listing of Pulse Height Analyzed Events</Name>
         <URL>ftp://www.rssd.esa.int/pub/ulysses/COSPIN/HET/pha</URL>
         <Description>
-          Parent directory containing daily ftp-downloadable files with naming convention 
-          uly_het_full_pha_YYYDDD.txt, where YYY indicates the three-digit year since 1900 
-          (e.g. YYY=090 for 1990, and YYY=102 for 2002) and DDD indicates the three digit day of 
-          year (Jan. 1 = 1). 
-          In each file, following a detailed description of the format, the data consist of a
-          line by line listing of all relevant parameters for each non-zero pha event returned
-          from the COSPIN HET.  The time of the start of the opening of the window for the event
-          is given in the first 4 columns of each line.  Each line contains data and relevant
-          parameters derived from the data for one event.
-          The first 4 columns give the time of the measurement as fractional year (to 12 
-          decimal places) and as  year since 1900, day of year, and ms of day.
-          At the most common science telemetry rate, 2048 bps, six events are collected in
-          every 32 second telemetry format.
-          The pha events represent a sample of the events incident on the telescope.  With the
-          pha data, the charge, mass, kinetic energy, and trajectory of the particle through
-          the telescope can be determined.  While most of the nuclei incident on 
-          the HET are protons, a three-level priority system selects events to pulse-height
-          analyze and return in the telemetry.  Lowest priority are events that satisfy the
-          most basic criteria for being an analyzable event, as determined by the combination
-          of discriminators on various detectors in the telescope that fire.  A higher priority
-          is given to events that stop in the telescope, and the highest priority is given to
-          events that stop in the telescope and that are  identified as heavy  nuclei by the 
-          size of their energy deposits in the detectors.  The highest priority event that
-          occurs in each window for pulse-height analysis is selected for inclusion in the 
-          telemetry data returned to the ground.  Thus, in large solar particle events with
-          abundant heavy nuclei, few protons may be included in the pha events transmitted via 
-          telemetry.  The counting rates, however, count every event, and in such cases it can
-          usually be assumed the counting rates that respond to protons are dominated by the
-          proton flux.
+          Parent directory containing daily ftp-downloadable files with the format described below.
         </Description>
       </AccessURL>
       <Format>Text</Format>
@@ -123,18 +139,16 @@
       <Acknowledgement>R.B. McKibben, Space Science Center, University of New Hampshire</Acknowledgement>
     </AccessInformation>
     <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/HET</InstrumentID>
-    <MeasurementType>InstrumentStatus</MeasurementType>
+    <MeasurementType>EnergeticParticles</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1990-10-22T00:00:00.000</StartDate>
         <StopDate>2009-06-29T23:59:59.000</StopDate>
       </TimeSpan>
-      <Cadence>P1D</Cadence>
     </TemporalDescription>
     <ObservedRegion>Heliosphere.Outer</ObservedRegion>
       <Parameter>
         <Name>Time of measurement</Name>
-        <ParameterKey>Columns 1-4</ParameterKey>
         <Description>
           Start Time of the collection window in which the event occurred
         </Description>
@@ -144,6 +158,7 @@
           <Element>
             <Name>Decimal Year</Name>
             <Index>1</Index>
+            <ParameterKey>Column_1</ParameterKey>
             <ValidMin>1990</ValidMin>
             <ValidMax>2009</ValidMax>
             <FillValue>0.00000000000</FillValue>
@@ -151,6 +166,7 @@
           <Element>
             <Name>year</Name>
             <Index>2</Index>
+            <ParameterKey>Column_2</ParameterKey>
             <ValidMin>1990</ValidMin>
             <ValidMax>2009</ValidMax>
             <FillValue>0</FillValue>
@@ -158,6 +174,7 @@
           <Element>
             <Name>day</Name>
             <Index>3</Index>
+            <ParameterKey>Column_3</ParameterKey>
             <ValidMin>1</ValidMin>
             <ValidMax>366</ValidMax>
             <FillValue>0</FillValue>
@@ -165,6 +182,7 @@
           <Element>
             <Name>msec of day</Name>
             <Index>4</Index>
+            <ParameterKey>Column_4</ParameterKey>
             <ValidMin>0</ValidMin>
             <ValidMax>86400000</ValidMax>
             <FillValue>0</FillValue>
@@ -176,7 +194,6 @@
       </Parameter>
       <Parameter>
         <Name>Event Parameters</Name>
-        <ParameterKey>Columns5-58</ParameterKey>
         <Description>
            All parameters related to a single PHA event.  The PHA data are complex, so a
            careful study of the material below and of the similar material in the header of
@@ -213,7 +230,7 @@
            commands were never issued in flight, so the value should always be 0000.     
 
            Column 9 (sect):
- 	         Spin sector in which the analyzed event occurred.  PHA sectors are identical to the
+ 	   Spin sector in which the analyzed event occurred.  PHA sectors are identical to the
            sectors used for the sectored countint rates H45S and H7S.
 
            Column 10 (ifc):
@@ -331,31 +348,31 @@
  	  <Element>
 	    <Name>discs</Name>
             <Index>1</Index>
-            <ParameterKey>column 6</ParameterKey>
+            <ParameterKey>Column_5</ParameterKey>
             <Units>12characterHex</Units>
           </Element>
 	  <Element>
 	    <Name>ash</Name>
             <Index>2</Index>
-            <ParameterKey>column 7</ParameterKey>
+            <ParameterKey>Column 6</ParameterKey>
             <Units>3CharacterBinary</Units>
           </Element>
 	  <Element>
 	    <Name>P123</Name>
             <Index>3</Index>
-            <ParameterKey>column 8</ParameterKey>
+            <ParameterKey>Column_7</ParameterKey>
             <Units>3CharacterBinary</Units>
           </Element>
 	  <Element>
 	    <Name>C1245</Name>
             <Index>4</Index>
-            <ParameterKey>column 9</ParameterKey>
+            <ParameterKey>Column_8</ParameterKey>
             <Units>4CharacterBinary</Units>
           </Element>
 	  <Element>
 	    <Name>Sect</Name>
             <Index>5</Index>
-            <ParameterKey>column 10</ParameterKey>
+            <ParameterKey>Column_9</ParameterKey>
             <Units>numeric</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>7</ValidMax>
@@ -363,7 +380,7 @@
 	  <Element>
 	    <Name>ifc</Name>
             <Index>6</Index>
-            <ParameterKey>column 11</ParameterKey>
+            <ParameterKey>Column_10</ParameterKey>
             <Units>numeric</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>1</ValidMax>
@@ -371,7 +388,7 @@
 	  <Element>
 	    <Name>step</Name>
             <Index>7</Index>
-            <ParameterKey>column 12</ParameterKey>
+            <ParameterKey>Column 11</ParameterKey>
             <Units>numeric</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>2047</ValidMax>
@@ -379,7 +396,7 @@
 	  <Element>
 	    <Name>p1</Name>
             <Index>8</Index>
-            <ParameterKey>column 13</ParameterKey>
+            <ParameterKey>Column_12</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -388,7 +405,7 @@
 	  <Element>
 	    <Name>p2</Name>
             <Index>9</Index>
-            <ParameterKey>column 14</ParameterKey>
+            <ParameterKey>Column_13</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -397,7 +414,7 @@
 	  <Element>
 	    <Name>p3</Name>
             <Index>10</Index>
-            <ParameterKey>column 15</ParameterKey>
+            <ParameterKey>Column 14</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -406,7 +423,7 @@
 	  <Element>
 	    <Name>p4</Name>
             <Index>11</Index>
-            <ParameterKey>column 16</ParameterKey>
+            <ParameterKey>Column_15</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -415,7 +432,7 @@
 	  <Element>
 	    <Name>p5</Name>
             <Index>12</Index>
-            <ParameterKey>column 17</ParameterKey>
+            <ParameterKey>Column_16</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -424,7 +441,7 @@
 	  <Element>
 	    <Name>p6</Name>
             <Index>13</Index>
-            <ParameterKey>column 18</ParameterKey>
+            <ParameterKey>Column_17</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -433,7 +450,7 @@
 	  <Element>
 	    <Name>e1</Name>
             <Index>14</Index>
-            <ParameterKey>column 19</ParameterKey>
+            <ParameterKey>Column_18</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -442,7 +459,7 @@
 	  <Element>
 	    <Name>e2</Name>
             <Index>15</Index>
-            <ParameterKey>column 20</ParameterKey>
+            <ParameterKey>Column_19</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -451,7 +468,7 @@
 	  <Element>
 	    <Name>e3</Name>
             <Index>16</Index>
-            <ParameterKey>column 21</ParameterKey>
+            <ParameterKey>Column_20</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -460,7 +477,7 @@
 	  <Element>
 	    <Name>e4</Name>
             <Index>17</Index>
-            <ParameterKey>column 22</ParameterKey>
+            <ParameterKey>Column_21</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -469,7 +486,7 @@
 	  <Element>
 	    <Name>e5</Name>
             <Index>18</Index>
-            <ParameterKey>column 23</ParameterKey>
+            <ParameterKey>Column_22</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -478,7 +495,7 @@
 	  <Element>
 	    <Name>e6</Name>
             <Index>19</Index>
-            <ParameterKey>column 24</ParameterKey>
+            <ParameterKey>Column_23</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -487,7 +504,7 @@
 	  <Element>
 	    <Name>k1</Name>
             <Index>20</Index>
-            <ParameterKey>column 25</ParameterKey>
+            <ParameterKey>Column_24</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -496,7 +513,7 @@
 	  <Element>
 	    <Name>k2</Name>
             <Index>21</Index>
-            <ParameterKey>column 26</ParameterKey>
+            <ParameterKey>Column_25</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -505,7 +522,7 @@
 	  <Element>
 	    <Name>k3</Name>
             <Index>22</Index>
-            <ParameterKey>column 27</ParameterKey>
+            <ParameterKey>Column_26</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -514,7 +531,7 @@
 	  <Element>
 	    <Name>k4</Name>
             <Index>23</Index>
-            <ParameterKey>column 28</ParameterKey>
+            <ParameterKey>Column_27</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -523,7 +540,7 @@
 	  <Element>
 	    <Name>k5</Name>
             <Index>24</Index>
-            <ParameterKey>column 29</ParameterKey>
+            <ParameterKey>Column_28</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -532,7 +549,7 @@
 	  <Element>
 	    <Name>k6</Name>
             <Index>25</Index>
-            <ParameterKey>column 30</ParameterKey>
+            <ParameterKey>Column_29</ParameterKey>
             <Units>channel</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>4094</ValidMax>
@@ -541,7 +558,7 @@
 	  <Element>
 	    <Name>p1ST</Name>
             <Index>26</Index>
-            <ParameterKey>column 31</ParameterKey>
+            <ParameterKey>Column_30</ParameterKey>
             <Units>strip</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>223</ValidMax>
@@ -550,7 +567,7 @@
 	  <Element>
 	    <Name>p2ST</Name>
             <Index>27</Index>
-            <ParameterKey>column 32</ParameterKey>
+            <ParameterKey>Column_31</ParameterKey>
             <Units>strip</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>223</ValidMax>
@@ -559,7 +576,7 @@
 	  <Element>
 	    <Name>p3ST</Name>
             <Index>28</Index>
-            <ParameterKey>column 33</ParameterKey>
+            <ParameterKey>Column_32</ParameterKey>
             <Units>strip</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>223</ValidMax>
@@ -568,7 +585,7 @@
 	  <Element>
 	    <Name>p4ST</Name>
             <Index>29</Index>
-            <ParameterKey>column 34</ParameterKey>
+            <ParameterKey>Column_33</ParameterKey>
             <Units>strip</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>144</ValidMax>
@@ -577,7 +594,7 @@
 	  <Element>
 	    <Name>p5ST</Name>
             <Index>30</Index>
-            <ParameterKey>column 35</ParameterKey>
+            <ParameterKey>Column_34</ParameterKey>
             <Units>strip</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>144</ValidMax>
@@ -586,7 +603,7 @@
 	  <Element>
 	    <Name>p6ST</Name>
             <Index>31</Index>
-            <ParameterKey>column 36</ParameterKey>
+            <ParameterKey>Column_35</ParameterKey>
             <Units>strip</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>223</ValidMax>
@@ -595,7 +612,7 @@
 	  <Element>
 	    <Name>e1EN</Name>
             <Index>32</Index>
-            <ParameterKey>column 37</ParameterKey>
+            <ParameterKey>Column_36</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>3500</ValidMax>
@@ -604,7 +621,7 @@
  	  <Element>
 	    <Name>e2EN</Name>
             <Index>33</Index>
-            <ParameterKey>column 38</ParameterKey>
+            <ParameterKey>Column_37</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>3500</ValidMax>
@@ -613,7 +630,7 @@
 	  <Element>
 	    <Name>e3EN</Name>
             <Index>34</Index>
-            <ParameterKey>column 39</ParameterKey>
+            <ParameterKey>Column_38</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>3500</ValidMax>
@@ -622,7 +639,7 @@
 	  <Element>
 	    <Name>e4EN</Name>
             <Index>35</Index>
-            <ParameterKey>column 40</ParameterKey>
+            <ParameterKey>Column_39</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>3500</ValidMax>
@@ -631,7 +648,7 @@
 	  <Element>
 	    <Name>e5EN</Name>
             <Index>36</Index>
-           <ParameterKey>column 41</ParameterKey>
+           <ParameterKey>Column_40</ParameterKey>
            <Units>MeV</Units>
 	   <ValidMin>0</ValidMin>
            <ValidMax>3500</ValidMax>
@@ -640,7 +657,7 @@
 	  <Element>
 	    <Name>e6EN</Name>
             <Index>37</Index>
-            <ParameterKey>column 42</ParameterKey>
+            <ParameterKey>Column_41</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>3500</ValidMax>
@@ -649,7 +666,7 @@
 	  <Element>
 	    <Name>k1EN</Name>
             <Index>38</Index>
-            <ParameterKey>column 43</ParameterKey>
+            <ParameterKey>Column_42</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>8000</ValidMax>
@@ -658,7 +675,7 @@
 	  <Element>
 	    <Name>k2EN</Name>
             <Index>39</Index>
-            <ParameterKey>column 44</ParameterKey>
+            <ParameterKey>Column_43</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>8000</ValidMax>
@@ -667,7 +684,7 @@
 	  <Element>
 	    <Name>k3EN</Name>
             <Index>40</Index>
-            <ParameterKey>column 45</ParameterKey>
+            <ParameterKey>Column_44</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>8000</ValidMax>
@@ -676,7 +693,7 @@
 	  <Element>
 	    <Name>k4EN</Name>
             <Index>41</Index>
-            <ParameterKey>column 46</ParameterKey>
+            <ParameterKey>Column_45</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>8000</ValidMax>
@@ -685,7 +702,7 @@
 	  <Element>
 	    <Name>k5EN</Name>
             <Index>42</Index>
-            <ParameterKey>column 47</ParameterKey>
+            <ParameterKey>Column_46</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>8000</ValidMax>
@@ -694,7 +711,7 @@
 	  <Element>
 	    <Name>k6EN</Name>
             <Index>43</Index>
-            <ParameterKey>column 48</ParameterKey>
+            <ParameterKey>Column_47</ParameterKey>
             <Units>MeV</Units>
 	    <ValidMin>0</ValidMin>
             <ValidMax>8000</ValidMax>
@@ -703,7 +720,7 @@
 	  <Element>
 	    <Name>RANGE</Name>
             <Index>44</Index>
-            <ParameterKey>column 49</ParameterKey>
+            <ParameterKey>Column_48</ParameterKey>
             <Units>numeric</Units>
 	    <ValidMin>1</ValidMin>
             <ValidMax>13</ValidMax>
@@ -712,7 +729,7 @@
           <Element>
             <Name>X0</Name>
             <Index>45</Index>
-            <ParameterKey>column 50</ParameterKey>
+            <ParameterKey>Column_49</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -721,7 +738,7 @@
           <Element>
             <Name>Y0</Name>
             <Index>46</Index>
-            <ParameterKey>column 51</ParameterKey>
+            <ParameterKey>Column_50</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -730,7 +747,7 @@
           <Element>
             <Name>ANGLE</Name>
             <Index>47</Index>
-            <ParameterKey>column 52</ParameterKey>
+            <ParameterKey>Column_51</ParameterKey>
             <Units>degreesx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>45000</ValidMax>
@@ -739,7 +756,7 @@
           <Element>
             <Name>RMS1</Name>
             <Index>48</Index>
-            <ParameterKey>column 53</ParameterKey>
+            <ParameterKey>Column_52</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -748,7 +765,7 @@
           <Element>
             <Name>RMS2</Name>
             <Index>49</Index>
-            <ParameterKey>column 54</ParameterKey>
+            <ParameterKey>Column_53</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -757,7 +774,7 @@
           <Element>
             <Name>DX</Name>
             <Index>50</Index>
-            <ParameterKey>column 55</ParameterKey>
+            <ParameterKey>Column_54</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -766,7 +783,7 @@
           <Element>
             <Name>DY</Name>
             <Index>51</Index>
-            <ParameterKey>column 56</ParameterKey>
+            <ParameterKey>Column_55</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -775,7 +792,7 @@
           <Element>
             <Name>RS</Name>
             <Index>52</Index>
-            <ParameterKey>column 57</ParameterKey>
+            <ParameterKey>Column_56</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -784,7 +801,7 @@
           <Element>
             <Name>RSP1</Name>
             <Index>53</Index>
-            <ParameterKey>column 58</ParameterKey>
+            <ParameterKey>Column_57</ParameterKey>
             <Units>mmx1000</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>40000</ValidMax>
@@ -793,7 +810,7 @@
           <Element>
             <Name>ZCAL</Name>
             <Index>54</Index>
-            <ParameterKey>column 59</ParameterKey>
+            <ParameterKey>Column_58</ParameterKey>
             <Units>numeric</Units>
             <ValidMin>0</ValidMin>
             <ValidMax>30000</ValidMax>
