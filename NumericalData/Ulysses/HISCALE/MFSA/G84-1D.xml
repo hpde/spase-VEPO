@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns="http://www.spase-group.org/data/schema" 
-  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
   <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VEPO/NumericalData/Ulysses/HISCALE/MFSA/G84-1D</ResourceID>
@@ -13,15 +11,7 @@
       <Description>
         Daily-averaged sectored proton fluxes from the MF Spectrum Analyzer of the Ulysses/HISCALE LEFS60 instrument. 
         All energies thresholds take into account the incident particle type, shielding, and inactive dead-layer of the 
-        solid state detector.  All fluxes are background corrected.
-        
-        The HISCALE instrument contains the Low-Energy Magnetic Spectrometers (LEMS), the Low-Energy Foil 
-        Spectrometers (LEFS) and the Composition Aperture (CA). There is a LEMS detector at 30 degrees from
-        the spacecraft spin axis and a second at 120 degrees.  LEFS is positioned at 60 degrees from the 
-        spacecraft spin axis with a second LEFS detector at 150 degrees.  The CA detector is positioned at
-        60 degrees from the spacecraft spin axis.  The parameter descriptions of this document reference the
-        detectors by their acronyms and angle from the spacecraft spin axis, i.e. LEMS30, LEMS120, LEFS60, LEFS150, 
-        and CA60.
+        solid state detector.  All fluxes are background corrected  and are in the solar wind rest frame.
       </Description>
       <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
       <Contact>
@@ -33,6 +23,9 @@
         <URL>http://vho.nasa.gov/vxo/documents/HISCALE.html</URL>
         <Description>
           A table summarizing the contents of HISCALE data available via the VHO/VEPO
+          
+          
+          
         </Description>
       </InformationURL>
       <Association>
