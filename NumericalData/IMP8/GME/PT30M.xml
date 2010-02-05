@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd"
-   xmlns="http://www.spase-group.org/data/schema">
-<Version>2.0.1</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema">
+<Version>2.0.2</Version>
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/GME/PT30M</ResourceID>
    <ResourceHeader>
@@ -12,12 +10,9 @@
 spin-averaged count rates and fluxes, and their statistical uncertainties, 
 of energetic particles from the IMP8 GME experiment.  Included are fluxes 
 of: protons in 30 energy bins from 0.88-1.15 to 327-485 MeV; alpha particles 
-in 29 energy bins from 1.14-1.36 to 382-456 MeV/n; oxygen in 4 bins from 
-8.8-10.7 to 22.0-40.8 MeV/n; CNO combined in 6 bins from 1.5-1.9 to 5.8-8.4 
-MeV/n; iron in two bins, 8.8-13.2 and 13.8-40.9 MeV/n; one bin near 10-40 MeV 
-for each of C, N, Ne, Mg and Si; and 0.3-18 MeV electrons.  Also included are 
-count rates for each of 7 sensors and for 11 multi-sensor coincidence 
-modes.</Description>
+in 21 energy bins from 1.14-1.36 to 63.3-81.0 MeV/n; and 0.3-18 MeV electrons.  
+Also included are count rates for each of 7 sensors and for 11 multi-sensor 
+coincidence modes.</Description>
       <Acknowledgement>Acknowledge Robert E. McGuire, the PI.</Acknowledgement>
       <Contact>
          <PersonID>spase://SMWG/Person/Robert.E.McGuire</PersonID>
@@ -29,7 +24,7 @@ modes.</Description>
       </InformationURL>
       <InformationURL>
          <Name>CDAWeb Skeleton Table</Name>
-         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/CDAWlib/0SKELTABLES/i8_h1_gme_00000000_v01.skt</URL>
+         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/CDAWlib/0SKELTABLES/i8_h0_gme_00000000_v01.skt</URL>
       </InformationURL>
    </ResourceHeader>
    <AccessInformation>
@@ -89,12 +84,12 @@ energy windows</Description>
    <Parameter>
       <Name>Alpha particle fluxes</Name>
       <Description>Spin-integrated fluxes of alpha particles, at 30-min 
-resolution, in 29 energy bins ranging from 1.14-1.36 MeV/n to 382-456 
+resolution, in 21 energy bins ranging from 1.14-1.36 MeV/n to 63.3-81.0 
 MeV/n, and statistical uncertainties in these fluxes</Description>
       <Cadence>PT30M</Cadence>
       <Units>1/sec-cm**2-ster-MeV/n</Units>
       <Structure>
-         <Size>29 2</Size>
+         <Size>21 2</Size>
          <Description>Array of fluxes and corresponding uncertainties at 29
 energy windows</Description>
       </Structure>
@@ -104,97 +99,7 @@ energy windows</Description>
             <AtomicNumber>2</AtomicNumber>
             <EnergyRange>
                <Low>1.14</Low>
-               <High>456</High>
-               <Units>MeV/n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-   <Parameter>
-      <Name>Oxygen nuclei fluxes</Name>
-      <Description>Spin-integrated fluxes of oxygen nuclei, at 30-min 
-resolution, in 4 energy bins ranging from 8.8-10.7 MeV/n to 22.0-40.8 
-MeV/n, and statistical uncertainties in these fluxes</Description>
-      <Cadence>PT30M</Cadence>
-      <Units>1/sec-cm**2-ster-MeV/n</Units>
-      <Structure>
-         <Size>4 2</Size>
-         <Description>Array of fluxes and corresponding uncertainties at 4
-energy windows</Description>
-      </Structure>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-            <AtomicNumber>8</AtomicNumber>
-            <EnergyRange>
-               <Low>8.8</Low>
-               <High>40.8</High>
-               <Units>MeV/n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-   <Parameter>
-      <Name>CNO fluxes</Name>
-      <Description>Spin-integrated fluxes of CNO nuclei combined, at 30-min 
-resolution, in 6 energy bins ranging from 1.5-1.9 MeV/n to 5.8-8.4 MeV/n, 
-and statistical uncertainties in these fluxes</Description>
-      <Cadence>PT30M</Cadence>
-      <Units>1/sec-cm**2-ster-MeV/n</Units>
-      <Structure>
-         <Size>6 2</Size>
-         <Description>Array of fluxes and corresponding uncertainties at 6
-energy windows</Description>
-      </Structure>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-            <EnergyRange>
-               <Low>1.5</Low>
-               <High>8.4</High>
-               <Units>MeV/n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-   <Parameter>
-      <Name>Iron nuclei fluxes</Name>
-      <Description>Spin-integrated fluxes of iron nuclei, at 30-min 
-resolution, in 2 energy bins 8.8-13.2 and 13.8-40.9 MeV/n, 
-and statistical uncertainties in these fluxes</Description>
-      <Cadence>PT30M</Cadence>
-      <Units>1/sec-cm**2-ster-MeV/n</Units>
-      <Structure>
-         <Size>2 2</Size>
-         <Description>Array of fluxes and corresponding uncertainties at 2
-energy windows</Description>
-      </Structure>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-            <AtomicNumber>26</AtomicNumber>
-            <EnergyRange>
-               <Low>8.8</Low>
-               <High>40.9</High>
-               <Units>MeV/n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-   <Parameter>
-      <Name>Fluxes for five species</Name>
-      <Description>One spin-integrated flux for each of five nuclei
-(C, N, Ne, Mg, Si), at 30-min resolution, near 10-40 MeV/n, 
-and statistical uncertainties in these fluxes</Description>
-      <Cadence>PT30M</Cadence>
-      <Units>1/sec-cm**2-ster-MeV/n</Units>
-      <Structure>
-         <Size>5 2</Size>
-         <Description>Array of fluxes and corresponding uncertainties at 1
-energy window for each of 5 species</Description>
-      </Structure>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-            <EnergyRange>
-               <Low>10</Low>
-               <High>40</High>
+               <High>81</High>
                <Units>MeV/n</Units>
             </EnergyRange>
          </Particle>
@@ -222,7 +127,7 @@ energy window for each of 5 species</Description>
          </Particle>
    </Parameter>
    <Parameter>
-      <Name>Elextron background fluxes</Name>
+      <Name>Electron background fluxes</Name>
       <Description>Spin-integrated fluxes considered as background
 for 3-18 MeV electron flux, at 30-min resolution, and statistical 
 uncertainties in these fluxes</Description>
