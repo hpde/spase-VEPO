@@ -8,16 +8,15 @@
         <ResourceHeader>
             <ResourceName>Voyager2 LECP Cosmic Ray Proton Rates in ASCII Format 26-day</ResourceName>
             <AlternateName>v2-LECP-COSMICRATES-P26D</AlternateName>
-            <ReleaseDate>2008-12-01T00:00:00.000</ReleaseDate>
-            <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
+            <ReleaseDate>2010-04-02T00:00:00.000</ReleaseDate>
             <Description>Count Rates, Averaged Over All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadenceP26D</Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
-                <PersonID>spase://SMWG/Person/Tom.Krimigis</PersonID>
+                <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Rob.Decker</PersonID>
+                <PersonID>spase://SMWG/Person/Robert.B.Decker</PersonID>
                 <Role>CoInvestigator</Role>
             </Contact>
             <Contact>

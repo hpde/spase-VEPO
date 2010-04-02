@@ -8,17 +8,15 @@
         <ResourceHeader>
             <ResourceName>Voyager1 LECP Proton Intensities in ASCII Format hourly</ResourceName>
             <AlternateName>V1-LECP-PROTONFLUX-PT1H</AlternateName>
-            <ReleaseDate>2008-12-01T00:00:00.000</ReleaseDate>
-            <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
+            <ReleaseDate>2010-04-02T00:00:00.000</ReleaseDate>
             <Description>Count Rates, Averaged Over All Sectors, Voyager1, LECP, Filtered, Channel, Calibrated, CadencePT1H</Description>
-            <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis)
- and the lead LECP CoI (R.B. Decker)</Acknowledgement>
+            <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
-                <PersonID>spase://SMWG/Person/Tom.Krimigis</PersonID>
+                <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Rob.Decker</PersonID>
+                <PersonID>spase://SMWG/Person/Robert.B.Decker</PersonID>
                 <Role>CoInvestigator</Role>
             </Contact>
             <Contact>
@@ -127,9 +125,16 @@
             <Cadence>PT1H</Cadence>
             <Units>Protons/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.57</Low>
+                    <High>1.78</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>CH16 Flux</Name>
@@ -155,9 +160,16 @@
             <Cadence>PT1H</Cadence>
             <Units>Protons/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>3.4</Low>
+                    <High>17.6</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>CH23 Flux</Name>
@@ -183,9 +195,16 @@
             <Cadence>PT1H</Cadence>
             <Units>Protons/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>22.0</Low>
+                    <High>31.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
     </NumericalData>
 </Spase>

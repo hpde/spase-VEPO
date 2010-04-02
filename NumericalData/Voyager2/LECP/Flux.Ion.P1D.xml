@@ -8,16 +8,27 @@
         <ResourceHeader>
             <ResourceName>Voyager2 LECP Key Channel Intensities in ASCII Format daily</ResourceName>
             <AlternateName>V2-LECP-KEYFLUX-PT1H</AlternateName>
-            <ReleaseDate>2008-12-01T00:00:00.000</ReleaseDate>
-            <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
-            <Description>Count Rates, Averaged Over All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT24H</Description>
+            <ReleaseDate>2010-04-02T00:00:00.000</ReleaseDate>
+            <Description>Count Rates, Averaged Over All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT24H
+            
+            Each file in this directory contains one year's worth of data from the
+            LECP instrument on the Voyager 1 spacecraft. Each record in a file
+            contains 1-day (24-hour) averages of fluxes and flux uncertainties of
+            ions (Z>=1) in eight contiguous energy channels, from 0.040-4.00
+            Mev/ion. Each file contains a 2-line header that identifies the
+            spacecraft, data type and time resolution, and labels each column of
+            data. Statistical uncertainties represent one standard deviation.
+            
+            Differential (in energy) flux units are: Ions/(cm^2 sec ster MeV).
+            
+            </Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
-                <PersonID>spase://SMWG/Person/Tom.Krimigis</PersonID>
+                <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Rob.Decker</PersonID>
+                <PersonID>spase://SMWG/Person/Robert.B.Decker</PersonID>
                 <Role>CoInvestigator</Role>
             </Contact>
             <Contact>
@@ -126,9 +137,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.028</Low>
+                    <High>0.043</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL02 Flux</Name>
@@ -154,9 +172,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.043</Low>
+                    <High>0.08</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL03 Flux</Name>
@@ -182,9 +207,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.08</Low>
+                    <High>0.137</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL04 Flux</Name>
@@ -210,9 +242,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.137</Low>
+                    <High>0.215</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL05 Flux</Name>
@@ -238,9 +277,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.215</Low>
+                    <High>0.54</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL06 Flux</Name>
@@ -266,9 +312,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.54</Low>
+                    <High>0.99</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL07 Flux</Name>
@@ -294,9 +347,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>0.99</Low>
+                    <High>2.14</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>PL08 Flux</Name>
@@ -322,9 +382,16 @@
             <Cadence>PT24H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
-            <Support>
-                <SupportQuantity>Other</SupportQuantity>
-            </Support>
+            <Particle>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Uncertainty</Qualifier>
+                <ParticleQuantity>EnergyFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>2.14</Low>
+                    <High>3.5</High>
+                    <Units>MeV/ion</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
     </NumericalData>
 </Spase>

@@ -8,20 +8,19 @@
         <ResourceHeader>
             <ResourceName>Voyager2 LECP Average Filtered Rate Data in ASCII Format daily</ResourceName>
             <AlternateName>V2-LECP-RATES--PT24H</AlternateName>
-            <ReleaseDate>2008-12-01T00:00:00.000</ReleaseDate>
-            <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
+            <ReleaseDate>2010-04-02T00:00:00.000</ReleaseDate>
             <Description>Count Rates, All Sectors, Voyager2, LECP, Filtered, Channel, CadencePT24H</Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
-                <PersonID>spase://SMWG/Person/Tom.Krimigis</PersonID>
+                <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Rob.Decker</PersonID>
+                <PersonID>spase://SMWG/Person/Robert.B.Decker</PersonID>
                 <Role>CoInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Pperson/Lawrence.Brown</PersonID>
+                <PersonID>spase://SMWG/Person/Lawrence.Brown</PersonID>
                 <Role>ArchiveSpecialist</Role>
             </Contact>
             <InformationURL>

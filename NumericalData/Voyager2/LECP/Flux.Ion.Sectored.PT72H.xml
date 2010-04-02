@@ -8,16 +8,15 @@
         <ResourceHeader>
             <ResourceName>Voyager2 LECP Key Channel Intensities By Sector in ASCII Format 3-day</ResourceName>
             <AlternateName>V2-LECP-KEYFLUX-SECTORED-PT72H</AlternateName>
-            <ReleaseDate>2008-12-01T00:00:00.000</ReleaseDate>
-            <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
+            <ReleaseDate>2010-04-02T00:00:00.000</ReleaseDate>
             <Description>Count Rates, For All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT72H</Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
-                <PersonID>spase://SMWG/Person/Tom.Krimigis</PersonID>
+                <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Rob.Decker</PersonID>
+                <PersonID>spase://SMWG/Person/Robert.B.Decker</PersonID>
                 <Role>CoInvestigator</Role>
             </Contact>
             <Contact>
