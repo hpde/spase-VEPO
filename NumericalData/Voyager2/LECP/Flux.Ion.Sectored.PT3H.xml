@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
     <Version>2.1.0</Version>
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/Voyager2/LECP/Flux.Sectored.PT3H</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/Voyager2/LECP/Flux.Ion.Sectored.PT3H</ResourceID>
         <ResourceHeader>
             <ResourceName>Voyager2 LECP Key Channel Intensities By Sector in ASCII Format 3-hour</ResourceName>
             <AlternateName>V2-LECP-KEYFLUX-SECTORED-PT3H</AlternateName>
