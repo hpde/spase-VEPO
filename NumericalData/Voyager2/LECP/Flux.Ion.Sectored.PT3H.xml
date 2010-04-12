@@ -4,12 +4,12 @@
     xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
     <Version>2.1.0</Version>
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/Voyager1/LECP/Flux.Ion.Sectored.PT72H</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/Voyager2/LECP/Flux.Sectored.PT3H</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager1 LECP Ion Channel Intensities By Sector in ASCII Format 3-day</ResourceName>
-            <AlternateName>V1-LECP-IONFLUX-SECTORED-PT72H</AlternateName>
+            <ResourceName>Voyager2 LECP Key Channel Intensities By Sector in ASCII Format 3-hour</ResourceName>
+            <AlternateName>V2-LECP-KEYFLUX-SECTORED-PT3H</AlternateName>
             <ReleaseDate>2010-04-02T00:00:00.000</ReleaseDate>
-            <Description>Count Rates, For All Sectors, Voyager1, LECP, Filtered, Channel, Calibrated, CadencePT72H</Description>
+            <Description>Count Rates, For All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT3H</Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
                 <PersonID>spase://SMWG/Person/Stamatios.M.Krimigis</PersonID>
@@ -24,10 +24,9 @@
                 <Role>ArchiveSpecialist</Role>
             </Contact>
             <InformationURL>
-                <Name>Informational Website for Voyager 1 and 2 LECP
-					Instrument</Name>
-                <URL>http://sd-www.jhuapl.edu/VOYAGER/v1_data/v1_3h/v1_ion_3h/aaa_read_me.txt</URL>
-                <Description>The webpage provides a detailed description of Ion Channel Intensity files.</Description>
+                <Name>Informational Website for Voyager 1 and 2 LECP Instrument</Name>
+                <URL>http://sd-www.jhuapl.edu/VOYAGER/v2_data/v2_3h/v2_ion_3h/aaa_read_me.txt</URL>
+                <Description>The webpage provides a detailed description of Key Ion Channel Intensity files.</Description>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -35,22 +34,22 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>Voyager1 LECP Average Filtered Rate Data in ASCII Format</Name>
-                <URL>http://sd-www.jhuapl.edu/VOYAGER/v1_data/v1_3h/v1_ion_3h/</URL>
-                <Description>Count Rates, All Sectors, Voyager1, LECP, Filtered, Channel CSV Text Files, File Name Template: http://sd-www.jhuapl.edu/VOYAGER/v1_data/v1_3h/v1_ion_3h/v1_%Y_ion_3h/%{*;regexp='.*'}%Y%{*;regexp='.*'}</Description>
+                <Name>Voyager2 LECP Average Filtered Rate Data in ASCII Format</Name>
+                <URL>http://sd-www.jhuapl.edu/VOYAGER/v2_data/v2_3h/v2_ion_3h/</URL>
+                <Description>Count Rates, All Sectors, Voyager2, LECP, Filtered, Channel CSV Text Files, File Name Template: http://sd-www.jhuapl.edu/VOYAGER/v2_data/v2_3h/v2_ion_3h/v2_%Y_ion_3h/%{*;regexp='.*'}%Y%{*;regexp='.*'}</Description>
             </AccessURL>
             <Format>Text</Format>
             <Encoding>GZIP</Encoding>
             <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
         </AccessInformation>
-        <InstrumentID>spase://SMWG/Instrument/Voyager1/LECP</InstrumentID>
+        <InstrumentID>spase://SMWG/Instrument/Voyager2/LECP</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
-                <StartDate>1991-01-01T00:00:00.000Z</StartDate>
+                <StartDate>1991-01-03T00:00:00.000Z</StartDate>
                 <StopDate>2009-05-31T23:59:59.999</StopDate>
             </TimeSpan>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
         </TemporalDescription>
         <ObservedRegion>Heliosphere</ObservedRegion>
         <Parameter>
@@ -58,13 +57,13 @@
             <ParameterKey>StartTime</ParameterKey>
             <Description>Start Time for the record given in year, day of
 				year, hour. </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Structure>
                 <Size>5</Size>
                 <Element>
                     <Name>Year</Name>
                     <Index>1</Index>
-                    <ValidMin>1977</ValidMin>
+                    <ValidMin>1990</ValidMin>
                     <ValidMax>2008</ValidMax>
                 </Element>
                 <Element>
@@ -100,7 +99,7 @@
             <Name>Start Time of Data Record (Decimal Year)</Name>
             <ParameterKey>DEC_YEAR</ParameterKey>
             <Description>decimal year (double precision) = year + (doy - 1 + hr/24)/dpy (dpy=365 or 366)</Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity>
             </Support>
@@ -109,7 +108,7 @@
             <Name>Start Time of Data Record (Decimal Day of Year)</Name>
             <ParameterKey>DEC_DOY</ParameterKey>
             <Description>Decimal Day of Year (1.0-365.0 or 366.0)</Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity>
             </Support>
@@ -118,7 +117,7 @@
             <Name>Start Time of Data Record (Decimal Hour of Day)</Name>
             <ParameterKey>DEC_HR</ParameterKey>
             <Description>Decimal Hour of Day</Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity>
             </Support>
@@ -127,7 +126,7 @@
             <Name>PL01 Flux</Name>
             <ParameterKey>PL01_FLUX</ParameterKey>
             <Description>PL01 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -209,8 +208,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>0.04</Low>
-                    <High>0.053</High>
+                    <Low>0.028</Low>
+                    <High>0.043</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -219,7 +218,7 @@
             <Name>PL02 Flux</Name>
             <ParameterKey>PL02_FLUX</ParameterKey>
             <Description>PL02 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -301,8 +300,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>0.053</Low>
-                    <High>0.085</High>
+                    <Low>0.043</Low>
+                    <High>0.08</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -311,7 +310,7 @@
             <Name>PL03 Flux</Name>
             <ParameterKey>PL03_FLUX</ParameterKey>
             <Description>PL03 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -393,8 +392,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>0.085</Low>
-                    <High>0.139</High>
+                    <Low>0.08</Low>
+                    <High>0.137</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -403,7 +402,7 @@
             <Name>PL04 Flux</Name>
             <ParameterKey>PL04_FLUX</ParameterKey>
             <Description>PL04 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -485,8 +484,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>0.139</Low>
-                    <High>0.22</High>
+                    <Low>0.137</Low>
+                    <High>0.215</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -495,7 +494,7 @@
             <Name>PL05 Flux</Name>
             <ParameterKey>PL05_FLUX</ParameterKey>
             <Description>PL05 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -577,8 +576,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>0.22</Low>
-                    <High>0.55</High>
+                    <Low>0.215</Low>
+                    <High>0.54</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -587,7 +586,7 @@
             <Name>PL06 Flux</Name>
             <ParameterKey>PL06_FLUX</ParameterKey>
             <Description>PL06 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -669,8 +668,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>0.55</Low>
-                    <High>1.05</High>
+                    <Low>0.54</Low>
+                    <High>0.99</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -679,7 +678,7 @@
             <Name>PL07 Flux</Name>
             <ParameterKey>PL07_FLUX</ParameterKey>
             <Description>PL07 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -761,8 +760,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>1.05</Low>
-                    <High>2.0</High>
+                    <Low>0.99</Low>
+                    <High>2.14</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
@@ -771,7 +770,7 @@
             <Name>PL08 Flux</Name>
             <ParameterKey>PL08_FLUX</ParameterKey>
             <Description>PL08 Ion Flux </Description>
-            <Cadence>PT72H</Cadence>
+            <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
                 <Size>18</Size>
@@ -853,8 +852,8 @@
                 <ParticleType>Ion</ParticleType>
                 <ParticleQuantity>EnergyFlux</ParticleQuantity>
                 <EnergyRange>
-                    <Low>2.0</Low>
-                    <High>4.0</High>
+                    <Low>2.14</Low>
+                    <High>3.5</High>
                     <Units>MeV/ion</Units>
                 </EnergyRange>
             </Particle>
