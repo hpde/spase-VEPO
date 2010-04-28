@@ -29,11 +29,11 @@ size range. </Description>
       <Acknowledgement>Please acknowledge the successive PI's George Gloeckler,
 and Fred Ipavich.</Acknowledgement>
       <Contact>
-         <PersonID>George.Gloeckler</PersonID>
+         <PersonID>spase://SMWG/Person/George.Gloeckler</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
-         <PersonID>Fred.M.Ipavich</PersonID>
+         <PersonID>spase://SMWG/Person/Fred.M.Ipavich</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
