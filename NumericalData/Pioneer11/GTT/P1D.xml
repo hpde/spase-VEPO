@@ -44,7 +44,7 @@ Bruce Randall</Acknowledgement>
       </InformationURL>
       <InformationURL>
          <Name>Readme file at nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/aavoldesc.sfd</URL>
+         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/ip_1day_ascii/p11_gtt_daily_readme.txt</URL>
          <Description>Readme with format statement for this ASCII version</Description>      
       </InformationURL>
    </ResourceHeader>
