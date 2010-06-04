@@ -5,7 +5,7 @@
    <ResourceID>spase://VEPO/NumericalData/Pioneer11/TRD/PT30M</ResourceID>
    <ResourceHeader>
       <ResourceName>Pioneer 11 TRD 30-m Count Rate Summary Data</ResourceName>
-      <ReleaseDate>2009-02-11T00:00:00</ReleaseDate>
+      <ReleaseDate>2010-06-04T15:27:33Z</ReleaseDate>
       <Description>This ASCII data set contains 30-min count rates for 
 21 "pulse-counting" channels from a Cerenkov counter (which measures,
 via 3 discrimination levels, electrons >6 MeV plus nuclei >480 MeV/n,
@@ -46,7 +46,7 @@ and the GSFC Space Physics Data Facility.</Acknowledgement>
       <Acknowledgement>Please acknowledge the PI, R. Walker Fillius,
 and the GSFC Space Physics Data Facility</Acknowledgement>
    </AccessInformation>
-   <InstrumentID>spase://SMWG/Instrument/Pioneer10/TRD</InstrumentID>
+   <InstrumentID>spase://SMWG/Instrument/Pioneer11/TRD</InstrumentID>
    <MeasurementType>EnergeticParticles</MeasurementType>
    <TemporalDescription>
       <TimeSpan>

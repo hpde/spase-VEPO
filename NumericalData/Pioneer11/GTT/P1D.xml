@@ -7,7 +7,7 @@
    <ResourceID>spase://VEPO/NumericalData/Pioneer11/GTT/P1D</ResourceID>
    <ResourceHeader>
       <ResourceName>Pioneer 11 GTT 24-hr count rate data</ResourceName>
-      <ReleaseDate>2010-04-21T00:00:00</ReleaseDate>
+      <ReleaseDate>2010-06-04T15:27:24Z</ReleaseDate>
       <Description>This data set holds 24-hour-averaged count rates and 
 related parameters for each of 8 sensors or multi-sensor coincidence modes,
 as obtained from the U.Iowa Geiger Tube Telescope (GTT) experiment flown 
@@ -54,7 +54,7 @@ Bruce Randall</Acknowledgement>
       <AccessRights>Open</AccessRights>
       <AccessURL>
          <Name>nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/ip_1day_ascii/p10_gtt_daily.txt</URL>
+         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/ip_1day_ascii/p11_gtt_daily.txt</URL>
       </AccessURL>
       <AccessURL>
          <Name>FTPBrowser</Name>
