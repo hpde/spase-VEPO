@@ -4,7 +4,7 @@
    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
 <Version>2.2.0</Version>
 <NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/IBEX/Hi/Maps</ResourceID>
+   <ResourceID>spase://VEPO/NumericalData/IBEX/Hi/Maps-TXT</ResourceID>
    <ResourceHeader>
       <ResourceName>IBEX-Hi digital maps every 6 months</ResourceName>
       <ReleaseDate>2010-05-19T00:00:00</ReleaseDate>
