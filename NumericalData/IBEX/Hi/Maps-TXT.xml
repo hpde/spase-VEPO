@@ -17,7 +17,7 @@ image files are between 260 and 290 KB in size.  Images in PNG format
 are identified by VEPO as a separate data product.</Description>
       <Acknowledgement>The IBEX Team</Acknowledgement>
       <Contact>
-         <PersonID>David.J.McComas</PersonID>
+         <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

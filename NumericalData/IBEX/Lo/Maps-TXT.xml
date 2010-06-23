@@ -17,7 +17,7 @@ coordinates.  Maps are available for energy bands 5 (209 eV),
 separate data product.</Description>
       <Acknowledgement>The IBEX Team</Acknowledgement>
       <Contact>
-         <PersonID>David.J.McComas</PersonID>
+         <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

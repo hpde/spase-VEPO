@@ -18,7 +18,7 @@ of these images in txt format are identified by VEPO as a separate
 data product.</Description>
       <Acknowledgement>The IBEX Team</Acknowledgement>
       <Contact>
-         <PersonID>David.J.McComas</PersonID>
+         <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
