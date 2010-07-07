@@ -44,7 +44,7 @@ ASCII.</Description>
       </DataExtent>
       <Acknowledgement>The IBEX Team</Acknowledgement>
    </AccessInformation>
-   <InstrumentID>spase://SMWG/Instrument/IBEX/Hi</InstrumentID>
+   <InstrumentID>spase://SMWG/Instrument/IBEX/Lo</InstrumentID>
    <MeasurementType>NeutralAtomImages</MeasurementType>
    <TemporalDescription>
       <TimeSpan>
