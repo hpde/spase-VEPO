@@ -10,7 +10,7 @@
          Hourly Cosmic Ray Intensities from Neutron Monitors at 
          McMurdo, Newark, South Pole, and Thule
        </ResourceName>
-       <ReleaseDate>2010-06-24T00:00:00.000</ReleaseDate>
+       <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
        <Description>
          Hourly averages of relativistic cssmic ray intensities from 
          Bartol Research Institute Neutron Monitors at 
@@ -82,10 +82,10 @@
        <Format>Text</Format>
        <Acknowledgement>John Bieber, Bartol Research Institute, University of Delaware</Acknowledgement>
      </AccessInformation>
-     <InstrumentID>spase://VEPO/Instrument/Neutron Monitors/Bartol/McMurdo</InstrumentID>
-     <InstrumentID>spase://VEPO/Instrument/Neutron Monitors/Bartol/SwarthmoreNewark</InstrumentID>
-     <InstrumentID>spase://VEPO/Instrument/Neutron Monitors/Bartol/SouthPole</InstrumentID>
-     <InstrumentID>spase://VEPO/Instrument/Neutron Monitors/Bartol/Thule</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/NeutronMonitor/Bartol/McMurdo</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/NeutronMonitor/Bartol/SwarthmoreNewark</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/NeutronMonitor/Bartol/SouthPole</InstrumentID>
+     <InstrumentID>spase://SMWG/Instrument/NeutronMonitor/Bartol/Thule</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
        <TimeSpan>
