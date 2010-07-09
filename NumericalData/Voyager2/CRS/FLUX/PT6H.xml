@@ -2,13 +2,13 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://www.spase-group.org/data/schema"
     xsi:schemaLocation="http://www.spase-group.org/data/schema
-    http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-    <Version>2.0.0</Version>  
+    http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version>  
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT6H</ResourceID> 
         <ResourceHeader>
             <ResourceName>Voyager-2 CRS Cruise Mode 6-hour averages</ResourceName>
-            <ReleaseDate>2008-12-05T21:52:14Z</ReleaseDate>
+            <ReleaseDate>2010-07-09T21:52:14Z</ReleaseDate>
             <Description>
                 6-hour averages of selected fluxes
             </Description>
@@ -44,9 +44,8 @@
             </TimeSpan>
             <Cadence>PT6H</Cadence> 
         </TemporalDescription>
-        <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
+        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion> 
         <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
-        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion> 
         <Parameter>
             <Name>Time</Name>
             <Description>

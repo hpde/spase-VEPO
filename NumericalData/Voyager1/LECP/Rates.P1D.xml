@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
-    <Version>2.1.0</Version>
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager1/LECP/Rates.P1D</ResourceID>
         <ResourceHeader>
             <ResourceName>Voyager1 LECP Average Filtered Rate Data in ASCII Format daily</ResourceName>
             <AlternateName>V1-LECP-RATES--PT24H</AlternateName>
-            <ReleaseDate>2008-12-01T00:00:00.000</ReleaseDate>
+            <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
             <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
             <Description>Count Rates, All Sectors, Voyager1, LECP, Filtered, Channel, CadencePT24H</Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
@@ -52,7 +52,8 @@
             </TimeSpan>
             <Cadence>PT24H</Cadence>
         </TemporalDescription>
-        <ObservedRegion>Heliosphere</ObservedRegion>
+        <ObservedRegion>Heliosphere.Outer</ObservedRegion>
+        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion>
         <Parameter>
             <Name>Start Time of Data Record</Name>
             <ParameterKey>StartTime</ParameterKey>

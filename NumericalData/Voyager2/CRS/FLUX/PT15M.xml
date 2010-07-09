@@ -2,8 +2,8 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://www.spase-group.org/data/schema"
     xsi:schemaLocation="http://www.spase-group.org/data/schema
-    http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-    <Version>2.0.0</Version> 
+    http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version> 
 <!-- Is index subelement of Structure element 0-based? -->
 <!-- Can duplicate Name subelements of Parameter element -->
 <!-- exist in a NumericalData resource --> 
@@ -13,7 +13,7 @@
             <ResourceName>
                 Voyager-2 CRS Cruise Mode 15-minute averages
             </ResourceName>
-            <ReleaseDate>2009-05-20T00:00:00Z</ReleaseDate>
+            <ReleaseDate>2010-07-09T00:00:00Z</ReleaseDate>
             <Description>
                 15-minute averages of selected fluxes
             </Description>
@@ -53,9 +53,8 @@
             </TimeSpan>
             <Cadence>PT15M</Cadence> 
         </TemporalDescription>
-        <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
+        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion> 
         <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
-        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion> 
         <Parameter>
             <Name>Time</Name>
             <Description>
