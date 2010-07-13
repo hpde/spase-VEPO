@@ -32,9 +32,7 @@
          <Name>
            General ReadMe file for data from the Climax, Haleakala, and Haleakala Neutron Monitors
          </Name>
-         <URL>
-           ftp://ulysses.sr.unh.edu/NeutronMonitor/00General.ReadMe.txt
-         </URL>
+           <URL>ftp://ulysses.sr.unh.edu/NeutronMonitor/00General.ReadMe.txt</URL>
          <Description>
            This ReadMe file provides basic information about the neutron monitors at Climax,
            Haleakala, and, for data before 1992, Haleakala, including geomagnetic cutoffs and 
@@ -45,9 +43,7 @@
          <Name>
            ReadMe file for hourly average files for the Haleakala, Peru Neutron Monitor
          </Name>
-         <URL>
-           ftp://ulysses.sr.unh.edu/NeutronMonitor/HourlyHaleakala/00HaleakalaHourly.ReadMe.txt
-         </URL>
+           <URL>ftp://ulysses.sr.unh.edu/NeutronMonitor/HourlyHaleakala/00HaleakalaHourly.ReadMe.txt</URL>
          <Description>
            This ReadMe file provides specific information about the neutron monitor at Haleakala, 
            Peru, and a description of the format of the data files
@@ -57,9 +53,7 @@
          <Name>
            ReadMe for hourly averages from the Huancayo, Peru and Haleakala, HI Neutron Monitors 
          </Name>
-         <URL>
-           ftp://ulysses.sr.unh.edu/NeutronMonitor/HourlyHaleakala/00HaleakalaHuancayoNormtxt
-         </URL>
+           <URL>ftp://ulysses.sr.unh.edu/NeutronMonitor/HourlyHaleakala/00HaleakalaHuancayoNormtxt</URL>
          <Description>
            This ReadMe file provides specific information about the correction for drift in
            the geomagnetic cutoff at Haleakala as a result of secular changesin the geomagnetic
@@ -76,9 +70,7 @@
          <Name>
            Haleakala hourly intensities
          </Name>
-         <URL>
-           ftp://ulysses.sr.unh.edu/NeutronMonitor/HourlyHaleakala/
-         </URL>
+           <URL>ftp://ulysses.sr.unh.edu/NeutronMonitor/HourlyHaleakala/</URL>
          <Description>
            Parent directory containing compressed yearly files with naming convention 
            "File: HaleakalaYYYY" containing hourly averaged Haleakala neutron monitor intensity 
