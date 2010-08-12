@@ -90,7 +90,7 @@ MeV/n, and statistical uncertainties in these fluxes</Description>
       <Units>1/sec-cm**2-ster-MeV/n</Units>
       <Structure>
          <Size>21 2</Size>
-         <Description>Array of fluxes and corresponding uncertainties at 29
+         <Description>Array of fluxes and corresponding uncertainties at 21
 energy windows</Description>
       </Structure>
          <Particle>
