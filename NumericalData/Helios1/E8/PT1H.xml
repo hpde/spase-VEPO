@@ -24,6 +24,10 @@ Institure, Lindau</Acknowledgement>
          <Name>Data set catalog at nssdcftp</Name>
          <URL>ftp://nssdcftp.gsfc.nasa.gov/staging/review_08/all_catalogs/dsc_0488.pdf</URL>
       </InformationURL>
+      <InformationURL>
+         <Name>Readme at nssdcftp</Name>
+         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/helios/helios1/particle/e8_keppler/h-ep.txt</URL>
+      </InformationURL>
    </ResourceHeader>
    <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
