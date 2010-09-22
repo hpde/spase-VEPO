@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Version>2.2.0</Version>
+<NumericalData>
+   <ResourceID>spase://VEPO/NumericalData/SOHO/CELIAS/KP/PT5M</ResourceID>
+   <ResourceHeader>
+      <ResourceName>SOHO CELIAS 5-min Key Parameter Data</ResourceName>
+      <ReleaseDate>2010-08-12T00:00:00</ReleaseDate>
+      <Description>Data include 5-min solar wind speed values, heavy ion
+fluxes in energy bands 0.02-1. MeV/q and 0.5-50 keV/q, and solar EUV
+photon fluxes from the CELIAS package on SOHO.  They are key parameter
+data accessible from CDAWeb.  Scanning CDAWeb plots for the full 
+1995-2002 time span suggests that only the solar wind flow speed are
+useful</Description>
+      <Acknowledgement>Please acknowledge the P.I., Peter Bochsler 
+of U. Bern</Acknowledgement>
+      <Contact>
+         <PersonID>spase://SMWG/Person/Peter.A.Bochsler</PersonID>
+         <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <InformationURL>
+         <Name>CDAWeb Skeleton Table</Name>
+         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/CDAWlib/0SKELTABLES/so_k0_cel_00000000_v01.skt</URL>
+      </InformationURL>
+   </ResourceHeader>
+   <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+         <Name>CDAWeb</Name>
+         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+         <Description>With subset, plot and ASCII list functions from CDAWeb</Description>
+      </AccessURL>
+      <AccessURL>
+         <Name>in CDF via ftp from CDAWeb</Name>
+         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/soho/cels</URL>
+      </AccessURL>
+      <Format>CDF</Format>
+      <DataExtent>
+         <Quantity>47</Quantity>
+         <Units>kB</Units>
+         <Per>P1D</Per>
+      </DataExtent>
+      <Acknowledgement>Please acknowledge the P.I., Peter Bochsler 
+of U. Bern, and CDAWeb at GSFC/SPDF</Acknowledgement>
+   </AccessInformation>
+   <InstrumentID>spase://SMWG/Instrument/SOHO/CELIAS</InstrumentID>
+   <MeasurementType>EnergeticParticles</MeasurementType>
+   <MeasurementType>ThermalPlasma</MeasurementType>
+   <TemporalDescription>
+      <TimeSpan>
+         <StartDate>1995-12-22T00:00:00</StartDate>
+         <StopDate>2002-01-31T00:00:00</StopDate>
+      </TimeSpan>
+      <Cadence>PT5M</Cadence>
+   </TemporalDescription>
+   <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+   <Parameter>
+      <Name>Solar wind flow speed</Name>
+      <ParameterKey>SW_speed</ParameterKey>
+      <Description>Solar wind plasma flow speed at 5 minute resolution</Description>
+      <Cadence>PT5M</Cadence>
+      <Units>km/sec</Units>
+      <FillValue>-1.0e+31</FillValue>
+         <Particle>
+            <ParticleType>Proton</ParticleType>
+            <ParticleQuantity>FlowSpeed</ParticleQuantity>
+         </Particle>
+   </Parameter>
+</NumericalData>
+</Spase>
