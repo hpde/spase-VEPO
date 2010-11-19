@@ -2,27 +2,56 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
    xmlns="http://www.spase-group.org/data/schema" 
    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-<Version>2.2.0</Version>
-<NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/IBEX/Hi/Maps-TXT</ResourceID>
+   <Version>2.2.0</Version>
+   <NumericalData>
+      <ResourceID>spase://VEPO/NumericalData/IBEX/Hi/Maps-TXT</ResourceID>
    <ResourceHeader>
       <ResourceName>IBEX-Hi digital maps every 6 months</ResourceName>
       <ReleaseDate>2010-05-19T00:00:00</ReleaseDate>
-      <Description>Hydrogen ENA fluxes in each of five energy band in 
-each of 21,600 [720(longitude) by 30(latitude)] bins, accumulated over 
-6 months.  Bins are defined in J2000 ecliptic coordinates.  Maps are 
-available for energy bands 2 (0.52-0.95 keV), 3 (0.84-1.55 keV), 
-4 (1.36-2.50 keV), 5 (1.99-3.75 keV) and 6 (3.13-6.00 keV).  Digital 
-image files are between 260 and 290 KB in size.  Images in PNG format 
-are identified by VEPO as a separate data product.</Description>
+      <Description>As of this writing (11/5/2010), this product 
+had been issued by the IBEX team in two releases. 
+Release 1 IBEX-Hi map data are superseded by Release 2
+data which are more time-extensive (12 months vs. 6 months)
+and are richer in content.  While Release 1 IBEX-Hi map data 
+and their documentation remain accessible at
+ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ibex/hi/maps/digital_data/release_1/
+and
+ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ibex/hi/maps/images/release_1/,
+this description supports the retrieval and use of Release 2 data only.
+
+The Release_2 IBEX-Hi map data contain all-sky 6 deg x 6 deg 
+resolution maps in J2000 ecliptic coordinates of energetic 
+neutral fluxes reaching the near-Earth IBEX spacecraft from 
+the distant heliosphere and heliosheath.  Maps 
+are in both a spacecraft frame and, via Compton-Getting 
+corrections, a heliospheric frame.  Basic maps are each 
+accumulated over 6-months duration, so far for epochs 1 
+(12/2008-06/2009) and 2 (06/2009-12/2009).  Maps are available 
+for five of the energy bands of IBEX-Hi (0.52-0.95, 0.84-1.55, 
+1.36-2.50, 1.99-3.75, 3.13-6.00 keV) and, for the heliospheric 
+frame only, also for six monoenergetic points (0.71, 1.11, 1.74, 
+2.73, 3.0, 4.29 keV).  In addition, monoenergetic maps are available
+as summed over the data collected during epochs 1 and 2 combined.
+All maps are available in digital text format and in PNG image format
+(considered as separate data sets within VEPO).
+
+In addition to the flux maps to which VEPO provides access, 
+several map files whose data support the determination of the 
+fluxes are also available in the underlying nssdcftp directories 
+and are described by aareadme files there (and by IBEX web pages 
+at SWRI: http://ibex.swri.edu/ibexpublicdata/Data_Release_2/)</Description>
       <Acknowledgement>The IBEX Team</Acknowledgement>
       <Contact>
-         <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
+         <PersonID>David.J.McComas</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
          <Name>SWRI IBEX Site</Name>
-         <URL>http://ibex.swri.edu/ibexpublicdata/Maps/Hi/Maps_Hi_description.txt</URL>
+         <URL>http://ibex.swri.edu/researchers/publicdata.shtml</URL>
+      </InformationURL>
+      <InformationURL>
+         <Name>SWRI IBEX Release 2 Page</Name>
+         <URL>http://ibex.swri.edu/ibexpublicdata/Data_Release_2/</URL>
       </InformationURL>
    </ResourceHeader>
    <AccessInformation>
@@ -36,8 +65,8 @@ are identified by VEPO as a separate data product.</Description>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
-         <Quantity>3</Quantity>
-         <Units>MB</Units>
+         <Quantity>800</Quantity>
+         <Units>KB</Units>
          <Per>P1Y</Per>
       </DataExtent>
       <Acknowledgement>The IBEX Team</Acknowledgement>
@@ -64,8 +93,8 @@ a modest delay after the end of each 6 month interval.</Note>
          <CoordinateSystemName>J2000</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-         <Size>720 30</Size>
-         <Description>The array has 720 rows and 30 columns.  
+         <Size>60 30</Size>
+         <Description>The array has 30 rows and 60 columns.  
 Row 1 (30) is for the north (south) ecliptic polar region.  The 
 columns start at zero ecliptic longitude and step through to 
 ecliptic longitude 360.  The first and last columns have the 

@@ -53,9 +53,10 @@ ASCII.</Description>
    <TemporalDescription>
       <TimeSpan>
          <StartDate>2008-12-25T00:00:00</StartDate>
-         <RelativeStopDate>P9M</RelativeStopDate>
-         <Note>Data are made public in 6-month batches, with 
-a modest delay after the end of each 6 month interval.</Note>
+         <StopDate>2009-06-19T00:00:00</StopDate>
+         <Note>Data are planned for 6-month releases. However, Release_2  
+contained only IBEX-Hi map data. Extensions to later times for this 
+data set may be forthcoming in the future.</Note>
       </TimeSpan>
       <Cadence>PT15S</Cadence>
    </TemporalDescription>
