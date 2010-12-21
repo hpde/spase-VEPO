@@ -42,7 +42,7 @@ and are described by aareadme files there (and by IBEX web pages
 at SWRI: http://ibex.swri.edu/ibexpublicdata/Data_Release_2/)</Description>
       <Acknowledgement>The IBEX Team</Acknowledgement>
       <Contact>
-         <PersonID>David.J.McComas</PersonID>
+         <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
