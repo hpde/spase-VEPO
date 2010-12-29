@@ -35,6 +35,26 @@ as summed over the data collected during epochs 1 and 2 combined.
 All maps are available in digital text format and in PNG image format
 (considered as separate data sets within VEPO).
 
+Given that VHO/VEPO typically displays clickable granule (file)
+names for any given specification of data product and time span,
+and given that IBEX-Hi digital maps and PNG-formatted display
+maps are each considered single data products, a request for data
+from either product will yield .GE.20 names of files containing data
+spanning or within the requested time span.  For IBEX, the names
+shown by VHO/VEPO actually have the form subdirectory/filename.
+The subdirectories are named map1, map1cg, map2, map2cg, and
+map-combined.  Maps involving "1" ("2") are from the first (second)
+6-month epoch, while "combined" means composed of data taken
+during epochs 1 and 2.  Maps involving (not involving) "cg" means
+heliospheric frame (spacecraft frame).  In the first four subdirectories,
+file names are of the forms ha60.hide-trp-flux100-hi-N-flux.ext and
+ha60.hide-trp-mono_80-P.PP-flux.ext, where "ext" is "png" or "txt"
+according to which product is requested,  N is the energy step
+number for the IBEX-Hi instrument (2-6), P.PP is the energy level,
+in keV, of a monoenergetic flux.  Files in the "combined"
+subdirectories are named "combined-P.PP-flux.ext, where P.PP
+has the same meaning as above.
+
 In addition to the flux maps to which VEPO provides access, 
 several map files whose data support the determination of the 
 fluxes are also available in the underlying nssdcftp directories 
