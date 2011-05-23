@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-   <Version>1.3.0</Version>
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+   <Version>2.2.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-1D</ResourceID>
      <ResourceHeader>
@@ -23,9 +23,9 @@
            (CSV) files, and how those files can be accessed.
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-12S</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-5M</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-1H</AssociationID>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-12S</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-5M</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG66-1H</AssociationID></Association>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
@@ -47,19 +47,18 @@
      <TemporalDescription>
        <TimeSpan>
          <StartDate>1991-01-01T00:00:00.000</StartDate>
-         <EndDate>2008-12-31T23:59:59.000</EndDate>
+         <StopDate>2008-12-31T23:59:59.000</StopDate>
        </TimeSpan>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Time for the record</Name>
        <ParameterKey>Time_PG66</ParameterKey>
        <Description>Time for the record given in year, day of year, hour, min, and decimal seconds.
                     The given time represents the beginning of the averaging interval.</Description>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Structure>
-         <StructureType>Array</StructureType>
          <Size>5</Size>
          <Element>
            <Name>Year</Name>
@@ -100,21 +99,21 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 1 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S1-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 1 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -132,22 +131,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 2 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S2-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 2 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -165,22 +164,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 3 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S3-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 3 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -198,22 +197,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 4 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S4-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 4 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -231,22 +230,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 5 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S5-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 5 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -264,22 +263,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 6 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S6-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 6 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -297,22 +296,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 7 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S7-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 7 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -330,22 +329,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1' Sector 8 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1S8-12s</ParameterKey>
        <Description>Daily LEFS60 E1' sector 8 electron count rates between 42 and 65 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -363,22 +362,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 1 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S1-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 1 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -396,22 +395,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 2 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S2-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 2 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -429,22 +428,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 3 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S3-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 3 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -462,22 +461,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 4 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S4-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 4 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -495,22 +494,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 5 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S5-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 5 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -528,22 +527,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 6 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S6-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 6 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -561,22 +560,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 7 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S7-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 7 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -594,22 +593,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2' Sector 8 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2S8-12s</ParameterKey>
        <Description>Daily LEFS60 E2' sector 8 electron count rates between 64 and 112 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -627,22 +626,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 1 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S1-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 1 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -660,22 +659,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 2 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S2-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 2 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -693,22 +692,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 3 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S3-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 3 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -726,22 +725,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 4 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S4-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 4 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -759,22 +758,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 5 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S5-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 5 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -792,22 +791,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 6 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S6-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 6 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -825,22 +824,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 7 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S7-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 7 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -858,22 +857,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3' Sector 8 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3S8-12s</ParameterKey>
        <Description>Daily LEFS60 E3' sector 8 electron count rates between 112 and 178 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -891,22 +890,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 1 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S1-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 1 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -924,22 +923,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 2 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S2-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 2 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -957,22 +956,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 3 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S3-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 3 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -990,22 +989,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 4 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S4-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 4 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -1023,22 +1022,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 5 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S5-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 5 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -1056,22 +1055,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 6 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S6-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 6 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -1089,22 +1088,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 7 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S7-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 7 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -1122,22 +1121,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4' Sector 8 Daily-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4S8-12s</ParameterKey>
        <Description>Daily LEFS60 E4' sector 8 electron count rates between 178 and 290 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -1155,22 +1154,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 1 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S1-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 1 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1188,22 +1187,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 2 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S2-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 2 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1221,22 +1220,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 3 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S3-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 3 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1254,22 +1253,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 4 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S4-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 4 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1287,22 +1286,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 5 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S5-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 5 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1320,22 +1319,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 6 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S6-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 6 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1353,22 +1352,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 7 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S7-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 7 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1386,22 +1385,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5' Sector 8 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5S8-12s</ParameterKey>
        <Description>Daily LEFS60 FP5' sector 8 ion count rates between 546 and 761 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -1419,22 +1418,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 1 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S1-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 1 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1452,22 +1451,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 2 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S2-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 2 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1485,22 +1484,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 3 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S3-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 3 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1518,22 +1517,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 4 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S4-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 4 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1551,22 +1550,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 5 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S5-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 5 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1584,22 +1583,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 6 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S6-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 6 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1617,22 +1616,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 7 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S7-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 7 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1650,22 +1649,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6' Sector 8 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6S8-12s</ParameterKey>
        <Description>Daily LEFS60 FP6' sector 8 ion count rates between 761 and 1223 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -1683,22 +1682,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 1 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S1-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 1 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1716,22 +1715,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 2 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S2-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 2 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1749,22 +1748,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 3 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S3-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 3 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1782,22 +1781,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 4 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S4-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 4 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1815,22 +1814,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 5 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S5-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 5 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1848,22 +1847,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 6 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S6-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 6 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1881,22 +1880,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 7 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S7-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 7 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1914,22 +1913,22 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7' Sector 8 Daily-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7S8-12s</ParameterKey>
        <Description>Daily LEFS60 FP7' sector 8 ion count rates between 1223 and 4974 keV</Description>
        <Caveats>Geometric Factor = 0.397 cm^2-sr</Caveats>
-       <Cadence>PT1D</Cadence>
+       <Cadence>P1D</Cadence>
        <Units>cps</Units>
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -1947,10 +1946,10 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>B-Field X-Component</Name>
        <ParameterKey>B-Field-X</ParameterKey>
        <Description>X-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1959,14 +1958,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.X</Qualifier>
+           <Qualifier>Component.I</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Y-Component</Name>
        <ParameterKey>B-Field-Y</ParameterKey>
        <Description>Y-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1975,14 +1974,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Y</Qualifier>
+           <Qualifier>Component.J</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Z-Component</Name>
        <ParameterKey>B-Field-Z</ParameterKey>
        <Description>Z-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1991,14 +1990,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Z</Qualifier>
+           <Qualifier>Component.K</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field HEE Magnitude</Name>
        <ParameterKey>B-Field-Mag-HEE</ParameterKey>
        <Description>Magnitude of the Magnetic Field in HEE Coordinates</Description>
@@ -2007,12 +2006,12 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
            <Qualifier>Magnitude</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
    </NumericalData>
  </Spase>

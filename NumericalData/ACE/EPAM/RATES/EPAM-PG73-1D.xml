@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+  <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-1D</ResourceID>
     <ResourceHeader>
@@ -27,9 +27,9 @@
           (CSV) files, and how those files can be accessed.
         </Description>
       </InformationURL>
-      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-12S</AssociationID>
-      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-5M</AssociationID>
-      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-1H</AssociationID>
+      <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-12S</AssociationID></Association>
+      <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-5M</AssociationID></Association>
+      <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG73-1H</AssociationID></Association>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
@@ -51,12 +51,12 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1991-01-01T00:00:00.000</StartDate>
-        <EndDate>2008-12-31T23:59:59.000</EndDate>
+        <StopDate>2008-12-31T23:59:59.000</StopDate>
       </TimeSpan>
-      <Cadence>PT1D</Cadence>
+      <Cadence>P1D</Cadence>
     </TemporalDescription>
     <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Time for the record</Name>
       <ParameterKey>Time_PG73</ParameterKey>
       <Description>
@@ -65,7 +65,7 @@
       </Description>
       <Cadence>P1D</Cadence>
       <Structure>
-        <StructureType>Array</StructureType>
+        
         <Size>5</Size>
         <Element>
           <Name>Year</Name>
@@ -106,8 +106,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft X Component</Name>
       <ParameterKey>SC-Loc-X-pSEDR</ParameterKey>
       <Description>
@@ -121,12 +121,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>X</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Y Component</Name>
       <ParameterKey>SC-Loc-Y-pSEDR</ParameterKey>
       <Description>
@@ -140,12 +140,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Y</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Z Component</Name>
       <ParameterKey>Loc-Z</ParameterKey>
       <Description>
@@ -159,12 +159,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Z</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Earth X Component</Name>
       <ParameterKey>Earth-Loc-X-pSEDR</ParameterKey>
       <Description>
@@ -178,12 +178,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>X</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Earth Y Component</Name>
       <ParameterKey>Earth-Loc-Y-pSEDR</ParameterKey>
       <Description>
@@ -197,12 +197,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Y</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Earth Z Component</Name>
       <ParameterKey>Earth-Loc-Z-pSEDR</ParameterKey>
       <Description>
@@ -216,12 +216,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Z</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Jupiter X Component</Name>
       <ParameterKey>Jupiter-Loc-X-pSEDR</ParameterKey>
       <Description>
@@ -235,12 +235,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>X</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Jupiter Y Component</Name>
       <ParameterKey>Jupiter-Loc-Y-pSEDR</ParameterKey>
       <Description>
@@ -254,12 +254,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Y</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Jupiter Z Component</Name>
       <ParameterKey>-Jupiter-Loc-Z-pSEDR</ParameterKey>
       <Description>
@@ -273,12 +273,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Z</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Starting Spin-Axis Longitude</Name>
       <ParameterKey>Spin-Lon-Start</ParameterKey>
       <Description>Longitude of the spacecraft spin-axis in HEE coordinates at the beginning of the time interval.</Description>
@@ -289,12 +289,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Starting Spin-Axis Latitude</Name>
       <ParameterKey>Spin-Lat-Starts</ParameterKey>
       <Description>Latitude of the spacecraft spin-axis in HEE coordinates at the beginning of the time interval.</Description>
@@ -305,12 +305,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Starting Spin-Axis Longitude Uncertainty</Name>
       <ParameterKey>Spin-Lon-Unc-Start</ParameterKey>
       <Description>Uncertainty in the longitude of the spacecraft spin-axis in HEE coordinates at the beginning of the time interval.</Description>
@@ -321,12 +321,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Starting Spin-Axis Latitude Uncertainty</Name>
       <ParameterKey>Spin-Lat-Unc-Start</ParameterKey>
       <Description>Uncertainty in the latitude of the spacecraft spin-axis in HEE coordinates at the beginning of the time interval.</Description>
@@ -337,12 +337,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ending Spin-Axis Longitude</Name>
       <ParameterKey>Spin-Lon-Stop</ParameterKey>
       <Description>Longitude of the spacecraft spin-axis in HEE coordinates at the end of the time interval.</Description>
@@ -353,12 +353,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ending Spin-Axis Latitude</Name>
       <ParameterKey>Spin-Lat-Stop</ParameterKey>
       <Description>Latitude of the spacecraft spin-axis in HEE coordinates at the end of the time interval.</Description>
@@ -369,12 +369,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ending Spin-Axis Longitude Uncertainty</Name>
       <ParameterKey>Spin-Lon-Unc-Stop</ParameterKey>
       <Description>Uncertainty in the longitude of the spacecraft spin-axis in HEE coordinates at the end of the time interval.</Description>
@@ -385,12 +385,12 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ending Spin-Axis Latitude Uncertainty</Name>
       <ParameterKey>Spin-Lat-Unc-Stop</ParameterKey>
       <Description>Uncertainty in the latitude of the spacecraft spin-axis in HEE coordinates at the end of the time interval.</Description>
@@ -401,226 +401,226 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
+        
+          
+        
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a11</Name>
       <ParameterKey>SC-RTN-a11</ParameterKey>
       <Description>Row 1, Column 1 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a12</Name>
       <ParameterKey>SC-RTN-a12</ParameterKey>
       <Description>Row 1, Column 2 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a13</Name>
       <ParameterKey>SC-RTN-a13</ParameterKey>
       <Description>Row 1, Column 3 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a21</Name>
       <ParameterKey>SC-RTN-a21</ParameterKey>
       <Description>Row 2, Column 1 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a22</Name>
       <ParameterKey>SC-RTN-a22</ParameterKey>
       <Description>Row 2, Column 2 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a23</Name>
       <ParameterKey>SC-RTN-a23</ParameterKey>
       <Description>Row 2, Column 3 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a31</Name>
       <ParameterKey>SC-RTN-a31</ParameterKey>
       <Description>Row 3, Column 1 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a32</Name>
       <ParameterKey>SC-RTN-a32</ParameterKey>
       <Description>Row 3, Column 2 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to RTN Rotation Operator Element a33</Name>
       <ParameterKey>SC-RTN-a33</ParameterKey>
       <Description>Row 3, Column 3 of the Payload to RTN rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a11</Name>
       <ParameterKey>SC-HEE-a11</ParameterKey>
       <Description>Row 1, Column 1 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a12</Name>
       <ParameterKey>SC-HEE-a12</ParameterKey>
       <Description>Row 1, Column 2 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a13</Name>
       <ParameterKey>SC-HEE-a13</ParameterKey>
       <Description>Row 1, Column 3 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a21</Name>
       <ParameterKey>SC-HEE-a21</ParameterKey>
       <Description>Row 2, Column 1 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a22</Name>
       <ParameterKey>SC-HEE-a22</ParameterKey>
       <Description>Row 2, Column 2 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a23</Name>
       <ParameterKey>SC-HEE-a23</ParameterKey>
       <Description>Row 2, Column 3 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a31</Name>
       <ParameterKey>SC-HEE-a31</ParameterKey>
       <Description>Row 3, Column 1 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a32</Name>
       <ParameterKey>SC-HEE-a32</ParameterKey>
       <Description>Row 3, Column 2 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to HEE Rotation Operator Element a33</Name>
       <ParameterKey>SC-HEE-a33</ParameterKey>
       <Description>Row 3, Column 3 of the Payload to HEE rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a11</Name>
       <ParameterKey>SC-EME-a11</ParameterKey>
       <Description>Row 1, Column 1 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a12</Name>
       <ParameterKey>SC-EME-a12</ParameterKey>
       <Description>Row 1, Column 2 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a13</Name>
       <ParameterKey>SC-EME-a13</ParameterKey>
       <Description>Row 1, Column 3 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a21</Name>
       <ParameterKey>SC-EME-a21</ParameterKey>
       <Description>Row 2, Column 1 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a22</Name>
       <ParameterKey>SC-EME-a22</ParameterKey>
       <Description>Row 2, Column 2 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a23</Name>
       <ParameterKey>SC-EME-a23</ParameterKey>
       <Description>Row 2, Column 3 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a31</Name>
       <ParameterKey>SC-EME-a31</ParameterKey>
       <Description>Row 3, Column 1 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a32</Name>
       <ParameterKey>SC-EME-a32</ParameterKey>
       <Description>Row 3, Column 2 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Payload to EME Rotation Operator Element a33</Name>
       <ParameterKey>SC-EME-a33</ParameterKey>
       <Description>Row 3, Column 3 of the Payload to EME rotation operator.</Description>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

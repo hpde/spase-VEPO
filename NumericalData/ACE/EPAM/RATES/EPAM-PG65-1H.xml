@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-   <Version>1.3.0</Version>
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+   <Version>2.2.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-1H</ResourceID>
      <ResourceHeader>
@@ -23,9 +23,9 @@
            (CSV) files, and how those files can be accessed.
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-12S</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-5M</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-1D</AssociationID>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-12S</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-5M</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-1D</AssociationID></Association>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
@@ -47,19 +47,19 @@
      <TemporalDescription>
        <TimeSpan>
          <StartDate>1991-01-01T00:00:00.000</StartDate>
-         <EndDate>2008-12-31T23:59:59.000</EndDate>
+         <StopDate>2008-12-31T23:59:59.000</StopDate>
        </TimeSpan>
        <Cadence>PT1H</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Time for the record</Name>
        <ParameterKey>Time_PG65</ParameterKey>
        <Description>Time for the record given in year, day of year, hour, min, and decimal seconds.
                     The given time represents the beginning of the averaging interval.</Description>
        <Cadence>PT1H</Cadence>
        <Structure>
-         <StructureType>Array</StructureType>
+         
          <Size>5</Size>
          <Element>
            <Name>Year</Name>
@@ -100,8 +100,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E1 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E1-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 electron count rates between 42 and 65 keV</Description>
@@ -111,10 +111,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>45</Low>
@@ -122,9 +122,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E2 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E2-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 electron count rates between 65 and 112 keV</Description>
@@ -134,10 +134,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>62</Low>
@@ -145,9 +145,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E3 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E3-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 electron count rates between 112 and 178 keV</Description>
@@ -157,10 +157,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>102</Low>
@@ -168,9 +168,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 E4 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS60-E4-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 electron count rates between 178 and 290 keV</Description>
@@ -180,10 +180,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -191,9 +191,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP5 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP5-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 ion count rates between 546 and 761 keV</Description>
@@ -203,10 +203,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -214,9 +214,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP6 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP6-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 ion count rates between 761 and 1223 keV</Description>
@@ -226,10 +226,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>795</Low>
@@ -237,9 +237,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS60 FP7 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEFS60-FP7-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS60 ion count rates between 1223 and 4974 keV</Description>
@@ -249,10 +249,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1193</Low>
@@ -260,9 +260,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P1' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P1-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 61 and 77 keV</Description>
@@ -272,10 +272,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>47</Low>
@@ -283,9 +283,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P2' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P2-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 77 and 127 keV</Description>
@@ -295,10 +295,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>68</Low>
@@ -306,9 +306,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P3' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P3-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 127 and 207 keV</Description>
@@ -318,10 +318,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>115</Low>
@@ -329,9 +329,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P4' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P4-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 207 and 336 keV</Description>
@@ -341,10 +341,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>195</Low>
@@ -352,9 +352,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P5' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P5-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 336 and 601 keV</Description>
@@ -364,10 +364,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>310</Low>
@@ -375,9 +375,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P6' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P6-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 601 and 1123 keV</Description>
@@ -387,10 +387,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>587</Low>
@@ -398,9 +398,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P7' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P7-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 1123 and 1874 keV</Description>
@@ -410,10 +410,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1060</Low>
@@ -421,9 +421,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS120 P8' Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS120-P8-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS120 ion count rates between 1874 and 4752 keV</Description>
@@ -433,10 +433,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1900</Low>
@@ -444,9 +444,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Hourly-Averaged Spin-Averaged Protons</Name>
        <ParameterKey>CA60-W1-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W1 proton count rates between 480 and 966 keV</Description>
@@ -456,10 +456,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <AtomicNumber>1</AtomicNumber>
            <EnergyRange>
@@ -468,9 +468,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Hourly-Averaged Spin-Averaged Protons</Name>
        <ParameterKey>CA60-W2-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W2 proton count rates between 968 abd 1204 keV</Description>
@@ -480,10 +480,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <AtomicNumber>1</AtomicNumber>
            <EnergyRange>
@@ -492,9 +492,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Hourly-Averaged Spin-Averaged Alphas</Name>
        <ParameterKey>CA60-W3-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W3 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -504,10 +504,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <AtomicNumber>2</AtomicNumber>
            <EnergyRange>
@@ -516,9 +516,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Hourly-Averaged Spin-Averaged Alphas</Name>
        <ParameterKey>CA60-W4-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W4 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -528,10 +528,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <AtomicNumber>2</AtomicNumber>
            <EnergyRange>
@@ -540,9 +540,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Hourly-Averaged Spin-Averaged Medium Ions</Name>
        <ParameterKey>CA60-W5-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W5 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -552,10 +552,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -563,9 +563,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Hourly-Averaged Spin-Averaged Medium and Heavy Ions</Name>
        <ParameterKey>CA60-W6-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W6 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -575,10 +575,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -586,9 +586,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Hourly-Averaged Spin-Averaged Heavy Ions</Name>
        <ParameterKey>CA60-W7-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W7 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -598,10 +598,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -609,9 +609,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Hourly-Averaged Spin-Averaged Heavy Ions</Name>
        <ParameterKey>CA60-W8-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 W8 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -621,10 +621,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <AtomicNumber>1</AtomicNumber>
            <EnergyRange>
@@ -633,9 +633,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 Z2 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>CA60-Z2-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 Z2 Z.ge.1 count rates between 167 and 1316 keV/nuc</Description>
@@ -645,10 +645,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>166</Low>
@@ -656,9 +656,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 Z2A Hourly-Averaged Spin-Averaged Medium and Heavy Ions</Name>
        <ParameterKey>CA60-Z2A-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 Z2A Z.ge.7 count rates between 427 and 1873 keV/nuc</Description>
@@ -668,10 +668,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>388</Low>
@@ -679,9 +679,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 Z3 Hourly-Averaged Spin-Averaged Medium and Heavy Ions</Name>
        <ParameterKey>CA60-Z3-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 Z3 Z.ge.5 count rates between 183 and 7922 keV/nuc</Description>
@@ -691,10 +691,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>187</Low>
@@ -702,9 +702,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 Z4 Hourly-Averaged Spin-Averaged Heavy Ions</Name>
        <ParameterKey>CA60-Z4-12s</ParameterKey>
        <Description>Hourly spin-averaged CA60 Z4 Z.ge.10 count rates between 243 and 20700 keV/nuc</Description>
@@ -714,10 +714,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>231</Low>
@@ -725,9 +725,9 @@
              <Units>keV/nuc</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 E1 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS150-E1-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 electron count rates between 40 and 65 keV</Description>
@@ -737,10 +737,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>44</Low>
@@ -748,9 +748,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 E2 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS150-E2-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 electron count rates between 60 and 107 keV</Description>
@@ -760,10 +760,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>58</Low>
@@ -771,9 +771,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 E3 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS150-E3-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 electron count rates between 107 and 170 keV</Description>
@@ -783,10 +783,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>104</Low>
@@ -794,9 +794,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 E4 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEFS150-E4-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 electron count rates between 170 and 280 keV</Description>
@@ -806,10 +806,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -817,9 +817,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 FP5 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEFS150-FP5-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 ion count rates between 540 and 765 keV</Description>
@@ -829,10 +829,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>568</Low>
@@ -840,9 +840,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 FP6 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEFS150-FP6-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 ion count rates between 765 and 1223 keV</Description>
@@ -852,10 +852,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>796</Low>
@@ -863,9 +863,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEFS150 FP7 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEFS150-FP7-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEFS150 ion count rates between 1223 and 4942 keV</Description>
@@ -875,10 +875,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1114</Low>
@@ -886,9 +886,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P1 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P1-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 56 and 78 keV</Description>
@@ -902,10 +902,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>46</Low>
@@ -913,9 +913,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P2 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P2-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 78 and 130 keV</Description>
@@ -929,10 +929,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>67</Low>
@@ -940,9 +940,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P3 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P3-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 130 and 214 keV</Description>
@@ -956,10 +956,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>115</Low>
@@ -967,9 +967,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P4 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P4-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 214 and 337 keV</Description>
@@ -983,10 +983,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>193</Low>
@@ -994,9 +994,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P5 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P5-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 337 and 594 keV</Description>
@@ -1010,10 +1010,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>315</Low>
@@ -1021,9 +1021,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P6 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P6-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 594 and 1073 keV</Description>
@@ -1037,10 +1037,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>580</Low>
@@ -1048,9 +1048,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P7 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P7-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 1073 and 1802 keV</Description>
@@ -1064,10 +1064,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1060</Low>
@@ -1075,9 +1075,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P8 Hourly-Averaged Spin-Averaged Ions</Name>
        <ParameterKey>LEMS30-P8-12s</ParameterKey>
        <Description>Hourly and spin-averaged LEMS30 ion count rates between 1802 and 4752 keV</Description>
@@ -1091,10 +1091,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1880</Low>
@@ -1102,9 +1102,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 DE1 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEMS30-DE1-12s</ParameterKey>
        <Description>Hourly spin-averaged LEMS30 DE1 electron count rates between 38 and 53 keV</Description>
@@ -1114,10 +1114,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>38</Low>
@@ -1125,9 +1125,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 DE2 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEMS30-DE2-12s</ParameterKey>
        <Description>Hourly spin-averaged LEMS30 DE2 electron count rates between 53 and 103 keV</Description>
@@ -1137,10 +1137,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>53</Low>
@@ -1148,9 +1148,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 DE3 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEMS30-DE3-12s</ParameterKey>
        <Description>Hourly spin-averaged LEMS30 DE3 electron count rates between 103 and 175 keV</Description>
@@ -1160,10 +1160,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>103</Low>
@@ -1171,9 +1171,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 DE4 Hourly-Averaged Spin-Averaged Electrons</Name>
        <ParameterKey>LEMS30-DE4-12s</ParameterKey>
        <Description>Hourly spin-averaged LEMS30 DE4 electron count rates between 175 and 315 keV</Description>
@@ -1183,10 +1183,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Electron</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>175</Low>
@@ -1194,9 +1194,9 @@
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-B-12s</ParameterKey>
        <Description>Hourly spin-averaged B singles count rates for particles with E>31.5 keV</Description>
@@ -1208,20 +1208,20 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>31.5</Low>
-             <High>20000.0</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>C Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-C-12s</ParameterKey>
        <Description>Hourly spin-averaged B singles count rates for particles with E>78 keV</Description>
@@ -1233,20 +1233,20 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>78</Low>
-             <High>20000</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>D Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-D-12s</ParameterKey>
        <Description>Hourly spin-averaged D singles count rates for particles with E>145 keV</Description>
@@ -1258,20 +1258,20 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>145</Low>
-             <High>20000</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>M Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-M-12s</ParameterKey>
        <Description>Hourly spin-averaged M singles count rates for particles with E>30 keV</Description>
@@ -1283,20 +1283,20 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>30</Low>
-             <High>20000</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>F Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-F-12s</ParameterKey>
        <Description>Hourly spin-averaged F singles count rates for particles with E>34 keV</Description>
@@ -1308,20 +1308,20 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>34</Low>
-             <High>20000</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>M' Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-M'-12s</ParameterKey>
        <Description>Hourly spin-averaged M' singles count rates for particles with E>34 keV</Description>
@@ -1333,20 +1333,20 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>34</Low>
-             <High>20000</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>F' Detector Singles Rates Hourly-averaged spin-averaged</Name>
        <ParameterKey>Single-F'-12s</ParameterKey>
        <Description>Hourly spin-averaged F' singles count rates for particles with E>36 keV</Description>
@@ -1358,21 +1358,21 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>36</Low>
-             <High>20000</High>
+             <High>2.2.0</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>B-Field X-Component</Name>
        <ParameterKey>B-Field-X</ParameterKey>
        <Description>X-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1381,14 +1381,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.X</Qualifier>
+           <Qualifier>Component.I</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Y-Component</Name>
        <ParameterKey>B-Field-Y</ParameterKey>
        <Description>Y-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1397,14 +1397,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Y</Qualifier>
+           <Qualifier>Component.J</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Z-Component</Name>
        <ParameterKey>B-Field-Z</ParameterKey>
        <Description>Z-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1413,14 +1413,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Z</Qualifier>
+           <Qualifier>Component.K</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field HEE Magnitude</Name>
        <ParameterKey>B-Field-Mag-HEE</ParameterKey>
        <Description>Magnitude of the Magnetic Field in HEE Coordinates</Description>
@@ -1429,12 +1429,12 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
            <Qualifier>Magnitude</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
    </NumericalData>
  </Spase>

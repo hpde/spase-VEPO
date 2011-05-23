@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-   <Version>1.3.0</Version>
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+   <Version>2.2.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-12S</ResourceID>
      <ResourceHeader>
@@ -23,9 +23,9 @@
            (CSV) files, and how those files can be accessed.
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-5M</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-1H</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-1D</AssociationID>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-5M</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-1H</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG68-1D</AssociationID></Association>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
@@ -47,19 +47,19 @@
      <TemporalDescription>
        <TimeSpan>
          <StartDate>1991-01-01T00:00:00.000</StartDate>
-         <EndDate>2008-12-31T23:59:59.000</EndDate>
+         <StopDate>2008-12-31T23:59:59.000</StopDate>
        </TimeSpan>
        <Cadence>PT12S</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Time for the record</Name>
        <ParameterKey>Time_PG68</ParameterKey>
        <Description>Time for the record given in year, day of year, hour, min, and decimal seconds.
                     The given time represents the beginning of the averaging interval.</Description>
        <Cadence>PT12S</Cadence>
        <Structure>
-         <StructureType>Array</StructureType>
+         
          <Size>5</Size>
          <Element>
            <Name>Year</Name>
@@ -100,8 +100,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 1 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S1-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 1 proton count rates between 480 and 966 keV</Description>
@@ -111,10 +111,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -132,9 +132,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 2 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S2-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 2 proton count rates between 480 and 966 keV</Description>
@@ -144,10 +144,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -165,9 +165,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 3 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S3-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 3 proton count rates between 480 and 966 keV</Description>
@@ -177,10 +177,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -198,9 +198,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 4 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S4-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 4 proton count rates between 480 and 966 keV</Description>
@@ -210,10 +210,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -231,9 +231,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 5 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S5-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 5 proton count rates between 480 and 966 keV</Description>
@@ -243,10 +243,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -264,9 +264,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 6 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S6-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 6 proton count rates between 480 and 966 keV</Description>
@@ -276,10 +276,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -297,9 +297,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 7 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S7-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 7 proton count rates between 480 and 966 keV</Description>
@@ -309,10 +309,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -330,9 +330,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W1 Sector 8 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W1S8-12s</ParameterKey>
        <Description>12-sec CA60 W1 Sector 8 proton count rates between 480 and 966 keV</Description>
@@ -342,10 +342,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>521</Low>
@@ -363,9 +363,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 1 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S1-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 1 proton count rates between 968 and 1204 keV</Description>
@@ -375,10 +375,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -396,9 +396,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 2 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S2-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 2 proton count rates between 968 and 1204 keV</Description>
@@ -408,10 +408,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -429,9 +429,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 3 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S3-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 3 proton count rates between 968 and 1204 keV</Description>
@@ -441,10 +441,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -462,9 +462,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 4 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S4-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 4 proton count rates between 968 and 1204 keV</Description>
@@ -474,10 +474,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -495,9 +495,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 5 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S5-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 5 proton count rates between 968 and 1204 keV</Description>
@@ -507,10 +507,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -528,9 +528,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 6 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S6-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 6 proton count rates between 968 and 1204 keV</Description>
@@ -540,10 +540,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -561,9 +561,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 7 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S7-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 7 proton count rates between 968 and 1204 keV</Description>
@@ -573,10 +573,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -594,9 +594,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W2 Sector 8 12-sec-Averaged Protons</Name>
        <ParameterKey>CA60-W2S8-12s</ParameterKey>
        <Description>12-sec CA60 W2 Sector 8 proton count rates between 968 and 1204 keV</Description>
@@ -606,10 +606,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Proton</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1048</Low>
@@ -627,9 +627,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 1 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S1-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 1 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -639,10 +639,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -660,9 +660,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 2 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S2-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 2 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -672,10 +672,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -693,9 +693,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 3 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S3-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 3 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -705,10 +705,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -726,9 +726,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 4 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S4-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 4 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -738,10 +738,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -759,9 +759,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 5 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S5-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 5 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -771,10 +771,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -792,9 +792,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 6 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S6-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 6 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -804,10 +804,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -825,9 +825,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 7 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S7-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 7 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -837,10 +837,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -858,9 +858,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W3 Sector 8 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W3S8-12s</ParameterKey>
        <Description>12-sec CA60 W3 Sector 8 alpha count rates between 389 and 1278 keV/nuc</Description>
@@ -870,10 +870,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>389</Low>
@@ -891,9 +891,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 1 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S1-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 1 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -903,10 +903,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -924,9 +924,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 2 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S2-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 2 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -936,10 +936,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -957,9 +957,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 3 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S3-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 3 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -969,10 +969,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -990,9 +990,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 4 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S4-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 4 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -1002,10 +1002,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -1023,9 +1023,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 5 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S5-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 5 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -1035,10 +1035,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -1056,9 +1056,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 6 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S6-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 6 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -1068,10 +1068,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -1089,9 +1089,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 7 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S7-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 7 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -1101,10 +1101,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -1122,9 +1122,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W4 Sector 8 12-sec-Averaged Alphas</Name>
        <ParameterKey>CA60-W4S8-12s</ParameterKey>
        <Description>12-sec CA60 W4 Sector 8 alpha count rates between 1277 and 6984 keV/nuc</Description>
@@ -1134,10 +1134,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>AlphaParticle</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1278</Low>
@@ -1155,9 +1155,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S1-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 1 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1167,10 +1167,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1188,9 +1188,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S2-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 2 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1200,10 +1200,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1221,9 +1221,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S3-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 3 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1233,10 +1233,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1254,9 +1254,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S4-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 4 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1266,10 +1266,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1287,9 +1287,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 5 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S5-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 5 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1299,10 +1299,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1320,9 +1320,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 6 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S6-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 6 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1332,10 +1332,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1353,9 +1353,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 7 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S7-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 7 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1365,10 +1365,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1386,9 +1386,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W5 Sector 8 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W5S8-12s</ParameterKey>
        <Description>12-sec CA60 W5 Sector 8 5.le.Z.le.12 count rates between 465 and 1709 keV/nuc</Description>
@@ -1398,10 +1398,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>546</Low>
@@ -1419,9 +1419,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S1-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 1 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1431,10 +1431,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1452,9 +1452,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S2-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 2 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1464,10 +1464,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1485,9 +1485,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S3-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 3 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1497,10 +1497,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1518,9 +1518,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S4-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 4 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1530,10 +1530,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1551,9 +1551,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 5 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S5-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 5 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1563,10 +1563,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1584,9 +1584,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 6 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S6-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 6 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1596,10 +1596,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1617,9 +1617,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 7 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S7-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 7 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1629,10 +1629,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1650,9 +1650,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W6 Sector 8 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W6S8-12s</ParameterKey>
        <Description>12-sec CA60 W6 Sector 8 Z.ge.5 count rates between 1709 and 19107 keV/nuc</Description>
@@ -1662,10 +1662,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1831</Low>
@@ -1683,9 +1683,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S1-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 1 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1695,10 +1695,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1716,9 +1716,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S2-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 2 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1728,10 +1728,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1749,9 +1749,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S3-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 3 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1761,10 +1761,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1782,9 +1782,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S4-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 4 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1794,10 +1794,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1815,9 +1815,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 5 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S5-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 5 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1827,10 +1827,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1848,9 +1848,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 6 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S6-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 6 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1860,10 +1860,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>239</Low>
@@ -1881,9 +1881,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 7 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S7-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 7 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1893,10 +1893,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1914,9 +1914,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W7 Sector 8 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W7S8-12s</ParameterKey>
        <Description>12-sec CA60 W7 Sector 8 Z.ge.12 count rates between 239 and 840 keV/nuc</Description>
@@ -1926,10 +1926,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>298</Low>
@@ -1947,9 +1947,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S1-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 1 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -1959,10 +1959,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -1980,9 +1980,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S2-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 2 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -1992,10 +1992,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2013,9 +2013,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S3-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 3 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -2025,10 +2025,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2046,9 +2046,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S4-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 4 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -2058,10 +2058,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2079,9 +2079,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 5 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S5-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 5 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -2091,10 +2091,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2112,9 +2112,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 6 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S6-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 6 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -2124,10 +2124,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2145,9 +2145,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 7 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S7-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 7 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -2157,10 +2157,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2178,9 +2178,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>CA60 W8 Sector 8 12-sec-Averaged Ions</Name>
        <ParameterKey>CA60-W8S8-12s</ParameterKey>
        <Description>12-sec CA60 W8 Sector 8 Z.ge.12 count rates between 840 and 92663 keV/nuc</Description>
@@ -2190,10 +2190,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>955</Low>
@@ -2211,10 +2211,10 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>B-Field X-Component</Name>
        <ParameterKey>B-Field-X</ParameterKey>
        <Description>X-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -2223,14 +2223,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.X</Qualifier>
+           <Qualifier>Component.I</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Y-Component</Name>
        <ParameterKey>B-Field-Y</ParameterKey>
        <Description>Y-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -2239,14 +2239,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Y</Qualifier>
+           <Qualifier>Component.J</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Z-Component</Name>
        <ParameterKey>B-Field-Z</ParameterKey>
        <Description>Z-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -2255,14 +2255,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Z</Qualifier>
+           <Qualifier>Component.K</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field HEE Magnitude</Name>
        <ParameterKey>B-Field-Mag-HEE</ParameterKey>
        <Description>Magnitude of the Magnetic Field in HEE Coordinates</Description>
@@ -2271,12 +2271,12 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
            <Qualifier>Magnitude</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
    </NumericalData>
  </Spase>

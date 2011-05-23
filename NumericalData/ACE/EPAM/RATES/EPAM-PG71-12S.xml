@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-   <Version>1.3.0</Version>
+  <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+   <Version>2.2.0</Version>
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-12S</ResourceID>
      <ResourceHeader>
@@ -23,9 +23,9 @@
            (CSV) files, and how those files can be accessed.
          </Description>
        </InformationURL>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-5M</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-1H</AssociationID>
-       <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-1D</AssociationID>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-5M</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-1H</AssociationID></Association>
+       <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG71-1D</AssociationID></Association>
      </ResourceHeader>
      <AccessInformation>
        <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
@@ -47,19 +47,19 @@
      <TemporalDescription>
        <TimeSpan>
          <StartDate>1991-01-01T00:00:00.000</StartDate>
-         <EndDate>2008-12-31T23:59:59.000</EndDate>
+         <StopDate>2008-12-31T23:59:59.000</StopDate>
        </TimeSpan>
        <Cadence>PT12S</Cadence>
      </TemporalDescription>
      <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-     <PhysicalParameter>
+     <Parameter>
        <Name>Time for the record</Name>
        <ParameterKey>Time_PG71</ParameterKey>
        <Description>Time for the record given in year, day of year, hour, min, and decimal seconds.
                     The given time represents the beginning of the averaging interval.</Description>
        <Cadence>PT12S</Cadence>
        <Structure>
-         <StructureType>Array</StructureType>
+         
          <Size>5</Size>
          <Element>
            <Name>Year</Name>
@@ -100,8 +100,8 @@
        <Support>
          <SupportQuantity>Temporal</SupportQuantity>
        </Support>
-     </PhysicalParameter>
-     <PhysicalParameter>
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P1 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P1S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P1 sector 1 ion count rates between 56 and 78 keV.</Description>
@@ -115,10 +115,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>46</Low>
@@ -136,9 +136,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P1 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P1S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P1 sector 2 ion count rates between 56 and 78 keV.</Description>
@@ -152,10 +152,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>46</Low>
@@ -173,9 +173,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P1 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P1S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P1 sector 3 ion count rates between 56 and 78 keV.</Description>
@@ -189,10 +189,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>46</Low>
@@ -210,9 +210,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P1 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P1S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P1 sector 4 ion count rates between 56 and 78 keV.</Description>
@@ -226,10 +226,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>46</Low>
@@ -247,9 +247,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P2 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P2S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P2 sector 1 ion count rates between 78 and 130 keV.</Description>
@@ -263,10 +263,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>67</Low>
@@ -284,9 +284,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P2 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P2S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P2 sector 2 ion count rates between 78 and 130 keV.</Description>
@@ -300,10 +300,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>67</Low>
@@ -321,9 +321,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P2 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P2S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P2 sector 3 ion count rates between 78 and 130 keV.</Description>
@@ -337,10 +337,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>67</Low>
@@ -358,9 +358,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P2 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P2S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P2 sector 4 ion count rates between 78 and 130 keV.</Description>
@@ -374,10 +374,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>67</Low>
@@ -395,9 +395,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P3 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P3S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P3 sector 1 ion count rates between 130 and 214 keV.</Description>
@@ -411,10 +411,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>115</Low>
@@ -432,9 +432,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P3 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P3S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P3 sector 2 ion count rates between 130 and 214 keV.</Description>
@@ -448,10 +448,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>115</Low>
@@ -469,9 +469,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P3 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P3S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P3 sector 3 ion count rates between 130 and 214 keV.</Description>
@@ -485,10 +485,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>115</Low>
@@ -506,9 +506,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P3 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P3S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P3 sector 4 ion count rates between 130 and 214 keV.</Description>
@@ -522,10 +522,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>115</Low>
@@ -543,9 +543,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P4 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P4S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P4 sector 1 ion count rates between 214 and 337 keV.</Description>
@@ -559,10 +559,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>193</Low>
@@ -580,9 +580,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P4 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P4S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P4 sector 2 ion count rates between 214 and 337 keV.</Description>
@@ -596,10 +596,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>193</Low>
@@ -617,9 +617,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P4 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P4S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P4 sector 3 ion count rates between 214 and 337 keV.</Description>
@@ -633,10 +633,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>193</Low>
@@ -654,9 +654,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P4 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P4S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P4 sector 4 ion count rates between 214 and 337 keV.</Description>
@@ -670,10 +670,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>193</Low>
@@ -691,9 +691,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P5 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P5S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P5 sector 1 ion count rates between 337 and 594 keV.</Description>
@@ -707,10 +707,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>315</Low>
@@ -728,9 +728,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P5 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P5S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P5 sector 2 ion count rates between 337 and 594 keV.</Description>
@@ -744,10 +744,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>315</Low>
@@ -765,9 +765,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P5 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P5S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P5 sector 3 ion count rates between 337 and 594 keV.</Description>
@@ -781,10 +781,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>315</Low>
@@ -802,9 +802,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P5 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P5S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P5 sector 4 ion count rates between 337 and 594 keV.</Description>
@@ -818,10 +818,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>315</Low>
@@ -839,9 +839,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P6 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P6S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P6 sector 1 ion count rates between 594 and 1073 keV.</Description>
@@ -855,10 +855,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>580</Low>
@@ -876,9 +876,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P6 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P6S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P6 sector 2 ion count rates between 594 and 1073 keV.</Description>
@@ -892,10 +892,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>580</Low>
@@ -913,9 +913,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P6 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P6S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P6 sector 3 ion count rates between 594 and 1073 keV.</Description>
@@ -929,10 +929,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>580</Low>
@@ -950,9 +950,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P6 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P6S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P6 sector 4 ion count rates between 594 and 1073 keV.</Description>
@@ -966,10 +966,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>580</Low>
@@ -987,9 +987,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P7 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P7S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P7 sector 1 ion count rates between 1073 and 1802 keV.</Description>
@@ -1003,10 +1003,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1060</Low>
@@ -1024,9 +1024,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P7 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P7S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P7 sector 2 ion count rates between 1073 and 1802 keV.</Description>
@@ -1040,10 +1040,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1060</Low>
@@ -1061,9 +1061,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P7 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P7S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P7 sector 3 ion count rates between 1073 and 1802 keV.</Description>
@@ -1077,10 +1077,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1060</Low>
@@ -1098,9 +1098,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P7 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P7S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P7 sector 4 ion count rates between 1073 and 1802 keV.</Description>
@@ -1114,10 +1114,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1060</Low>
@@ -1135,9 +1135,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P8 Sector 1 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P8S1-12s</ParameterKey>
        <Description>12-sec LEMS30 P8 sector 1 ion count rates between 1802 and 4752 keV.</Description>
@@ -1151,10 +1151,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1880</Low>
@@ -1172,9 +1172,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P8 Sector 2 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P8S2-12s</ParameterKey>
        <Description>12-sec LEMS30 P8 sector 2 ion count rates between 1802 and 4752 keV.</Description>
@@ -1188,10 +1188,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1880</Low>
@@ -1209,9 +1209,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P8 Sector 3 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P8S3-12s</ParameterKey>
        <Description>12-sec LEMS30 P8 sector 3 ion count rates between 1802 and 4752 keV.</Description>
@@ -1225,10 +1225,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1880</Low>
@@ -1246,9 +1246,9 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>LEMS30 P8 Sector 4 12-sec-Averaged Ions</Name>
        <ParameterKey>LEMS30-P8S4-12s</ParameterKey>
        <Description>12-sec LEMS30 P8 sector 4 ion count rates between 1802 and 4752 keV.</Description>
@@ -1262,10 +1262,10 @@
        <ValidMin>0.0</ValidMin>
        <ValidMax>1.00E+06</ValidMax>
        <FillValue>null</FillValue>
-       <Measured>
+       
          <Particle>
            <ParticleType>Ion</ParticleType>
-           <ParticleQualifier>Average</ParticleQualifier>
+           <Qualifier>Average</Qualifier>
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>1880</Low>
@@ -1283,10 +1283,10 @@
              <Units>Degrees</Units>
            </PolarAngleRange>
          </Particle>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
 
-     <PhysicalParameter>
+     <Parameter>
        <Name>B-Field X-Component</Name>
        <ParameterKey>B-Field-X</ParameterKey>
        <Description>X-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1295,14 +1295,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.X</Qualifier>
+           <Qualifier>Component.I</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Y-Component</Name>
        <ParameterKey>B-Field-Y</ParameterKey>
        <Description>Y-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1311,14 +1311,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Y</Qualifier>
+           <Qualifier>Component.J</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field Z-Component</Name>
        <ParameterKey>B-Field-Z</ParameterKey>
        <Description>Z-Component of the Magnetic Field in HEE Coordinates</Description>
@@ -1327,14 +1327,14 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
-           <Qualifier>Component.Z</Qualifier>
+           <Qualifier>Component.K</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
-     <PhysicalParameter>
+       
+     </Parameter>
+     <Parameter>
        <Name>B-Field HEE Magnitude</Name>
        <ParameterKey>B-Field-Mag-HEE</ParameterKey>
        <Description>Magnitude of the Magnetic Field in HEE Coordinates</Description>
@@ -1343,12 +1343,12 @@
          <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
          <CoordinateSystemName>HEE</CoordinateSystemName>
        </CoordinateSystem>
-       <Measured>
+       
          <Field>
            <Qualifier>Magnitude</Qualifier>
            <FieldQuantity>Magnetic</FieldQuantity>
          </Field>
-       </Measured>
-     </PhysicalParameter>
+       
+     </Parameter>
    </NumericalData>
  </Spase>
