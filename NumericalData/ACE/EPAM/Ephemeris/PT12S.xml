@@ -14,7 +14,7 @@
       </Description>
       <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
       <Contact>
-        <PersonID>spase://VEPO/person/armstrong@ftecs.com</PersonID>
+        <PersonID>spase://SMWG/Person/Thomas.P.Armstrong</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>
@@ -27,12 +27,12 @@
           (CSV) files, and how those files can be accessed.
         </Description>
       </InformationURL>
-      <AssociationID>spase://VEPO/NumericData/ACE/EPAM/RAT/EPH-5M</AssociationID>
-      <AssociationID>spase://VEPO/NumericData/ACE/EPAM/RAT/EPH-1H</AssociationID>
-      <AssociationID>spase://VEPO/NumericData/ACE/EPAM/RAT/EPH-1D</AssociationID>
+      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT5M</AssociationID>
+      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT1H</AssociationID>
+      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/P1D</AssociationID>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VEPO/Repository/FTECS</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
@@ -46,7 +46,7 @@
       <Encoding>ASCII</Encoding>
       <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
     </AccessInformation>
-    <InstrumentID>spase://VEPO/Instrument/ACE/EPAM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/ACE/EPAM</InstrumentID>
     <MeasurementType>EnergeticParticles</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
