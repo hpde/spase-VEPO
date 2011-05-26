@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+  <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/P1D</ResourceID>
     <ResourceHeader>
@@ -27,9 +28,9 @@
           (CSV) files, and how those files can be accessed.
         </Description>
       </InformationURL>
-      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT12S</AssociationID>
-      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT5M</AssociationID>
-      <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT1H</AssociationID>
+      <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT12S</AssociationID></Association>
+      <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT5M</AssociationID></Association>
+      <Association><AssociationID>spase://VEPO/NumericalData/ACE/EPAM/Ephemeris/PT1H</AssociationID></Association>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
@@ -120,9 +121,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>X</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -139,9 +137,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Y</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -158,9 +153,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Z</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -177,9 +169,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>X</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -196,9 +185,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Y</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -215,9 +201,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Z</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -234,9 +217,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>X</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -253,9 +233,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Y</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -272,9 +249,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Z</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -288,9 +262,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -304,9 +275,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -320,9 +288,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -336,9 +301,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -352,9 +314,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -368,9 +327,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -384,9 +340,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Theta</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
@@ -400,9 +353,6 @@
       </CoordinateSystem>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
-        <Positional>
-          <Orientation>Phi</Orientation>
-        </Positional>
       </Support>
     </Parameter>
     <Parameter>
