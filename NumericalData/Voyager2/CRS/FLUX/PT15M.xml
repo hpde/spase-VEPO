@@ -36,7 +36,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/VOYCRS</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC</RepositoryID>
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
