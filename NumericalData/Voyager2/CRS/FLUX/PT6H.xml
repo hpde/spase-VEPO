@@ -31,7 +31,15 @@
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
+                <Name>nssdcftp</Name>
                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/crs/six_hour</URL>
+                <Description>FTP access to annual ASCII files</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>CRS team site</Name>
+                <URL>http://voyager.gsfc.nasa.gov/heliopause/heliopause/archive.html</URL>
+                <Description>Flux Listings of user-selected species, energy band and
+                    time span</Description>
             </AccessURL>
             <Format>Text</Format> 
         </AccessInformation>
