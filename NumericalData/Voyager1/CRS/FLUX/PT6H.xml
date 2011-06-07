@@ -25,7 +25,8 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
-                 <URL>http://voyager.gsfc.nasa.gov</URL>
+                <Name>Voyager CRS Team Web Site</Name>
+                <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
                  <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt</URL>
@@ -41,7 +42,7 @@
                 <Description>FTP access to annual ASCII files</Description>
             </AccessURL>
             <AccessURL>
-                <Name>CRS team site</Name>
+                <Name>Voyager CRS Team Web Page for 6-Hr Fluxes</Name>
                 <URL>http://voyager.gsfc.nasa.gov/heliopause/heliopause/archive.html</URL>
                 <Description>Flux Listings of user-selected species, energy band and
                     time span</Description>
