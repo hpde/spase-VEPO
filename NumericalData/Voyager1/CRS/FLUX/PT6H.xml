@@ -29,7 +29,8 @@
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt</URL>
+                <Name>Readme at nssdcftp</Name>
+                <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
