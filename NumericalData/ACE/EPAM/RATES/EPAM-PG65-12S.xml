@@ -1215,7 +1215,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>31.5</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
@@ -1240,7 +1240,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>78</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
@@ -1265,7 +1265,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>145</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
@@ -1290,7 +1290,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>30</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
@@ -1315,7 +1315,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>34</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
@@ -1340,7 +1340,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>34</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
@@ -1365,7 +1365,7 @@
            <ParticleQuantity>Counts</ParticleQuantity>
            <EnergyRange>
              <Low>36</Low>
-             <High>2.2.0</High>
+             <High>20000</High>
              <Units>keV</Units>
            </EnergyRange>
          </Particle>
