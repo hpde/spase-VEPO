@@ -23,14 +23,10 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
-                <URL>
-                    http://voyager.gsfc.nasa.gov
-                </URL>
+                <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <URL>
-                    http://voyager.gsfc.nasa.gov/archive/voyager-1/PT15M.html
-                </URL>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT15M.html</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
