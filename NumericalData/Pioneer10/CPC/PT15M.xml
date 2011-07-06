@@ -11,7 +11,7 @@
       <Description>This data set contains coincidence mode counts and 
 accumulation times, plus "box counts" based on pulse height analysis (PHA), 
 at 15-min resolution. There are 11 coincidence mode counts and 27 "box 
-counts."  Taken together, the parameters include allow computation of 
+counts."  Taken together, the parameters included allow computation of 
 average counting rates and of fluxes of protons, electrons, helium and 
 CNO nuclei in selected energy windows corresponding to the PHA boxes.
 There are 12 proton boxes spanning 3-67 MeV, 5 helium boxes spanning
