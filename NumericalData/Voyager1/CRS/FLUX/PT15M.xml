@@ -23,9 +23,11 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
+                <Name>Top CRS Team web site</Name>
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
+                <Name>Info at CRS Team site</Name>
                 <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT15M.html</URL>
             </InformationURL>
         </ResourceHeader>
@@ -34,6 +36,7 @@
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
+                <Name>Data at CRS Team site</Name>
                 <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT15M</URL>
             </AccessURL>
             <Format>Text</Format> 
