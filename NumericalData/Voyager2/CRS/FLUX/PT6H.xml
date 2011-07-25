@@ -29,7 +29,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/NSSDC</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
@@ -43,6 +43,11 @@
                 <Description>Flux Listings of user-selected species, energy band and
                     time span</Description>
             </AccessURL>
+	    <AccessURL>
+		<Name>FTPBrowser</Name>
+		<URL>http://ftpbrowser.gsfc.nasa.gov/vy2_crs_6h_flux.html</URL>
+		<Description>Flux plots and lists of fluxes for user-selected species, energy band and time span</Description>
+	    </AccessURL>
             <Format>Text</Format> 
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager2/CRS</InstrumentID> 
