@@ -42,6 +42,18 @@
             <Encoding>GZIP</Encoding>
             <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
         </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>nssdcftp</Name>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/lecp/v1_cosray_rate_26day/v1_cosray_rate_26d.txt</URL>
+                <Description>ftp access to single ASCII file</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>S.M. Krimigis, JHU/APL, and the Space Physics Data Facility</Acknowledgement>
+        </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager1/LECP</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>

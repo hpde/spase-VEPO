@@ -54,6 +54,18 @@
             <Encoding>GZIP</Encoding>
             <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
         </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>nssdcftp</Name>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/lecp/v2_ion_1day/</URL>
+                <Description>ftp access to annual ASCII files</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>S.M. Krimigis, JHU/APL, and the Space Physics Data Facility</Acknowledgement>
+        </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager2/LECP</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>

@@ -42,6 +42,23 @@
             <Encoding>GZIP</Encoding>
             <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
         </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>nssdcftp</Name>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/lecp/v1_prot_1hour/</URL>
+                <Description>ftp access to annual ascii files</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>FTPBrowser</Name>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/v1_lecp_prot_flux_1h.html</URL>
+                <Description>Plots and lists of 0.57-1.78, 3.40-17.6, 22.0-31.0 MeV proton fluxes</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>S.M. Krimigis, JHU/APL, and the Space Physics data Facility</Acknowledgement>
+        </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager1/LECP</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
