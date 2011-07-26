@@ -60,7 +60,7 @@
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/lecp/v2_ion_1day/</URL>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/lecp/v2_ion_flux_1day/</URL>
                 <Description>ftp access to annual ASCII files</Description>
             </AccessURL>
             <Format>Text</Format>
