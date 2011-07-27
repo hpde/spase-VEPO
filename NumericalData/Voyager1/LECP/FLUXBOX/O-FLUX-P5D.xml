@@ -25,7 +25,7 @@
             </Contact>
             <InformationURL>
                 <Name>Informational Website for Voyager 1 and 2 LECP Instrument</Name>
-                <URL>http://sd-www.jhuapl.edu/VOYAGER/v1_data/v1_fluxbox/v1_5d/v1_O_5d/Read_Me.txt</URL>
+                <URL>http://sd-www.jhuapl.edu/VOYAGER/v1_data/v1_fluxbox/v1_5d/v1_o_5d/Read_Me.txt</URL>
                 <Description>The webpage provides a detailed description of Fluxbox Rate files.</Description>
             </InformationURL>
         </ResourceHeader>
