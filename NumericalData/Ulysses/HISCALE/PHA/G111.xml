@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
   <Version>2.0.0</Version>
   <NumericalData>
-    <ResourceID>spase://VEPO/NumericalData/Ulysses/HISCALE/PHA/G94</ResourceID>
+    <ResourceID>spase://VEPO/NumericalData/Ulysses/HISCALE/PHA/G111</ResourceID>
     <ResourceHeader>
       <ResourceName>Ulysses:HISCALE PHA Event Data</ResourceName>
       <AlternateName>HISCALE-PHA-EVENT</AlternateName>
@@ -30,7 +30,7 @@
         </Description>
       </InformationURL>
       <Association>
-        <AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/PHA/G93</AssociationID>
+        <AssociationID>spase://VEPO/NumericalData/Ulysses/HISCALE/PHA/G110</AssociationID>
       </Association>
     </ResourceHeader>
     <AccessInformation>
