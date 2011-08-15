@@ -5,12 +5,12 @@ xsi:schemaLocation="http://www.spase-group.org/data/schema
 http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
 <Version>2.2.0</Version>
 <NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/WIND/EPACT/PT92S</ResourceID>
+   <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/PT92S</ResourceID>
    <ResourceHeader>
       <ResourceName>Wind EPACT 92s KP Fluxes</ResourceName>
       <ReleaseDate>2011-04-14T00:00:00</ReleaseDate>
       <Description>This set of key parameter flux data 
-from the WIND EPACT (Energetic Particles: Acceleration, 
+from the Wind EPACT (Energetic Particles: Acceleration, 
 Composition and Transport) telescopes contains fluxes of 
 protons (19-72 MeV in 2 energy bins), He nuclei (0.08-72 MeV/n
 in 5 bins), CNO nuclei (80-640 MeV/n in 2 bins), O nuclei
@@ -45,7 +45,7 @@ and file creation</Description>
 and the CDAWeb team at NASA/GSFC</Acknowledgement>
    </AccessInformation>
    <ProcessingLevel>Calibrated</ProcessingLevel>
-   <InstrumentID>spase://SMWG/Instrument/WIND/EPACT</InstrumentID>
+   <InstrumentID>spase://SMWG/Instrument/Wind/EPACT</InstrumentID>
    <MeasurementType>EnergeticParticles</MeasurementType>
    <TemporalDescription>
       <TimeSpan>
