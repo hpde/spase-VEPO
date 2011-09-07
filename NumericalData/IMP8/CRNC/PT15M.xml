@@ -5,7 +5,7 @@
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/PT15M</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP 8 U.Chicago Cosmic Ray and Nuclear Composition (CRNC) 15-min counts</ResourceName>
+      <ResourceName>IMP 8 CRNC 15-min PHA and coincidence mode counts</ResourceName>
       <ReleaseDate>2008-10-07T17:56:58Z</ReleaseDate>
       <Description> 
         This 15-min-resolution data set consists of 5 count rates from the Low Energy Telescope, 

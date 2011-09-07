@@ -7,10 +7,10 @@ http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/Helium_PT1H</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP8 CRNC hourly energetic alpha particle fluxes</ResourceName>
+      <ResourceName>IMP 8 CRNC hourly energetic alpha particle fluxes</ResourceName>
       <ReleaseDate>2011-08-31T00:00:00</ReleaseDate>
       <Description>This data set contains hourly, spin-averaged 
-fluxes of alpha particles from the IMP8 Cosmic Ray Nuclear Composition 
+fluxes of alpha particles from the IMP 8 Cosmic Ray Nuclear Composition 
 experiment of U. Chicago and UNH.  There are fluxes of alpha particles 
 in 9 energy bins from 10.90-12.89 to 84.32-94.81 MeV/n.  These fluxes 
 were generated at GSFC/SPDF from count rates accessible from 

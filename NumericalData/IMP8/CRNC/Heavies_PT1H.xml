@@ -7,11 +7,11 @@ http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/Heavies_PT1H</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP8 CRNC hourly count rates of heavy nuclei</ResourceName>
+      <ResourceName>IMP 8 CRNC hourly count rates of heavy nuclei</ResourceName>
       <ReleaseDate>2011-08-31T00:00:00</ReleaseDate>
       <Description>This data set contains hourly, spin-averaged 
 count rates of heavy nuclei, and of particles penetrating the 
-anticoincidence sensor, from the IMP8 Cosmic Ray Nuclear Composition 
+anticoincidence sensor, from the IMP 8 Cosmic Ray Nuclear Composition 
 experiment of U. Chicago and UNH.  Included are rates of CNO nuclei
 at E.LT.80 MeV/n and E.GT.80 MeV/n, of Z.GT.8 nuclei at "low" and "high"
 energies, and of penetrating particles (protons with E.GT.106 MeV, 

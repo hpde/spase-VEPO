@@ -7,10 +7,10 @@ http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/Protons_PT1H</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP8 CRNC hourly energetic proton fluxes</ResourceName>
+      <ResourceName>IMP 8 CRNC hourly energetic proton fluxes</ResourceName>
       <ReleaseDate>2011-08-31T00:00:00</ReleaseDate>
       <Description>This data set contains hourly, spin-averaged 
-fluxes of protons from the IMP8.  Cosmic Ray Nuclear Composition 
+fluxes of protons from the IMP 8.  Cosmic Ray Nuclear Composition 
 experiment of U. Chicago and UNH.  There are are fluxes of protons 
 in 9 energy bins from 11.24-12.62 to 74.50-94.78 MeV.  These fluxes 
 were generated at GSFC/SPDF from count rates accessible from 

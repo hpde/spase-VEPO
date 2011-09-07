@@ -7,10 +7,10 @@ http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/Electrons_PT1H</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP8 CRNC hourly energetic electron fluxes</ResourceName>
+      <ResourceName>IMP 8 CRNC hourly energetic electron fluxes</ResourceName>
       <ReleaseDate>2011-08-31T00:00:00</ReleaseDate>
       <Description>This data set contains hourly, spin-averaged 
-fluxes of electrons from the IMP8 Cosmic Ray Nuclear Composition 
+fluxes of electrons from the IMP 8 Cosmic Ray Nuclear Composition 
 experiment of U. Chicago and UNH.  There are fluxes of electrons 
 in three energy bins: 0.7-2.0, 2-12, 12-50 MeV.  These fluxes 
 were generated at GSFC/SPDF from count rates accessible from 
