@@ -56,7 +56,7 @@ and CDAWeb at GSFC/SPDF</Acknowledgement>
    <TemporalDescription>
       <TimeSpan>
          <StartDate>2006-11-13T00:00:00</StartDate>
-         <RelativeStopDate>P5M</RelativeStopDate>
+         <RelativeStopDate>-P5M</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT1M</Cadence>
    </TemporalDescription>
