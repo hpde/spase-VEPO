@@ -7,7 +7,7 @@
    <ResourceID>spase://VEPO/NumericalData/ISEE3/IsotAbun</ResourceID>
    <ResourceHeader>
       <ResourceName>ISEE 3 Isotopic Abundance Ratios</ResourceName>
-      <ReleaseDate>2009-05-20T00:00:00</ReleaseDate>
+      <ReleaseDate>2011-11-23T00:00:00</ReleaseDate>
       <Description>This data product consists of a single ASCII file 
 containing values and their uncertainties for 32 abundance ratios of 
 various pairs of isotopes of 13 chemical elements (C, O, Ne, Mg, Al, 
@@ -49,6 +49,7 @@ ISEE 3 instrument Principal Investigator.</Acknowledgement>
    </AccessInformation>
    <InstrumentID>spase://SMWG/Instrument/ISEE3/HECR</InstrumentID>
    <MeasurementType>IonComposition</MeasurementType>
+   <MeasurementType>EnergeticParticles</MeasurementType>
    <TemporalDescription>
       <TimeSpan>
          <StartDate>1978-08-18T00:00:00</StartDate>

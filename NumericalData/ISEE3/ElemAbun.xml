@@ -7,7 +7,7 @@
    <ResourceID>spase://VEPO/NumericalData/ISEE3/ElemAbun</ResourceID>
    <ResourceHeader>
       <ResourceName>ISEE 3 Elemental Abundance Ratios</ResourceName>
-      <ReleaseDate>2009-05-20T00:00:00</ReleaseDate>
+      <ReleaseDate>2011-11-23T00:00:00</ReleaseDate>
       <Description>This ASCII file contains values and their uncertainties 
 for 25 abundance ratios of various pairs of chemical elements.  The ratios 
 are based on 1978-1981 observations of ~50-500 MeV/n cosmic rays by the 
@@ -44,6 +44,7 @@ ISEE 3 instrument Principal Investigator.</Acknowledgement>
    </AccessInformation>
    <InstrumentID>spase://SMWG/Instrument/ISEE3/HECR</InstrumentID>
    <MeasurementType>IonComposition</MeasurementType>
+   <MeasurementType>EnergeticParticles</MeasurementType>
    <TemporalDescription>
       <TimeSpan>
          <StartDate>1978-08-18T00:00:00</StartDate>
