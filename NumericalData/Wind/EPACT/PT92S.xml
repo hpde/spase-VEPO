@@ -8,7 +8,7 @@ http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
    <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/PT92S</ResourceID>
    <ResourceHeader>
       <ResourceName>Wind EPACT 92s KP Fluxes</ResourceName>
-      <ReleaseDate>2011-08-18T00:00:00</ReleaseDate>
+      <ReleaseDate>2011-12-12T00:00:00</ReleaseDate>
       <Description>This set of key parameter flux data 
 from the Wind EPACT (Energetic Particles: Acceleration, 
 Composition and Transport) telescopes contains fluxes of 
@@ -21,10 +21,6 @@ and 1-10 MeV electrons, each averaged over 92 seconds.</Description>
          <PersonID>spase://SMWG/Person/Tycho.T.Von.Rosenvinge</PersonID>
          <Role>PrincipalInvestigator</Role>
       </Contact>
-      <InformationURL>
-         <Name>Instrument web page</Name>
-         <URL>http://lheawww.gsfc.nasa.gov/docs/gamcosray/lecr/EPACT/epact.html</URL>      
-      </InformationURL>
    </ResourceHeader>
    <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
