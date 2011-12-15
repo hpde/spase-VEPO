@@ -41,7 +41,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>ACE EPAM Daily-Averaged</Name>
-        <URL>http://data.ftecs.com/VHO/VEPO/ace_epam/mfsa/Daily/</URL>
+        <URL>http://data.ftecs.com/VHO/VEPO/ace_epam/mfsa/P1D/</URL>
         <Description>
           Parent directory containing the Daily-averaged fluxes for the ACE/EPAM instrument for the entire mission.
         </Description>

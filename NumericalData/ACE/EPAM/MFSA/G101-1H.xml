@@ -41,7 +41,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>ACE EPAM Hourly-Averaged</Name>
-        <URL>http://data.ftecs.com/VHO/VEPO/ace_epam/mfsa/Hourly/</URL>
+        <URL>http://data.ftecs.com/VHO/VEPO/ace_epam/mfsa/PT1H/</URL>
         <Description>
           Parent directory containing the Hourly-averaged fluxes for the ACE/EPAM instrument for the entire mission.
         </Description>
