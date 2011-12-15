@@ -4,7 +4,7 @@
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/RATES/EPAM-PG65-5M</ResourceID>
      <ResourceHeader>
-       <ResourceName>5min-Averaged EPAM LEFS60 Count Rates</ResourceName>
+       <ResourceName>5min-Averaged EPAM Spin-Averaged Count Rates</ResourceName>
        <AlternateName>EPAM-PG65-5M</AlternateName>
        <ReleaseDate>2007-11-06T00:00:00.000</ReleaseDate>
        <Description>5min-averaged and spin-averaged count rates from all detectors.</Description>
