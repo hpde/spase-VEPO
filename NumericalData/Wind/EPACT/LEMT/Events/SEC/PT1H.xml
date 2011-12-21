@@ -5,7 +5,7 @@ xsi:schemaLocation="http://www.spase-group.org/data/schema
 http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
 <Version>2.2.1</Version>
 <NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/EVENTS/SEC/PT1H</ResourceID>
+   <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/Events/SEC/PT1H</ResourceID>
    <ResourceHeader>
       <ResourceName>Wind EPACT/LEMT 1-Hr Spin-Sectored H,He,O,Fe Counts for Events</ResourceName>
       <ReleaseDate>2011-12-12T00:00:00</ReleaseDate>

@@ -5,7 +5,7 @@ xsi:schemaLocation="http://www.spase-group.org/data/schema
 http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
 <Version>2.2.1</Version>
 <NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/EVENTS/OMNI/PT1H</ResourceID>
+   <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/Events/OMNI/PT1H</ResourceID>
    <ResourceHeader>
       <ResourceName>Wind EPACT/LEMT 1-Hr Omnidirectional He,O,Fe Fluxes for Events</ResourceName>
       <ReleaseDate>2011-12-12T00:00:00</ReleaseDate>
