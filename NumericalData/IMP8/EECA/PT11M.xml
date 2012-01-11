@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd"
+   xsi:schemaLocation="http://www.spase-group.org/data/schema 
+http://www.spase-group.org/data/schema/spase-2_2_1.xsd"
  xmlns="http://www.spase-group.org/data/schema">
-<Version>2.0.0</Version>
+<Version>2.2.1</Version>
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/EECA/PT11M</ResourceID>
    <ResourceHeader>
@@ -547,21 +548,21 @@ vector, in km.</Description>
 vector, in km.</Description>
          <Element>
             <Name>X Component, GSE</Name>
-	    <Component>I</Component>
+	    <Qualifier>Component.I</Qualifier>
             <Index>1</Index>
             <ParameterKey>Column_07</ParameterKey>
             <Units>km</Units>
          </Element>
          <Element>
             <Name>Y Component, GSE</Name>
-	    <Component>J</Component>
+	    <Qualifier>Component.J</Qualifier>
             <Index>2</Index>
             <ParameterKey>Column_08</ParameterKey>
             <Units>km</Units>
          </Element>
          <Element>
             <Name>Z Component, GSE</Name>
-	    <Component>K</Component>
+	    <Qualifier>Component.K</Qualifier>
             <Index>3</Index>
             <ParameterKey>Column_09</ParameterKey>
             <Units>km</Units>
@@ -573,4 +574,3 @@ vector, in km.</Description>
    </Parameter>
 </NumericalData>
 </Spase>
-
