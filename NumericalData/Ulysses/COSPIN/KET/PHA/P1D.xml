@@ -42,7 +42,7 @@
        <AccessRights>Open</AccessRights>
        <AccessURL>
          <Name>Ulysses COSPIN/KET Daily Average PHA Count Rates</Name>
-         <URL>http://helio.esa.int/ulysses/ftp/data/cospin/ket/pha/ket90-07.daily</URL>
+         <URL>http://helio.esa.int/ulysses/ftp/data/cospin/ket/pha/ket90-09.daily</URL>
          <Description>
            ASCII data file containing all Ulysses COSPIN/KET daily average
 		   proton, helium and electron PHA derived count rates.
