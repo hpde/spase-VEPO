@@ -61,11 +61,11 @@
           <Role>TeamLeader</Role>
         </Contact>
         <Contact>
-          <PersonID>spase://SMWG/person/Clifford.Lopate</PersonID>
+          <PersonID>spase://SMWG/Person/Clifford.Lopate</PersonID>
           <Role>DataProducer</Role>
         </Contact>
         <Contact>
-          <PersonID>spase://SMWG/person/James.Connell</PersonID>
+          <PersonID>spase://SMWG/Person/James.Connell</PersonID>
           <Role>CoInvestigator</Role>
         </Contact>
         <InformationURL>

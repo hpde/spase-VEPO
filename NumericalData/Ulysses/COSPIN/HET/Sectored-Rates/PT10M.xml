@@ -43,7 +43,7 @@
        </Association>
      </ResourceHeader>
      <AccessInformation>
-       <RepositoryID>spase://VEPO/Repository/UDS</RepositoryID>
+       <RepositoryID>spase://SMWG/Repository/UDS</RepositoryID>
        <Availability>Online</Availability>
        <AccessRights>Open</AccessRights>
        <AccessURL>
