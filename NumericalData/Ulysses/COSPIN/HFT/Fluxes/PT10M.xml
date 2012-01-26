@@ -12,11 +12,10 @@
          Ulysses COSPIN HFT 10 minute average fluxes of energetic (MeV) nuclei
        </AlternateName>
        <ReleaseDate>
-         2009-05-31T00:00:00.000
+         2012-01-26T00:00:00.000
        </ReleaseDate>
        <Description>
-          Nominal 10 minute average spin-averages and sectored counting-rate-based fluxes of energetic protons and heavier 
-          nuclei from the Ulysses COSPIN High Flux Telescope
+          Nominal 10 minute average spin-averages and sectored counting-rate-based fluxes of energetic protons and heavier nuclei from the Ulysses COSPIN High Flux Telescope. The parameter keys in the parameter-level segments below are specifically relevant to the UDS-accessible versions of the data.
        </Description>
        <Acknowledgement>
          Please acknowledge the Lead HFT Investigator  (Dr. J. David Anglin)
@@ -97,6 +96,35 @@
        <Encoding>ZIP</Encoding>
        <Acknowledgement>J.D. Anglin, HIA/NRC, Ottawa, Canada</Acknowledgement>
      </AccessInformation>
+  <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+           <Name>CDAWeb</Name>
+           <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+           <Description>subset, plot, list via CDAWeb</Description>
+         </AccessURL>
+         <AccessURL>
+           <Name>nssdcftp</Name>
+           <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ulysses/particle/cospin/hft/10min/</URL>
+           <Description>via ftp in ASCII from nssdcftp.</Description>
+         </AccessURL>
+          <Format>Text</Format>
+         <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
+        </AccessInformation>
+       <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+           <Name>SPDF CDF ftp area</Name>
+           <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/hft/</URL>
+           <Description>via ftp in CDF from SPDF.</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+       </AccessInformation>
      <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/HFT</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>

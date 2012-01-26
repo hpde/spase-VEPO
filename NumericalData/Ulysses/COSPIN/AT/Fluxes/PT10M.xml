@@ -7,7 +7,7 @@
      <ResourceHeader>
        <ResourceName>Ulysses COSPIN/AT Ion 10-Minute Fluxes in ASCII Format</ResourceName>
        <AlternateName>COSPIN-AT-Fluxes-PT10M</AlternateName>
-       <ReleaseDate>2009-04-17T00:00:00.000</ReleaseDate>
+       <ReleaseDate>2012-01-26T00:00:00.000</ReleaseDate>
        <Description>10-Minute cadence proton and helium spin-averaged coincidence fluxes from the 
             COSPIN Anisotropy Telescopes (AT1 and AT2). The two telescopes differ only by their orientation 
             with respect to the spacecraft spin axis. </Description>
@@ -125,13 +125,52 @@
            end of the nominal interval.  These data are therefore not useful for highly accurate timing
            studies. 
            Information on the definition the spin sectors and the sectoring process is given below in the
-           description of the A3 sectored data (channels 14-21 in the table above). 
+           description of the A3 sectored data (channels 14-21 in the table above). The parameter keys in the parameter-level segments below are specifically relevant to the UDS-accessible versions of the data.
          </Description>
        </AccessURL>
        <Format>Text</Format>
        <Encoding>ZIP</Encoding>
        <Acknowledgement>Dr. Silvia Dalla, University of Central Lancashire, UK</Acknowledgement>
      </AccessInformation>
+   <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+           <Name>CDAWeb</Name>
+           <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+           <Description>subset, plot, list via CDAWeb</Description>
+         </AccessURL>
+         <AccessURL>
+           <Name>nssdcftp, AT1</Name>
+           <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ulysses/particle/cospin/at1/10min_new/</URL>
+           <Description>AT1 data via ftp in ASCII from nssdcftp.</Description>
+         </AccessURL>
+         <AccessURL>
+           <Name>nssdcftp, AT2</Name>
+           <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ulysses/particle/cospin/at2/10min_new/</URL>
+           <Description>AT2 data via ftp in ASCII from nssdcftp.</Description>
+         </AccessURL>
+          <Format>Text</Format>
+         <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
+        </AccessInformation>
+       <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+           <Name>SPDF CDF ftp area, AT1</Name>
+           <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/at1/</URL>
+           <Description>AT1 data via ftp in CDF from SPDF.</Description>
+         </AccessURL>
+         <AccessURL>
+           <Name>SPDF CDF ftp area, AT2</Name>
+           <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/at2/</URL>
+           <Description>AT2 data via ftp in CDF from SPDF.</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+       </AccessInformation>
      <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/AT</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
