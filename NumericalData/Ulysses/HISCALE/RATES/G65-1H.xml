@@ -53,6 +53,23 @@
        <Encoding>ZIP</Encoding>
        <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
      </AccessInformation>
+ <AccessInformation>
+       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+        <Availability>Online</Availability>
+        <AccessRights>Open</AccessRights>
+        <AccessURL>
+            <Name>CDAWeb ftp area</Name>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/</URL>
+            <Description>
+               The parameters described below are available at CDAWeb; however, they are 
+               distributed across 5 data sets. These data sets are available in the following 
+	       sub-folders of the above url: lf60_m1/, lm12_m1/, lm30_m1/, lmde_m1/, 
+	       and lf15_m1/
+            </Description>
+        </AccessURL>
+        <Format>CDF</Format>
+        <Acknowledgement>CDAWeb from NASA/GSFC/SPDF</Acknowledgement>
+ </AccessInformation>
      <InstrumentID>spase://SMWG/Instrument/Ulysses/HISCALE</InstrumentID>
      <MeasurementType>EnergeticParticles</MeasurementType>
      <TemporalDescription>
