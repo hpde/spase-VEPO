@@ -49,7 +49,7 @@
        <Availability>Online</Availability>
        <AccessRights>Open</AccessRights>
        <AccessURL>
-         <Name>Ulysses COSPIN/AT 10-Minute Flux  Data</Name>
+         <Name>Ulysses Data System</Name>
          <URL>http://helio.esa.int/ulysses/ftp/data/cospin/at/</URL>
          <Description>
            Parent directory containing yearly downloadable .zip compressed subdirectories with naming 

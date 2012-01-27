@@ -45,7 +45,7 @@
        <Availability>Online</Availability>
        <AccessRights>Open</AccessRights>
        <AccessURL>
-         <Name>Ulysses COSPIN/LET 10-Minute Average Data</Name>
+         <Name>Ulysses Data System</Name>
          <URL>http://helio.esa.int/ulysses/ftp/data/cospin/let/</URL>
          <Description>
 		   Parent directory containing compressed Ulysses COSPIN/LET 10-minute average rates

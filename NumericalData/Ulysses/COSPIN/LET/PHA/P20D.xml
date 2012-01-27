@@ -6,7 +6,7 @@
    <NumericalData>
      <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/LET/PHA/P20D</ResourceID>
      <ResourceHeader>
-       <ResourceName>Ulysses COSPIN/LET Oxygen, Nitrogen and Neon Daily Average PHA Derived Fluxes in ASCII Format</ResourceName>
+       <ResourceName>Ulysses COSPIN/LET Oxygen, Nitrogen and Neon 20-Day Average PHA Derived Fluxes in ASCII Format</ResourceName>
        <AlternateName>COSPIN-LET-PHA-20D</AlternateName>
        <ReleaseDate>2008-12-01T00:00:00Z</ReleaseDate>
        <Description>this set contains 20-day averaged PHA derived fluxes of oxygen (4-8, 8-12, 12-16, 16-20 MeV/n), nitrogen (4-7, 8-20 MeV/n)

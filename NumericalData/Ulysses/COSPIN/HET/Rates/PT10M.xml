@@ -46,7 +46,7 @@
        <Availability>Online</Availability>
        <AccessRights>Open</AccessRights>
        <AccessURL>
-         <Name>Ulysses COSPIN/HET 10-Minute Spin-Average Counting Rate Data (1990)</Name>
+         <Name>Ulysses Data System</Name>
          <URL>http://helio.esa.int/ulysses/ftp/data/cospin/het/</URL>
          <Description>
            Parent directory containing compressed archives with naming convention coshetYY.zip, where

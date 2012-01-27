@@ -58,7 +58,7 @@
        <Availability>Online</Availability>
        <AccessRights>Open</AccessRights>
        <AccessURL>
-         <Name>Ulysses COSPIN/HFT 10-Minute Spin-Average Counting Rate Data</Name>
+         <Name>Ulysses Data System</Name>
          <URL>http://helio.esa.int/ulysses/ftp/data/cospin/hft/</URL>
          <Description>
            Parent directory containing yearly downloadable .zip compressed subdirectories with naming 
