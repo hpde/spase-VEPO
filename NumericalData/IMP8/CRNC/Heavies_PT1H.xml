@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns="http://www.spase-group.org/data/schema" 
-xsi:schemaLocation="http://www.spase-group.org/data/schema 
-http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-<Version>2.2.1</Version>
-<NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/Heavies_PT1H</ResourceID>
-   <ResourceHeader>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+  <Version>2.2.1</Version>
+  <NumericalData>
+    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/Heavies_PT1H</ResourceID>
+    <ResourceHeader>
       <ResourceName>IMP 8 CRNC hourly count rates of heavy nuclei</ResourceName>
       <ReleaseDate>2011-08-31T00:00:00</ReleaseDate>
       <Description>This data set contains hourly, spin-averaged 
@@ -19,81 +16,81 @@ etc.)</Description>
       <Acknowledgement>Acknowledge the late John A. Simpson, the 
 original CRNC PI, and Clifford Lopate/UNH, current PI.</Acknowledgement>
       <Contact>
-         <PersonID>spase://SMWG/Person/Clifford.Lopate</PersonID>
-         <Role>PrincipalInvestigator</Role>
+        <PersonID>spase://SMWG/Person/Clifford.Lopate</PersonID>
+        <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
-         <Name>Readme file at nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/
+        <Name>Readme file at nssdcftp</Name>
+        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/
 particles_uchi/hourly/heavies/aareadme.txt</URL>
       </InformationURL>
       <InformationURL>
-         <Name>Comprehensive data descriptive file</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/
+        <Name>Comprehensive data descriptive file</Name>
+        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/
 particles_uchi/15min_asci/voldesc.sfd</URL>
-         <Description>SFDU-formatted file describing the CRNC instrument
+        <Description>SFDU-formatted file describing the CRNC instrument
 and the 15-min data set of count rates and pulse height data from which the
 hourly rates data set was created.</Description>
       </InformationURL>
-   </ResourceHeader>
-   <AccessInformation>
+    </ResourceHeader>
+    <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-         <Name>nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/
+        <Name>nssdcftp</Name>
+        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/
 particles_uchi/hourly/heavies</URL>
-         <Description>ftp access to subdirectory holding annual ASCII files</Description>
+        <Description>ftp access to subdirectory holding annual ASCII files</Description>
       </AccessURL>
       <AccessURL>
-         <Name>FTPBrowser</Name>
-         <URL>http://ftpbrowser.gsfc.nasa.gov/imp_chi_crnc_1h.html</URL>
-         <Description>Subset, plot and list fluxes of protons, alpha
+        <Name>FTPBrowser</Name>
+        <URL>http://ftpbrowser.gsfc.nasa.gov/imp_chi_crnc_1h.html</URL>
+        <Description>Subset, plot and list fluxes of protons, alpha
 particles and electron, and count rates of heavies, via FTPBrowser</Description>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
-         <Quantity>0.6</Quantity>
-         <Units>MB</Units>
-         <Per>P1Y</Per>
+        <Quantity>0.6</Quantity>
+        <Units>MB</Units>
+        <Per>P1Y</Per>
       </DataExtent>
       <Acknowledgement>Acknowledge C. Lopate, J. Simpson, and GSFC/SPDF
 (Space Physics Data Facility)</Acknowledgement>
-   </AccessInformation>
-   <InstrumentID>spase://SMWG/Instrument/IMP8/CRNC</InstrumentID>
-   <MeasurementType>EnergeticParticles</MeasurementType>
-   <TemporalDescription>
+    </AccessInformation>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/CRNC</InstrumentID>
+    <MeasurementType>EnergeticParticles</MeasurementType>
+    <TemporalDescription>
       <TimeSpan>
-         <StartDate>1973-10-30T00:00:00</StartDate>
-         <StopDate>2001-10-26T00:00:00</StopDate>
+        <StartDate>1973-10-30T00:00:00</StartDate>
+        <StopDate>2001-10-26T00:00:00</StopDate>
       </TimeSpan>
       <Cadence>PT1H</Cadence>
-   </TemporalDescription>
-   <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
-   <Parameter>
+    </TemporalDescription>
+    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    <Parameter>
       <Name>Time</Name>
       <ParameterKey>Column_1-Column_3</ParameterKey>
       <Description>Time at start of flux average, as year, day, hour</Description>
       <Cadence>PT1H</Cadence>
       <Structure>
-         <Size>3</Size>
-         <Description>year, day, hour</Description>
+        <Size>3</Size>
+        <Description>year, day, hour</Description>
       </Structure>
-         <Support>
-            <SupportQuantity>Temporal</SupportQuantity>
-         </Support>
-   </Parameter>
-   <Parameter>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Fractional Coverage</Name>
       <ParameterKey>Column_4</ParameterKey>
       <Description>Fractional counting coverage (0-1) during this hour</Description>
       <Cadence>PT1H</Cadence>
-         <Support>
-            <SupportQuantity>Temporal</SupportQuantity>
-         </Support>
-   </Parameter>
-   <Parameter>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Count rates of penetrating particles</Name>
       <ParameterKey>Columns_5</ParameterKey>
       <Description>Spin-integrated count rates of particles that
@@ -101,12 +98,12 @@ penetrate the anticoincidence sensor.  These include E.GT.106 MeV
 protons and other particles</Description>
       <Cadence>PT1H</Cadence>
       <Units>1/sec</Units>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>CountRate</ParticleQuantity>
-         </Particle>
-   </Parameter>
-   <Parameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>CountRate</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Count rates of Z.GT.8 nuclei</Name>
       <ParameterKey>Column_6-Column_7</ParameterKey>
       <Description>Spin-integrated count rates of Z.GT.8 nuclei, 
@@ -114,15 +111,15 @@ at 1-hour resolution, in two energy bins, low and high</Description>
       <Cadence>PT1H</Cadence>
       <Units>1/sec</Units>
       <Structure>
-         <Size>2</Size>
-         <Description>Array of two Z.GT.8 count rates</Description>
+        <Size>2</Size>
+        <Description>Array of two Z.GT.8 count rates</Description>
       </Structure>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>CountRate</ParticleQuantity>
-         </Particle>
-   </Parameter>
-   <Parameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>CountRate</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Count rates of CNO nuclei</Name>
       <ParameterKey>Column_8-Column_9</ParameterKey>
       <Description>Spin-integrated count rates of CNO nuclei, 
@@ -131,14 +128,13 @@ MeV/n</Description>
       <Cadence>PT1H</Cadence>
       <Units>1/sec</Units>
       <Structure>
-         <Size>2</Size>
-         <Description>Array of two CNO count rates</Description>
+        <Size>2</Size>
+        <Description>Array of two CNO count rates</Description>
       </Structure>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>CountRate</ParticleQuantity>
-         </Particle>
-   </Parameter>
-</NumericalData>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>CountRate</ParticleQuantity>
+      </Particle>
+    </Parameter>
+  </NumericalData>
 </Spase>
-

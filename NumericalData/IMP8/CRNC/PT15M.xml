@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
-   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-<Version>2.0.0</Version>
-<NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/PT15M</ResourceID>
-   <ResourceHeader>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VEPO/NumericalData/IMP8/CRNC/PT15M</ResourceID>
+    <ResourceHeader>
       <ResourceName>IMP 8 CRNC 15-min PHA and coincidence mode counts</ResourceName>
       <ReleaseDate>2008-10-07T17:56:58Z</ReleaseDate>
       <Description> 
@@ -20,119 +19,119 @@
        </Description>
       <Acknowledgement>C. Lopate, UNH, and the late J. Simpson, U. Chi</Acknowledgement>
       <Contact>
-	 <PersonID>spase://SMWG/Person/Clifford.Lopate</PersonID>
-         <Role>GeneralContact</Role>
+        <PersonID>spase://SMWG/Person/Clifford.Lopate</PersonID>
+        <Role>GeneralContact</Role>
       </Contact>
       <InformationURL>
-         <Name>Voldesc file at nssdcftp</Name>
+        <Name>Voldesc file at nssdcftp</Name>
         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/particles_uchi/15min_asci/voldesc.sfd</URL>
-         <Description>Detailed documentation file about experiment and data</Description>
+        <Description>Detailed documentation file about experiment and data</Description>
       </InformationURL>
       <PriorID>spase://VEPO/NumericalData/IMP8/UChi/PT15M</PriorID>
-   </ResourceHeader>
-   <AccessInformation>
+    </ResourceHeader>
+    <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-         <Name>FTPBrowser</Name>
-         <URL>http://ftpbrowser.gsfc.nasa.gov/chicago.html</URL>
-         <Description>Interface to plot or list parameter subsets</Description>
+        <Name>FTPBrowser</Name>
+        <URL>http://ftpbrowser.gsfc.nasa.gov/chicago.html</URL>
+        <Description>Interface to plot or list parameter subsets</Description>
       </AccessURL>
       <AccessURL>
-         <Name>nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/particles_uchi/15min_asci/</URL>
-         <Description>download files by ftp</Description>
+        <Name>nssdcftp</Name>
+        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/particles_uchi/15min_asci/</URL>
+        <Description>download files by ftp</Description>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
-         <Quantity>320</Quantity>
-         <Units>MB</Units>
+        <Quantity>320</Quantity>
+        <Units>MB</Units>
       </DataExtent>
       <Acknowledgement>C. Lopate, UNH, the late J. Simpson, U. Chicago, and the NSSDC and SPDF at GSFC</Acknowledgement>
-   </AccessInformation>
-   <ProcessingLevel>Uncalibrated</ProcessingLevel>
-   <InstrumentID>spase://SMWG/Instrument/IMP8/CRNC</InstrumentID>
-   <MeasurementType>EnergeticParticles</MeasurementType>
-   <TemporalDescription>
+    </AccessInformation>
+    <ProcessingLevel>Uncalibrated</ProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/CRNC</InstrumentID>
+    <MeasurementType>EnergeticParticles</MeasurementType>
+    <TemporalDescription>
       <TimeSpan>
-         <StartDate>1973-10-30T00:00:00</StartDate>
-         <StopDate>2000-09-30T00:00:00</StopDate>
+        <StartDate>1973-10-30T00:00:00</StartDate>
+        <StopDate>2000-09-30T00:00:00</StopDate>
       </TimeSpan>
       <Cadence>PT15M</Cadence>
-   </TemporalDescription>
-   <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
-   <Caveats>Data must be processed to obtain count rates and fluxes.  Note that records with no data have spacecraft ID = 0 in first word.</Caveats>
-   <Parameter>
+    </TemporalDescription>
+    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    <Caveats>Data must be processed to obtain count rates and fluxes.  Note that records with no data have spacecraft ID = 0 in first word.</Caveats>
+    <Parameter>
       <Name>Coincidence mode counts</Name>
       <Description>A set of 13 counts of events corresponding various telescope coincidence modes and discriminator levels</Description>
       <Cadence>PT15M</Cadence>
       <Structure>
-         <Size>13</Size>
-         <Description> A set of 13 counts of events corresponding various telescope coincidence modes and discriminator levels.  Counts are due to a mix of protons and alpha particles identified below plus 0.7-50 MeV electrons.</Description>
+        <Size>13</Size>
+        <Description> A set of 13 counts of events corresponding various telescope coincidence modes and discriminator levels.  Counts are due to a mix of protons and alpha particles identified below plus 0.7-50 MeV electrons.</Description>
       </Structure>
-         <Particle>
-            <ParticleType>Proton</ParticleType>
-            <ParticleType>AlphaParticle</ParticleType>
-            <ParticleQuantity>Counts</ParticleQuantity>
-            <EnergyRange>
-               <Low>0.54</Low>
-               <High>94.78</High>
-               <Units>MeV per n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-   <Parameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>AlphaParticle</ParticleType>
+        <ParticleQuantity>Counts</ParticleQuantity>
+        <EnergyRange>
+          <Low>0.54</Low>
+          <High>94.78</High>
+          <Units>MeV per n</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Count accumulation durations</Name>
       <Description>A set of 13 accumulation durations (in seconds) corresponding to the 13 coincidence mode counts described above</Description>
       <Cadence>PT15M</Cadence>
       <Units>sec</Units>
       <Structure>
-         <Size>13</Size>
-         <Description> A set of 13 accumulation durations (in seconds) corresponding to the 13 coincidence mode counts described above </Description>
+        <Size>13</Size>
+        <Description> A set of 13 accumulation durations (in seconds) corresponding to the 13 coincidence mode counts described above </Description>
       </Structure>
       <Support>
-      <SupportQuantity>Other</SupportQuantity>
+        <SupportQuantity>Other</SupportQuantity>
       </Support>
-   </Parameter>
-   <Parameter>
+    </Parameter>
+    <Parameter>
       <Name>Counts of events pulse height analyzed</Name>
       <Description>A set of 4 counts of events pulse height analyzed in various coincidence modes for this interval for the CPI main telescope</Description>
       <Cadence>PT15M</Cadence>
       <Structure>
-         <Size>4</Size>
-         <Description> A set of 4 counts of events pulse height analyzed in various coincidence modes for this interval.  Counts are due to a mix of protons and alpha particles identified below plus 0.7-50 MeV electrons.</Description>
+        <Size>4</Size>
+        <Description> A set of 4 counts of events pulse height analyzed in various coincidence modes for this interval.  Counts are due to a mix of protons and alpha particles identified below plus 0.7-50 MeV electrons.</Description>
       </Structure>
-         <Particle>
-            <ParticleType>Proton</ParticleType>
-            <ParticleType>AlphaParticle</ParticleType>
-            <ParticleQuantity>Counts</ParticleQuantity>
-            <EnergyRange>
-               <Low>11.24</Low>
-               <High>94.78</High>
-               <Units>MeV per n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-   <Parameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>AlphaParticle</ParticleType>
+        <ParticleQuantity>Counts</ParticleQuantity>
+        <EnergyRange>
+          <Low>11.24</Low>
+          <High>94.78</High>
+          <Units>MeV per n</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Box counts for specific species</Name>
       <Description>A set of 27 counts in E-dE/dx boxes corresponding to known species and energy ranges.  In particular, there are 9 proton counts with energy ranges between 11.24-12.62 MeV and 74.50-94.78 MeV plus 2 proton counts aggregated over subsets of the 9, 10 alpha particle counts with energy ranges between 10.90-12.89 MeV/n and 84.32-94.81 MeV/n plus 2 alpha particle counts aggregated over subsets of the 10, 3 electron boxes at 0.7-2.0 MeV, 2.0-12 MeV, and 12-50 MeV, and one CNO box at ~25-250 MeV/n</Description>
       <Caveats>Data and companion documentation (algorithms, geometric factors, etc.) enable calculation of count rates and fluxes</Caveats>
       <Cadence>PT15M</Cadence>
       <Structure>
-         <Size>27</Size>
-         <Description>A set of 27 box counts as described above</Description>
+        <Size>27</Size>
+        <Description>A set of 27 box counts as described above</Description>
       </Structure>
-         <Particle>
-            <ParticleType>Proton</ParticleType>
-            <ParticleType>AlphaParticle</ParticleType>
-            <ParticleQuantity>Counts</ParticleQuantity>
-            <EnergyRange>
-               <Low>11.24</Low>
-               <High>94.78</High>
-               <Units>MeV per n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-</NumericalData>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>AlphaParticle</ParticleType>
+        <ParticleQuantity>Counts</ParticleQuantity>
+        <EnergyRange>
+          <Low>11.24</Low>
+          <High>94.78</High>
+          <Units>MeV per n</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+  </NumericalData>
 </Spase>
