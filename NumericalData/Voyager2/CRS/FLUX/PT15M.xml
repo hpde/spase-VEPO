@@ -2,18 +2,15 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://www.spase-group.org/data/schema"
     xsi:schemaLocation="http://www.spase-group.org/data/schema
-    http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-    <Version>2.2.0</Version> 
-<!-- Is index subelement of Structure element 0-based? -->
-<!-- Can duplicate Name subelements of Parameter element -->
-<!-- exist in a NumericalData resource --> 
+    http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+    <Version>2.2.1</Version> 
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT15M</ResourceID> 
         <ResourceHeader>
             <ResourceName>
                 Voyager-2 CRS Cruise Mode 15-minute averages
             </ResourceName>
-            <ReleaseDate>2010-07-09T00:00:00Z</ReleaseDate>
+            <ReleaseDate>2009-05-20T00:00:00Z</ReleaseDate>
             <Description>
                 15-minute averages of selected fluxes
             </Description>
@@ -25,20 +22,17 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
-                <Name>Top CRS Team web site</Name>
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <Name>Info at CRS Team site</Name>
-                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15M.html</URL>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/pt15m.html</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/GSFC</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/Voyager/CRS</RepositoryID>
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
-                <Name>Data at CRS Team site</Name>
                 <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15M</URL>
             </AccessURL>
             <Format>Text</Format> 
@@ -48,19 +42,20 @@
         <TemporalDescription>
             <TimeSpan>
                 <StartDate>1977-08-24T00:00:00</StartDate> 
-                <StopDate>2008-09-01T00:00:00</StopDate> 
+                <StopDate>2011-10-01T00:00:00</StopDate> 
             </TimeSpan>
             <Cadence>PT15M</Cadence> 
         </TemporalDescription>
-        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion> 
+        <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
         <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
+        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion> 
         <Parameter>
             <Name>Time</Name>
             <Description>
                 ISO 8601 formatted UT of start of 15 minute interval
             </Description>
             <ValidMin>1977-08-24T00:00:00</ValidMin>
-            <ValidMax>2008-09-01T00:00:00</ValidMax>
+            <ValidMax>2011-10-01T00:00:00</ValidMax>
             <FillValue>-1.0E31</FillValue> 
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity> 

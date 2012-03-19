@@ -5,14 +5,14 @@
     http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
     <Version>2.2.1</Version> 
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/Voyager1/CRS/FLUX/PT15M</ResourceID> 
+        <ResourceID>spase://VEPO/NumericalData/Voyager1/CRS/FLUX/P1D</ResourceID> 
         <ResourceHeader>
             <ResourceName>
-                Voyager-1 CRS Cruise Mode 15-minute averages
+                Voyager-1 CRS Cruise Mode daily averages
             </ResourceName>
             <ReleaseDate>2009-05-20T00:00:00Z</ReleaseDate>
             <Description>
-                15-minute averages of selected fluxes
+                daily averages of selected fluxes
             </Description>
             <Acknowledgement>
                 Please acknowledge the Voyager CRS team
@@ -33,7 +33,7 @@
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
-                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT15M</URL>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/P1D</URL>
             </AccessURL>
             <Format>Text</Format> 
         </AccessInformation>
@@ -44,7 +44,7 @@
                 <StartDate>1977-09-07T00:00:00</StartDate> 
                 <StopDate>2011-10-01T00:00:00</StopDate> 
             </TimeSpan>
-            <Cadence>PT15M</Cadence> 
+            <Cadence>P1D</Cadence> 
         </TemporalDescription>
         <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
         <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
@@ -52,7 +52,7 @@
         <Parameter>
             <Name>Time</Name>
             <Description>
-                ISO 8601 formatted UT of start of 15 minute interval
+                ISO 8601 formatted UT of start of daily interval
             </Description>
             <ValidMin>1977-09-07T00:00:00</ValidMin>
             <ValidMax>2011-10-01T00:00:00</ValidMax>

@@ -2,18 +2,15 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://www.spase-group.org/data/schema"
     xsi:schemaLocation="http://www.spase-group.org/data/schema
-    http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-    <Version>2.2.0</Version> 
-<!-- Is index subelement of Structure element 0-based? -->
-<!-- Can duplicate Name subelements of Parameter element -->
-<!-- exist in a NumericalData resource --> 
+    http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+    <Version>2.2.1</Version> 
     <NumericalData>
-           <ResourceID>spase://VEPO/NumericalData/Voyager1/CRS/FLUX/PT6H</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/Voyager1/CRS/FLUX/PT6H</ResourceID> 
         <ResourceHeader>
             <ResourceName>
                 Voyager-1 CRS Cruise Mode 6-hour averages
             </ResourceName>
-            <ReleaseDate>2010-07-09T21:52:14Z</ReleaseDate>
+            <ReleaseDate>2008-09-15T00:00:00Z</ReleaseDate>
             <Description>
                 6-hour averages of selected fluxes
             </Description>
@@ -25,34 +22,33 @@
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
-                <Name>Voyager CRS Team Web Site</Name>
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <Name>Readme at nssdcftp</Name>
                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour/vy1crs_6h_fmt.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/Voyager/CRS</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT6H</URL>
+                <Description>Contains data starting 2008/1/1. Earlier data available at the URL contained in the following AccessInformation element</Description>
+            </AccessURL>
+            <Format>Text</Format>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NSSDC</RepositoryID>
             <Availability>Online</Availability> 
             <AccessRights>Open</AccessRights> 
             <AccessURL>
-                <Name>nssdcftp</Name>
                 <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour</URL>
-                <Description>FTP access to annual ASCII files</Description>
+                <Description>Contains data upto 2008/1/1. Later data available at the URL contained in the preceding AccessInformation element</Description>
             </AccessURL>
             <AccessURL>
-                <Name>Voyager CRS Team Web Page for 6-Hr Fluxes</Name>
-                <URL>http://voyager.gsfc.nasa.gov/heliopause/heliopause/archive.html</URL>
-                <Description>Flux Listings of user-selected species, energy band and
-                    time span</Description>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT6H</URL>
             </AccessURL>
-	    <AccessURL>
- 		<Name>FTPBrowser</Name>
-		<URL>http://ftpbrowser.gsfc.nasa.gov/vy1_crs_6h_flux.html</URL>
-		<Description>Flux plots and lists of fluxes for user-selected species, energy band and time span</Description>
-	    </AccessURL>
             <Format>Text</Format> 
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager1/CRS</InstrumentID> 
@@ -60,19 +56,20 @@
         <TemporalDescription>
             <TimeSpan>
                 <StartDate>1977-09-05T00:00:00</StartDate> 
-                <StopDate>2007-01-01T00:00:00</StopDate> 
+                <StopDate>2011-10-01T00:00:00</StopDate> 
             </TimeSpan>
             <Cadence>PT6H</Cadence> 
         </TemporalDescription>
+        <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
         <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
-        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion>
+        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion> 
         <Parameter>
             <Name>Time</Name>
             <Description>
                 ISO 8601 formatted UT of start of 6 hour interval
             </Description>
             <ValidMin>1977-09-05T00:00:00</ValidMin>
-            <ValidMax>2007-01-01T00:00:00</ValidMax>
+            <ValidMax>2011-10-01T00:00:00</ValidMax>
             <FillValue>-1.0E31</FillValue> 
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity> 
