@@ -59,7 +59,7 @@ Dr. Nand Lal</Acknowledgement>
       </AccessURL>
       <AccessURL>
          <Name>OMNIWeb-Plus</Name>
-         <URL>http://ftpbrowser.gsfc.nasa.gov/helios2_e7_30min.html/</URL>
+         <URL>http://ftpbrowser.gsfc.nasa.gov/helios2_e7_30min.html</URL>
          <Description>Primary parameters of data product, with graphical display</Description>
       </AccessURL>
       <Format>Text</Format>
