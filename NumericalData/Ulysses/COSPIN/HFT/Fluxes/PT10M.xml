@@ -33,7 +33,7 @@
            The Ulysses cosmic ray and solar particle investigation
          </Name>
          <URL>
-           http://helio.estec.esa.nl/ulysses/ftp/cdroms/uls_02_a/Docs/Cospin/cospin.htm
+            ftp://www.rssd.esa.int/pub/ulysses/cdroms/uls_02_a/docs/cospin/cospin.htm
          </URL>
          <Description>
            Published (J.A. Simpson et al., Astron. Astrophys. v92, pp365-399, 1992) description 
@@ -46,7 +46,7 @@
            COSPIN/HFT User Notes
          </Name>
          <URL>
-           http://helio.estec.esa.nl/ulysses/archive/cospin_hft_un.html
+           http://www.rssd.esa.int/helio/archive/cospin_hft_un.html
          </URL>
          <Description>
            Identification of data channels archived and brief discussion of data structure
