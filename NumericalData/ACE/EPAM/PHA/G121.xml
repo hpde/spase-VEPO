@@ -2,7 +2,7 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
   <Version>2.0.0</Version>
   <NumericalData>
-    <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/PHA/G94</ResourceID>
+    <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/PHA/G121</ResourceID>
     <ResourceHeader>
       <ResourceName>ACE:EPAM PHA Event Data</ResourceName>
       <AlternateName>EPAM-PHA-EVENT</AlternateName>
@@ -28,7 +28,7 @@
         </Description>
       </InformationURL>
       <Association>
-        <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/PHA/G93</AssociationID>
+        <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/PHA/G120</AssociationID>
       </Association>
     </ResourceHeader>
     <AccessInformation>
