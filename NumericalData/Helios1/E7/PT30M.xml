@@ -62,6 +62,12 @@ Dr. Nand Lal</Acknowledgement>
          <URL>http://ftpbrowser.gsfc.nasa.gov/helios1_e7_30min.html</URL>
          <Description>Primary parameters of data product, with graphical display</Description>
       </AccessURL>
+      <AccessURL>
+         <Name>Multi-Source Spectral Plot</Name>
+         <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
+         <Description>Spectral plots and power law fits for arbitrary
+            durations</Description>
+      </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>The late Dr. James H. Trainor and Dr. Nand Lal, 
 plus GSFC's Space Physics Data Facility</Acknowledgement>

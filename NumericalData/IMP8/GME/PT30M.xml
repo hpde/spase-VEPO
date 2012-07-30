@@ -4,7 +4,7 @@
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/GME/PT30M</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP8 GME 30-min energetic particle rates and fluxes</ResourceName>
+      <ResourceName>IMP 8 GME 30-min energetic particle rates and fluxes</ResourceName>
       <ReleaseDate>2009-09-16T00:00:00</ReleaseDate>
       <Description>This CDAWeb-accessible data set contains 30-minute, 
 spin-averaged count rates and fluxes, and their statistical uncertainties, 
@@ -12,7 +12,8 @@ of energetic particles from the IMP8 GME experiment.  Included are fluxes
 of: protons in 30 energy bins from 0.88-1.15 to 327-485 MeV; alpha particles 
 in 21 energy bins from 1.14-1.36 to 63.3-81.0 MeV/n; and 0.3-18 MeV electrons.  
 Also included are count rates for each of 7 sensors and for 11 multi-sensor 
-coincidence modes.</Description>
+coincidence modes. Proton and alpha particle fluxes, for every other energy bin,
+are given at the FTPBrowser and MSSP interfaces identified below.</Description>
       <Acknowledgement>Acknowledge Robert E. McGuire, the PI.</Acknowledgement>
       <Contact>
          <PersonID>spase://SMWG/Person/Robert.E.McGuire</PersonID>
@@ -47,6 +48,25 @@ coincidence modes.</Description>
          <Units>MB</Units>
       </DataExtent>
       <Acknowledgement>Acknowledge Robert E. McGuire, the PI, and CDAWeb</Acknowledgement>
+   </AccessInformation>
+   <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+         <Name>FTPBrowser</Name>
+         <URL>http://ftpbrowser.gsfc.nasa.gov/imp8_gme_30m.html</URL>
+         <Description>Subset, plot and list H and He fluxes</Description>
+      </AccessURL>
+      <AccessURL>
+         <Name>Multi-Source Spectral Plot</Name>
+         <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
+         <Description>Spectral plots and power law fits for arbitrary
+            durations for H and He fluxes</Description>
+      </AccessURL>
+      <Format>Text</Format>
+      <Acknowledgement>Acknowledge Robert E. McGuire, the PI, SPDF and
+         the service used</Acknowledgement>
    </AccessInformation>
    <InstrumentID>spase://SMWG/Instrument/IMP8/MCGUIRE</InstrumentID>
    <MeasurementType>EnergeticParticles</MeasurementType>

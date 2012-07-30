@@ -7,7 +7,7 @@ http://www.spase-group.org/data/schema/spase-2_2_1.xsd"
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/EECA/PT11M</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP 8 U. Md. EECA 10.92m Rates, PHA</ResourceName>
+      <ResourceName>IMP 8 UMD EECA 10.92m Rates, PHA</ResourceName>
       <ReleaseDate>2009-04-22T00:00:00</ReleaseDate>
       <Description>This data set, from the Electrostatic Energy-Charge
 Analyzer (EECA) part of the U. Maryland experiment on IMP 8, contains 

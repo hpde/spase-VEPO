@@ -38,6 +38,16 @@ Kiel</Acknowledgement>
          <Name>nssdcftp</Name>
          <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/helios/helios1/particle/e6_kunow/</URL>
       </AccessURL>
+      <AccessURL>
+         <Name>FTPBrowser</Name>
+         <URL>http://ftpbrowser.gsfc.nasa.gov/helios1_e6_1hr.html</URL>
+         <Description>Subset, plot, and/or list fluxes</Description>
+      </AccessURL>
+      <AccessURL>
+         <Name>Multi-Source Spectral Plot</Name>
+         <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
+         <Description>Spectral plots and power law fits for arbitrary durations</Description>
+      </AccessURL>
       <Format>Text</Format>
       <DataExtent>
          <Quantity>29</Quantity>

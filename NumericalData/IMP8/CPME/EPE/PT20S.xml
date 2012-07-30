@@ -6,7 +6,7 @@
 <NumericalData>
    <ResourceID>spase://VEPO/NumericalData/IMP8/CPME/EPE/PT20S</ResourceID>
    <ResourceHeader>
-      <ResourceName>IMP 8 Merge Data Set</ResourceName>
+      <ResourceName>IMP 8 CPME EPE MAG PLS Merge Data Set</ResourceName>
       <ReleaseDate>2009-02-04T00:00:00</ReleaseDate>
       <Description>This data set contains 20.48s IMP8 CPME and EPE energetic 
 particle data, along with IMP8 magnetic field and plasma data to facilitate use 
