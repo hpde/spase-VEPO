@@ -39,17 +39,21 @@
             <Format>Text</Format>
         </AccessInformation>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NSSDC</RepositoryID>
-            <Availability>Online</Availability> 
-            <AccessRights>Open</AccessRights> 
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
             <AccessURL>
-                <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/crs/six_hour</URL>
-                <Description>Contains data upto 2008/1/1. Later data available at the URL contained in the preceding AccessInformation element</Description>
+                <Name>FTPBrowser</Name>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/vy1_crs_6h_flux.html</URL>
+                <Description>For subsets, plots and lists</Description>
             </AccessURL>
             <AccessURL>
-                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-1/PT6H</URL>
+                <Name>Multi Source Spectral Plot</Name>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
+                <Description>For spectral plots of 6-hour or longer
+                    resolution</Description>
             </AccessURL>
-            <Format>Text</Format> 
+            <Format>Text</Format>
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager1/CRS</InstrumentID> 
         <MeasurementType>EnergeticParticles</MeasurementType>
