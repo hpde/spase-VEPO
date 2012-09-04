@@ -1,93 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.spase-group.org/data/schema"
-    xsi:schemaLocation="http://www.spase-group.org/data/schema
-    http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-    <Version>2.2.1</Version> 
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema     http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version> 
+<!-- Is index subelement of Structure element 0-based? -->
+<!-- Can duplicate Name subelements of Parameter element -->
+<!-- exist in a NumericalData resource -->
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT6H</ResourceID> 
+        <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT15M</ResourceID>
         <ResourceHeader>
-            <ResourceName>
-                Voyager-2 CRS Cruise Mode 6-hour averages
-            </ResourceName>
-            <ReleaseDate>2008-09-15T00:00:00Z</ReleaseDate>
-            <Description>
-                6-hour averages of selected fluxes
-            </Description>
-            <Acknowledgement>
-                Please acknowledge the Voyager CRS team
-            </Acknowledgement>
+            <ResourceName>Voyager 2 CRS Cruise Mode 15-minute averages</ResourceName>
+            <ReleaseDate>2012-02-07T00:00:00Z</ReleaseDate>
+            <Description>15-minute averages of selected fluxes</Description>
+            <Acknowledgement>Please acknowledge the Voyager CRS team</Acknowledgement>
             <Contact>
                 <PersonID>spase://SMWG/Person/Nand.Lal</PersonID>
                 <Role>CoInvestigator</Role>
             </Contact>
             <InformationURL>
+                <Name>Voyager CRS Team web site</Name>
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/crs/six_hour/vy2crs_6h_fmt.txt</URL>
+                <Name>Info at Voyager 2 CRS Team site</Name>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15M.html</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/Voyager/CRS</RepositoryID>
-            <Availability>Online</Availability> 
-            <AccessRights>Open</AccessRights> 
-            <AccessURL>
-                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT6H</URL>
-                <Description>Contains data starting 2008/1/1. Earlier data available at the URL contained in the following AccessInformation element</Description>
-            </AccessURL>
-            <Format>Text</Format> 
-        </AccessInformation>
-        <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>FTPBrowser</Name>
-                <URL>http://ftpbrowser.gsfc.nasa.gov/vy2_crs_6h_flux.html</URL>
-                <Description>For subsets, plots and lists</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>Multi Source Spectral Plot</Name>
-                <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
-                <Description>For spectral plots of 6-hour or longer
-                    resolution</Description>
+                <Name>Voyager 2 CRS Team Archive</Name>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15M</URL>
             </AccessURL>
             <Format>Text</Format>
         </AccessInformation>
-        <InstrumentID>spase://SMWG/Instrument/Voyager2/CRS</InstrumentID> 
+        <InstrumentID>spase://SMWG/Instrument/Voyager2/CRS</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
-                <StartDate>1977-08-22T00:00:00</StartDate> 
-                <StopDate>2011-10-01T00:00:00</StopDate> 
+                <StartDate>1977-08-24T00:00:00</StartDate>
+                <StopDate>2011-09-30T00:00:00</StopDate>
             </TimeSpan>
-            <Cadence>PT6H</Cadence> 
+            <Cadence>PT15M</Cadence>
         </TemporalDescription>
-        <ObservedRegion>Heliosphere.Inner</ObservedRegion> 
-        <ObservedRegion>Heliosphere.Outer</ObservedRegion> 
-        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion> 
+        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion>
+        <ObservedRegion>Heliosphere.Outer</ObservedRegion>
         <Parameter>
             <Name>Time</Name>
-            <Description>
-                ISO 8601 formatted UT of start of 6 hour interval
-            </Description>
-            <ValidMin>1977-08-22T00:00:00</ValidMin>
-            <ValidMax>2007-10-01T00:00:00</ValidMax>
-            <FillValue>-1.0E31</FillValue> 
+            <Description>ISO 8601 formatted UT of start of 15 minute interval</Description>
+            <ValidMin>1977-08-24T00:00:00</ValidMin>
+            <ValidMax>2008-09-01T00:00:00</ValidMax>
+            <FillValue>-1.0E31</FillValue>
             <Support>
-                <SupportQuantity>Temporal</SupportQuantity> 
+                <SupportQuantity>Temporal</SupportQuantity>
             </Support>
         </Parameter>
+
 <!-- parameter section -->
         <Parameter>
-            <Name>4.2 - 6 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX1</ParameterKey> 
-            <Description>
-                Helium4 flux derived from A-stopping 2 dimensional
-                analysis, high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>4.2 - 6 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX1</ParameterKey>
+            <Description>Helium4 flux derived from A-stopping 2 dimensional
+
+                analysis, high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -101,27 +76,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>4.2</Low> 
-                        <High>6.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>4.2</Low>
+                    <High>6.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>6 - 42 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX2</ParameterKey> 
-            <Description>
-                Helium4 flux derived from A-stopping 3 dimensional
-                analysis, high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>6 - 42 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX2</ParameterKey>
+            <Description>Helium4 flux derived from A-stopping 3 dimensional
+
+                analysis, high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -135,27 +107,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>6.0</Low> 
-                        <High>42.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>6.0</Low>
+                    <High>42.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>17 - 27 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX3</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, low gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>17 - 27 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX3</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, low gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -169,27 +138,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>17.0</Low> 
-                        <High>27.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>17.0</Low>
+                    <High>27.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>30 - 69 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX4</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, low gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>30 - 69 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX4</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, low gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -203,27 +169,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>30.0</Low> 
-                        <High>69.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30.0</Low>
+                    <High>69.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>17 - 27 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX5</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>17 - 27 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX5</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -237,27 +200,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>17.0</Low> 
-                        <High>27.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>17.0</Low>
+                    <High>27.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>30 - 69 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX6</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>30 - 69 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX6</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -271,27 +231,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>30.0</Low> 
-                        <High>69.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30.0</Low>
+                    <High>69.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>193 - 480 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX7</ParameterKey> 
-            <Description>
-                Helium4 flux derived from low gain penetrating mode
-                data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>193 - 480 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX7</ParameterKey>
+            <Description>Helium4 flux derived from low gain penetrating mode
+
+                data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -305,27 +262,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>193</Low> 
-                        <High>480</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>193</Low>
+                    <High>480</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>191 - 475 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX8</ParameterKey> 
-            <Description>
-                Helium4 flux derived from high gain penetrating mode
-                data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>191 - 475 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX8</ParameterKey>
+            <Description>Helium4 flux derived from high gain penetrating mode
+
+                data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -339,27 +293,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>191</Low> 
-                        <High>475</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>191</Low>
+                    <High>475</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>4.2 - 6 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX1</ParameterKey> 
-            <Description>
-                Proton flux derived from A-stopping 2 dimensional analysis,
-                high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>4.2 - 6 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX1</ParameterKey>
+            <Description>Proton flux derived from A-stopping 2 dimensional analysis,
+
+                high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -373,27 +324,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>4.2</Low> 
-                        <High>6.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>4.2</Low>
+                    <High>6.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>6 - 42 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX2</ParameterKey> 
-            <Description>
-                Proton flux derived from A-stopping 3 dimensional analysis,
-                high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>6 - 42 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX2</ParameterKey>
+            <Description>Proton flux derived from A-stopping 3 dimensional analysis,
+
+                high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -407,27 +355,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>6.0</Low> 
-                        <High>42.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>6.0</Low>
+                    <High>42.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>17 - 27 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX3</ParameterKey> 
-            <Description>
-                Proton flux derived from B-stopping 2 dimensional analysis,
-                high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>17 - 27 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX3</ParameterKey>
+            <Description>Proton flux derived from B-stopping 2 dimensional analysis,
+
+                high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -441,27 +386,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>17.0</Low> 
-                        <High>27.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>17.0</Low>
+                    <High>27.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>30 - 69 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX4</ParameterKey> 
-            <Description>
-                Proton flux derived from B-stopping 3 dimensional analysis,
-                high gain data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>30 - 69 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX4</ParameterKey>
+            <Description>Proton flux derived from B-stopping 3 dimensional analysis,
+
+                high gain data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -475,27 +417,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>30.0</Low> 
-                        <High>69.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30.0</Low>
+                    <High>69.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>133 - 242 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX5</ParameterKey> 
-            <Description>
-                Proton flux derived from high gain penetrating mode
-                data from HET-I
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>133 - 242 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX5</ParameterKey>
+            <Description>Proton flux derived from high gain penetrating mode
+
+                data from HET-I</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -509,27 +448,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>132.8</Low> 
-                        <High>242</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>132.8</Low>
+                    <High>242</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>4.2 - 6 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX9</ParameterKey> 
-            <Description>
-                Helium4 flux derived from A-stopping 2 dimensional
-                analysis, high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>4.2 - 6 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX9</ParameterKey>
+            <Description>Helium4 flux derived from A-stopping 2 dimensional
+
+                analysis, high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -543,27 +479,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>4.2</Low> 
-                        <High>6.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>4.2</Low>
+                    <High>6.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>6 - 42 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX10</ParameterKey> 
-            <Description>
-                Helium4 flux derived from A-stopping 3 dimensional
-                analysis, high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>6 - 42 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX10</ParameterKey>
+            <Description>Helium4 flux derived from A-stopping 3 dimensional
+
+                analysis, high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -577,27 +510,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>6.0</Low> 
-                        <High>42.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>6.0</Low>
+                    <High>42.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>17 - 27 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX11</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, low gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>17 - 27 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX11</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, low gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -611,27 +541,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>17.0</Low> 
-                        <High>27.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>17.0</Low>
+                    <High>27.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>30 - 69 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX12</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, low gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>30 - 69 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX12</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, low gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -645,27 +572,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>30.0</Low> 
-                        <High>69.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30.0</Low>
+                    <High>69.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>17 - 27 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX13</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>17 - 27 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX13</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -679,27 +603,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>17.0</Low> 
-                        <High>27.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>17.0</Low>
+                    <High>27.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>30 - 69 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX14</ParameterKey> 
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>30 - 69 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX14</ParameterKey>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -713,27 +634,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>30.0</Low> 
-                        <High>69.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30.0</Low>
+                    <High>69.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>193 - 480 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX15</ParameterKey> 
-            <Description>
-                Helium4 flux derived from low gain penetrating mode
-                data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>193 - 480 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX15</ParameterKey>
+            <Description>Helium4 flux derived from low gain penetrating mode
+
+                data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -747,27 +665,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>193</Low> 
-                        <High>480</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>193</Low>
+                    <High>480</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>191 - 475 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX16</ParameterKey> 
-            <Description>
-                Helium4 flux derived from high gain penetrating mode
-                data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>191 - 475 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX16</ParameterKey>
+            <Description>Helium4 flux derived from high gain penetrating mode
+
+                data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -781,27 +696,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>191</Low> 
-                        <High>475</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>191</Low>
+                    <High>475</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>4.2 - 6 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX6</ParameterKey> 
-            <Description>
-                Proton flux derived from A-stopping 2 dimensional analysis,
-                high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>4.2 - 6 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX6</ParameterKey>
+            <Description>Proton flux derived from A-stopping 2 dimensional analysis,
+
+                high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -815,27 +727,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>4.2</Low> 
-                        <High>6.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>4.2</Low>
+                    <High>6.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>6 - 42 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX7</ParameterKey> 
-            <Description>
-                Proton flux derived from A-stopping 3 dimensional analysis,
-                high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>6 - 42 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX7</ParameterKey>
+            <Description>Proton flux derived from A-stopping 3 dimensional analysis,
+
+                high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -849,27 +758,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>6.0</Low> 
-                        <High>42.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>6.0</Low>
+                    <High>42.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>17 - 27 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX8</ParameterKey> 
-            <Description>
-                Proton flux derived from B-stopping 2 dimensional analysis,
-                high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>17 - 27 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX8</ParameterKey>
+            <Description>Proton flux derived from B-stopping 2 dimensional analysis,
+
+                high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -883,27 +789,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>17.0</Low> 
-                        <High>27.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>17.0</Low>
+                    <High>27.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>30 - 69 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX9</ParameterKey> 
-            <Description>
-                Proton flux derived from B-stopping 3 dimensional analysis,
-                high gain data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>30 - 69 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX9</ParameterKey>
+            <Description>Proton flux derived from B-stopping 3 dimensional analysis,
+
+                high gain data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -917,27 +820,24 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>30.0</Low> 
-                        <High>69.0</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>30.0</Low>
+                    <High>69.0</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>133 - 242 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX10</ParameterKey> 
-            <Description>
-                Proton flux derived from high gain penetrating mode
-                data from HET-II
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>133 - 242 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX10</ParameterKey>
+            <Description>Proton flux derived from high gain penetrating mode
+
+                data from HET-II</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -951,26 +851,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>132.8</Low> 
-                        <High>242</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>132.8</Low>
+                    <High>242</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 3.3 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX11</ParameterKey> 
-            <Description>
-                Proton flux derived from 2 dimensional LET-A data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 3.3 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX11</ParameterKey>
+            <Description>Proton flux derived from 2 dimensional LET-A data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -984,26 +880,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>3.3</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>3.3</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 3.3 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX12</ParameterKey> 
-            <Description>
-                Proton flux derived from 2 dimensional LET-B data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 3.3 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX12</ParameterKey>
+            <Description>Proton flux derived from 2 dimensional LET-B data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1017,26 +909,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>3.3</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>3.3</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 3.3 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX13</ParameterKey> 
-            <Description>
-                Proton flux derived from 2 dimensional LET-C data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 3.3 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX13</ParameterKey>
+            <Description>Proton flux derived from 2 dimensional LET-C data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1050,26 +938,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>3.3</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>3.3</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 3.3 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX14</ParameterKey> 
-            <Description>
-                Proton flux derived from 2 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 3.3 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX14</ParameterKey>
+            <Description>Proton flux derived from 2 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1083,26 +967,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>3.3</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>3.3</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>3.3 - 8.1 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX15</ParameterKey> 
-            <Description>
-                Proton flux derived from 3 dimensional LET-A data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>3.3 - 8.1 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX15</ParameterKey>
+            <Description>Proton flux derived from 3 dimensional LET-A data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1116,26 +996,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>3.3</Low> 
-                        <High>8.1</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>3.3</Low>
+                    <High>8.1</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>3.3 - 8.1 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX16</ParameterKey> 
-            <Description>
-                Proton flux derived from 3 dimensional LET-B data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>3.3 - 8.1 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX16</ParameterKey>
+            <Description>Proton flux derived from 3 dimensional LET-B data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1149,26 +1025,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>3.3</Low> 
-                        <High>8.1</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>3.3</Low>
+                    <High>8.1</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>3.3 - 8.1 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX17</ParameterKey> 
-            <Description>
-                Proton flux derived from 3 dimensional LET-C data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>3.3 - 8.1 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX17</ParameterKey>
+            <Description>Proton flux derived from 3 dimensional LET-C data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1182,26 +1054,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>3.3</Low> 
-                        <High>8.1</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>3.3</Low>
+                    <High>8.1</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>3.3 - 8.1 MeV Proton Flux</Name> 
-            <ParameterKey>PROTONFLUX18</ParameterKey> 
-            <Description>
-                Proton flux derived from 3 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>3.3 - 8.1 MeV Proton Flux</Name>
+            <ParameterKey>PROTONFLUX18</ParameterKey>
+            <Description>Proton flux derived from 3 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1215,26 +1083,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>Proton</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>3.3</Low> 
-                        <High>8.1</High> 
-                        <Units>MeV</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>3.3</Low>
+                    <High>8.1</High>
+                    <Units>MeV</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX17</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX17</ParameterKey>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1248,26 +1112,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>2.8</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>2.8</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX18</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX18</ParameterKey>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1281,26 +1141,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>2.8</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>2.8</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX19</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX19</ParameterKey>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1314,26 +1170,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>2.8</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>2.8</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX20</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX20</ParameterKey>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1347,26 +1199,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>1.8</Low> 
-                        <High>2.8</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>1.8</Low>
+                    <High>2.8</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX21</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-A data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX21</ParameterKey>
+            <Description>Helium4 flux derived from 3 dimensional LET-A data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1380,26 +1228,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>2.8</Low> 
-                        <High>8.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>2.8</Low>
+                    <High>8.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX22</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-B data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX22</ParameterKey>
+            <Description>Helium4 flux derived from 3 dimensional LET-B data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1413,26 +1257,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>2.8</Low> 
-                        <High>8.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>2.8</Low>
+                    <High>8.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX23</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-C data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX23</ParameterKey>
+            <Description>Helium4 flux derived from 3 dimensional LET-C data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1446,26 +1286,22 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>2.8</Low> 
-                        <High>8.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>2.8</Low>
+                    <High>8.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
         <Parameter>
-            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name> 
-            <ParameterKey>HELIUMFLUX24</ParameterKey> 
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-D data
-            </Description> 
-            <Units>1/(cm^2 s sr MeV)</Units> 
+            <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
+            <ParameterKey>HELIUMFLUX24</ParameterKey>
+            <Description>Helium4 flux derived from 3 dimensional LET-D data</Description>
+            <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
                 <Element>
@@ -1479,18 +1315,16 @@
                     <ValidMin>0</ValidMin>
                 </Element>
             </Structure>
-            
-                <Particle>
-                    <ParticleType>AlphaParticle</ParticleType> 
-                    <Qualifier>Differential</Qualifier> 
-                    <ParticleQuantity>NumberFlux</ParticleQuantity> 
-                    <EnergyRange>
-                        <Low>2.8</Low> 
-                        <High>8.0</High> 
-                        <Units>MeV/nucleon</Units> 
-                    </EnergyRange>
-                </Particle>
-            
+            <Particle>
+                <ParticleType>AlphaParticle</ParticleType>
+                <Qualifier>Differential</Qualifier>
+                <ParticleQuantity>NumberFlux</ParticleQuantity>
+                <EnergyRange>
+                    <Low>2.8</Low>
+                    <High>8.0</High>
+                    <Units>MeV/nucleon</Units>
+                </EnergyRange>
+            </Particle>
         </Parameter>
     </NumericalData>
 </Spase>
