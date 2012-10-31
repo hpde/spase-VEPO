@@ -66,12 +66,12 @@ IEEE Transactions on Geoscience and Remote Sensing, Vol. 31, No. 3, May 1993</De
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>CDAWeb FTP area</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/sampex/pof/</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/sampex/combined_cdaweb/pof/</URL>
             </AccessURL>
             <AccessURL>
-                <Name>CDAWeb HTTP area</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/data/sampex/pof/</URL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/sampex/comvined_cdaweb/pof/</URL>
                 <Description>In CDF via HTTP from CDAWeb</Description>
             </AccessURL>
 	    <Format>CDF</Format>

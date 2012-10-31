@@ -33,8 +33,13 @@ of Universitat Kiel</Acknowledgement>
          <Description>With subset, plot and ASCII list functions from CDAWeb</Description>
       </AccessURL>
       <AccessURL>
-         <Name>in CDF via ftp from CDAWeb</Name>
-         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/soho/cost</URL>
+         <Name>SPDF FTP area</Name>
+         <URL>ftp://spdf.gsfc.nasa.gov/pub/data/soho/cost</URL>
+      </AccessURL>
+      <AccessURL>
+         <Name>SPDF HTTP area</Name>
+         <URL>http://spdf.gsfc.nasa.gov/pub/data/soho/cost</URL>
+         <Description>In CDF via HTTP from SPDF</Description>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>

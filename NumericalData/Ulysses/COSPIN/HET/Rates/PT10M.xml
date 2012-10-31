@@ -1,5 +1,4 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
     <Version>2.2.1</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/HET/Rates/PT10M</ResourceID>
@@ -80,9 +79,14 @@
                 <Description>subset, plot, list via CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ulysses/particle/cospin/het/10min_spinavg/</URL>
+                <Name>SPDF FTP area (originally nssdcftp area) </Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/het/10min_spinavg/</URL>
                 <Description>via ftp in ASCII from nssdcftp.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/het/10min_spinavg/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
             <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
@@ -92,9 +96,14 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>CDAWeb FTP area</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/het/</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/het/</URL>
                 <Description>via ftp in CDF from SPDF.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/het/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
             <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>

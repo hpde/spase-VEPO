@@ -1,5 +1,4 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
     <Version>2.2.1</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/AT/Fluxes/PT10M</ResourceID>
@@ -146,14 +145,24 @@
                 <Description>subset, plot, list via CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>nssdcftp, AT1</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ulysses/particle/cospin/at1/10min_new/</URL>
-                <Description>AT1 data via ftp in ASCII from nssdcftp.</Description>
+                <Name>AT1 data from SPDF FTP area (originally nssdcftp area) </Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at1/10min_new/</URL>
+                <Description>AT1 data via ftp in ASCII from SPDF.</Description>
             </AccessURL>
             <AccessURL>
-                <Name>nssdcftp, AT2</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ulysses/particle/cospin/at2/10min_new/</URL>
-                <Description>AT2 data via ftp in ASCII from nssdcftp.</Description>
+                <Name>AT1 data from SPDF HTTP area (originally nssdcftp area)</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at1/10min_new/</URL>
+                <Description>AT1 data via http in ASCII from SPDF.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>AT2 data from SPDF FTP area (originally nssdcftp area) </Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at2/10min_new/</URL>
+                <Description>AT2 data via ftp in ASCII from SPDF.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>AT2 data from SPDF HTTP area (originally nssdcftp area)</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at2/10min_new/</URL>
+                <Description>AT1 data via http in ASCII from SPDF.</Description>
             </AccessURL>
             <Format>Text</Format>
             <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
@@ -163,14 +172,24 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>CDAWeb FTP area, AT1</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/at1/</URL>
+                <Name>AT1 data from SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at1/</URL>
                 <Description>AT1 data via ftp in CDF from SPDF.</Description>
             </AccessURL>
             <AccessURL>
-                <Name>CDAWeb FTP area, AT2</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/at2/</URL>
+                <Name>AT1 data from SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at1/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>AT2 data from SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at2/</URL>
                 <Description>AT2 data via ftp in CDF from SPDF.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>AT2 data from SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at2/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
             <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>

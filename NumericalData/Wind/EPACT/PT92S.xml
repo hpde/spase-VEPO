@@ -25,7 +25,7 @@ and 1-10 MeV electrons, each averaged over 92 seconds.</Description>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>FTP access to daily CDF files at CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/wind/epact/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/wind/epact/epact_k0</URL>
       </AccessURL>
       <AccessURL>
         <Name>CDAWeb</Name>

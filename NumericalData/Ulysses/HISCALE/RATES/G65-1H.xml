@@ -59,7 +59,7 @@
         <AccessRights>Open</AccessRights>
         <AccessURL>
             <Name>CDAWeb ftp area</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/ulysses/</URL>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/ulysses/</URL>
             <Description>
                The parameters described below are available at CDAWeb; however, they are 
                distributed across 5 data sets. These data sets are available in the following 
