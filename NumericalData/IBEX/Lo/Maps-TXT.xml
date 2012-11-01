@@ -30,8 +30,8 @@ separate data product.</Description>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-         <Name>nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/ibex/lo/maps/digital_data/</URL>
+         <Name>SPDF</Name>
+         <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/lo/maps/digital_data/</URL>
          <Description>Directory with energy-range-specific subdirectories</Description>
       </AccessURL>
       <Format>Text</Format>

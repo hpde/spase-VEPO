@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
     <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager1/LECP/Rates.P1D</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager1 LECP Average Filtered Rate Data in ASCII Format daily</ResourceName>
+            <ResourceName>Voyager 1 LECP Average Filtered Rate Data in ASCII Format daily</ResourceName>
             <AlternateName>V1-LECP-RATES--PT24H</AlternateName>
             <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
             <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
@@ -31,7 +28,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://VEPO/Repository/JHU-APL/Voyager-LECP</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/JHU_APL</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
@@ -41,7 +38,7 @@
             </AccessURL>
             <Format>Text</Format>
             <Encoding>GZIP</Encoding>
-            <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
+            <Acknowledgement>S.M. Krimigis, JHU/APL</Acknowledgement>
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager1/LECP</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
@@ -58,7 +55,7 @@
             <Name>Start Time of Data Record</Name>
             <ParameterKey>StartTime</ParameterKey>
             <Description>Start Time for the record given in year, day of
-				year, hour, min, and seconds. </Description>
+				year, hour, min, and seconds.</Description>
             <Cadence>PT24H</Cadence>
             <Structure>
                 <Size>5</Size>

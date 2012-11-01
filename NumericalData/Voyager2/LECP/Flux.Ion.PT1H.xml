@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
     <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager2/LECP/Flux.Ion.PT1H</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager2 LECP Key Channel Intensities in ASCII Format hourly</ResourceName>
+            <ResourceName>Voyager 2 LECP Key Channel Intensities in ASCII Format hourly</ResourceName>
             <AlternateName>V2-LECP-KEYFLUX-PT1H</AlternateName>
             <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
             <Description>Count Rates, Averaged Over All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT1H</Description>
@@ -30,7 +27,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://VEPO/Repository/JHU-APL/Voyager-LECP</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/JHU_APL</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
@@ -40,16 +37,21 @@
             </AccessURL>
             <Format>Text</Format>
             <Encoding>GZIP</Encoding>
-            <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
+            <Acknowledgement>S.M. Krimigis, JHU/APL</Acknowledgement>
         </AccessInformation>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/lecp/v2_ion_flux_1hour/</URL>
-                <Description>ftp access to annual ASCII files</Description>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/lecp/v2_ion_flux_1hour/</URL>
+                <Description>http access to annual ASCII files</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/lecp/v2_ion_flux_1hour/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
             <Acknowledgement>S.M. Krimigis, JHU/APL, and the Space Physics Data Facility</Acknowledgement>
@@ -69,7 +71,7 @@
             <Name>Start Time of Data Record</Name>
             <ParameterKey>StartTime</ParameterKey>
             <Description>Start Time for the record given in year, day of
-				year, hour. </Description>
+				year, hour.</Description>
             <Cadence>PT1H</Cadence>
             <Structure>
                 <Size>3</Size>
@@ -117,7 +119,7 @@
         <Parameter>
             <Name>PL01 Flux</Name>
             <ParameterKey>PL01_FLUX</ParameterKey>
-            <Description>PL01 Ion Flux </Description>
+            <Description>PL01 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -152,7 +154,7 @@
         <Parameter>
             <Name>PL02 Flux</Name>
             <ParameterKey>PL02_FLUX</ParameterKey>
-            <Description>PL02 Ion Flux </Description>
+            <Description>PL02 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -187,7 +189,7 @@
         <Parameter>
             <Name>PL03 Flux</Name>
             <ParameterKey>PL03_FLUX</ParameterKey>
-            <Description>PL03 Ion Flux </Description>
+            <Description>PL03 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -222,7 +224,7 @@
         <Parameter>
             <Name>PL04 Flux</Name>
             <ParameterKey>PL04_FLUX</ParameterKey>
-            <Description>PL04 Ion Flux </Description>
+            <Description>PL04 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -257,7 +259,7 @@
         <Parameter>
             <Name>PL05 Flux</Name>
             <ParameterKey>PL05_FLUX</ParameterKey>
-            <Description>PL05 Ion Flux </Description>
+            <Description>PL05 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -292,7 +294,7 @@
         <Parameter>
             <Name>PL06 Flux</Name>
             <ParameterKey>PL06_FLUX</ParameterKey>
-            <Description>PL06 Ion Flux </Description>
+            <Description>PL06 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -327,7 +329,7 @@
         <Parameter>
             <Name>PL07 Flux</Name>
             <ParameterKey>PL07_FLUX</ParameterKey>
-            <Description>PL07 Ion Flux </Description>
+            <Description>PL07 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>
@@ -362,7 +364,7 @@
         <Parameter>
             <Name>PL08 Flux</Name>
             <ParameterKey>PL08_FLUX</ParameterKey>
-            <Description>PL08 Ion Flux </Description>
+            <Description>PL08 Ion Flux</Description>
             <Cadence>PT1H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <FillValue>-1</FillValue>

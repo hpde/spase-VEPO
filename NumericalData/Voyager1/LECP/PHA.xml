@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>2.0.3</Version>
+    <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager1/LECP/PHA</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager1 LECP PHA Events in ASCII</ResourceName>
+            <ResourceName>Voyager 1 LECP PHA Events in ASCII</ResourceName>
             <AlternateName>V1-LECP-PHA</AlternateName>
             <ReleaseDate>2011-01-09T00:00:00.000</ReleaseDate>
             <ExpirationDate>2100-12-01T00:00:00.000</ExpirationDate>
@@ -29,7 +28,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://VEPO/Repository/JHU-APL/Voyager-LECP</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/JHU_APL</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
@@ -40,7 +39,7 @@
             </AccessURL>
             <Format>Text</Format>
             <Encoding>GZIP</Encoding>
-            <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
+            <Acknowledgement>S.M. Krimigis, JHU/APL</Acknowledgement>
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Voyager1/LECP</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
@@ -54,7 +53,7 @@
         <Parameter>
             <Name>Packet Creation Time of Event</Name>
             <ParameterKey>Epoch</ParameterKey>
-            <Description>Packet creation time (precise event time is not available) for the PHA Event given in YYYY-DDDTHH:MM:SS.SSS format. </Description>
+            <Description>Packet creation time (precise event time is not available) for the PHA Event given in YYYY-DDDTHH:MM:SS.SSS format.</Description>
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity>
             </Support>

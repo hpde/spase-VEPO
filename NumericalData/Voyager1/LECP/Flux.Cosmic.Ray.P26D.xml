@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
     <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager1/LECP/Flux.Cosmic.Ray.P26D</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager1 LECP Cosmic Ray Proton Rates in ASCII Format 26-day</ResourceName>
+            <ResourceName>Voyager 1 LECP Cosmic Ray Proton Rates in ASCII Format 26-day</ResourceName>
             <AlternateName>V1-LECP-COSMICRATES-P26D</AlternateName>
             <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
             <Description>Count Rates, Averaged Over All Sectors, Voyager1, LECP, Filtered, Channel, Calibrated, CadenceP26D</Description>
@@ -30,7 +27,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://VEPO/Repository/JHU-APL/Voyager-LECP</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/JHU_APL</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
@@ -40,16 +37,21 @@
             </AccessURL>
             <Format>Text</Format>
             <Encoding>GZIP</Encoding>
-            <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
+            <Acknowledgement>S.M. Krimigis, JHU/APL</Acknowledgement>
         </AccessInformation>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager1/particle/lecp/v1_cosray_rate_26day/v1_cosray_rate_26d.txt</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/v1_cosray_rate_26day/v1_cosray_rate_26d.txt</URL>
                 <Description>ftp access to single ASCII file</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/v1_cosray_rate_26day/v1_cosray_rate_26d.txt</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
             <Acknowledgement>S.M. Krimigis, JHU/APL, and the Space Physics Data Facility</Acknowledgement>
@@ -69,7 +71,7 @@
             <Name>Start Time of Data Record</Name>
             <ParameterKey>StartTime</ParameterKey>
             <Description>Start Time for the record given in year, day of
-				year, hour. </Description>
+				year, hour.</Description>
             <Cadence>P26D</Cadence>
             <Structure>
                 <Size>3</Size>
@@ -108,7 +110,7 @@
         <Parameter>
             <Name>Cosmic Ray Rate</Name>
             <ParameterKey>EB05_RATE</ParameterKey>
-            <Description>Channel EB05 (Cosmic Ray Proton) Rate </Description>
+            <Description>Channel EB05 (Cosmic Ray Proton) Rate</Description>
             <Cadence>P26D</Cadence>
             <Units>counts/second</Units>
             <FillValue>-9.900E+01</FillValue>
@@ -120,7 +122,7 @@
         <Parameter>
             <Name>Cosmic Ray Rate Uncertainty</Name>
             <ParameterKey>EB05_RATEU</ParameterKey>
-            <Description>Channel EB05 (Cosmic Ray Proton) Rate </Description>
+            <Description>Channel EB05 (Cosmic Ray Proton) Rate</Description>
             <Cadence>P26D</Cadence>
             <Units>counts/second</Units>
             <FillValue>-9.900E+01</FillValue>

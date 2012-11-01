@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
     <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager2/LECP/Flux.Ion.Sectored.PT3H</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager2 LECP Key Channel Intensities By Sector in ASCII Format 3-hour</ResourceName>
+            <ResourceName>Voyager 2 LECP Key Channel Intensities By Sector in ASCII Format 3-hour</ResourceName>
             <AlternateName>V2-LECP-KEYFLUX-SECTORED-PT3H</AlternateName>
             <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
             <Description>Count Rates, For All Sectors, Voyager2, LECP, Filtered, Channel, Calibrated, CadencePT3H</Description>
@@ -30,7 +27,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://VEPO/Repository/JHU-APL/Voyager-LECP</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/JHU_APL</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
@@ -40,16 +37,21 @@
             </AccessURL>
             <Format>Text</Format>
             <Encoding>GZIP</Encoding>
-            <Acknowledgement>S.M. Krimigis, JHU/APL </Acknowledgement>
+            <Acknowledgement>S.M. Krimigis, JHU/APL</Acknowledgement>
         </AccessInformation>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/voyager/voyager2/particle/lecp/v2_ion_flux_3hour/</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/lecp/v2_ion_flux_3hour/</URL>
                 <Description>ftp access to annual non-zipped ASCII files</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/lecp/v2_ion_flux_3hour/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
             <Acknowledgement>S.M. Krimigis, JHU/APL, and the Space Physics Data Facility</Acknowledgement>
@@ -69,7 +71,7 @@
             <Name>Start Time of Data Record</Name>
             <ParameterKey>StartTime</ParameterKey>
             <Description>Start Time for the record given in year, day of
-				year, hour. </Description>
+				year, hour.</Description>
             <Cadence>PT3H</Cadence>
             <Structure>
                 <Size>5</Size>
@@ -138,7 +140,7 @@
         <Parameter>
             <Name>PL01 Flux</Name>
             <ParameterKey>PL01_FLUX</ParameterKey>
-            <Description>PL01 Ion Flux </Description>
+            <Description>PL01 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -230,7 +232,7 @@
         <Parameter>
             <Name>PL02 Flux</Name>
             <ParameterKey>PL02_FLUX</ParameterKey>
-            <Description>PL02 Ion Flux </Description>
+            <Description>PL02 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -322,7 +324,7 @@
         <Parameter>
             <Name>PL03 Flux</Name>
             <ParameterKey>PL03_FLUX</ParameterKey>
-            <Description>PL03 Ion Flux </Description>
+            <Description>PL03 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -414,7 +416,7 @@
         <Parameter>
             <Name>PL04 Flux</Name>
             <ParameterKey>PL04_FLUX</ParameterKey>
-            <Description>PL04 Ion Flux </Description>
+            <Description>PL04 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -506,7 +508,7 @@
         <Parameter>
             <Name>PL05 Flux</Name>
             <ParameterKey>PL05_FLUX</ParameterKey>
-            <Description>PL05 Ion Flux </Description>
+            <Description>PL05 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -598,7 +600,7 @@
         <Parameter>
             <Name>PL06 Flux</Name>
             <ParameterKey>PL06_FLUX</ParameterKey>
-            <Description>PL06 Ion Flux </Description>
+            <Description>PL06 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -690,7 +692,7 @@
         <Parameter>
             <Name>PL07 Flux</Name>
             <ParameterKey>PL07_FLUX</ParameterKey>
-            <Description>PL07 Ion Flux </Description>
+            <Description>PL07 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>
@@ -782,7 +784,7 @@
         <Parameter>
             <Name>PL08 Flux</Name>
             <ParameterKey>PL08_FLUX</ParameterKey>
-            <Description>PL08 Ion Flux </Description>
+            <Description>PL08 Ion Flux</Description>
             <Cadence>PT3H</Cadence>
             <Units>Ions/(cm^2 sec ster MeV)</Units>
             <Structure>

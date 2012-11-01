@@ -27,7 +27,7 @@ and the GSFC Space Physics Data Facility.</Acknowledgement>
             </InformationURL>
             <InformationURL>
                 <Name>Readme at SPDF</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/ip_1hour_ascii/aareadme.txt</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer11/particle/gtt/ip_1hour_ascii/aareadme.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -39,8 +39,13 @@ and the GSFC Space Physics Data Facility.</Acknowledgement>
                 <URL>http://ftpbrowser.gsfc.nasa.gov/p11_part_gtt_1h.html</URL>
             </AccessURL>
             <AccessURL>
-                <Name>ASCII ftp site at SPDF</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/pioneer/pioneer11/particle/gtt/ip_1hour_ascii/</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer11/particle/gtt/ip_1hour_ascii/</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/pioneer/pioneer11/particle/gtt/ip_1hour_ascii/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
             <DataExtent>

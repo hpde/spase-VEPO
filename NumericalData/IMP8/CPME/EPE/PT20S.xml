@@ -69,8 +69,8 @@ accessing data from APL.</Acknowledgement>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-         <Name>nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/particles_apl/merge_20s_ascii/</URL>
+         <Name>SPDF</Name>
+         <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_apl/merge_20s_ascii/</URL>
          <Description>gzipped ASCII daily files via ftp from NSSDC</Description>
       </AccessURL>
       <AccessURL>
