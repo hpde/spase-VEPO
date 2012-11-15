@@ -1,16 +1,15 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema     http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-    <Version>2.2.1</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema     http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version> 
+<!-- Is index subelement of Structure element 0-based? -->
+<!-- Can duplicate Name subelements of Parameter element -->
+<!-- exist in a NumericalData resource -->
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT6H</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT15M</ResourceID>
         <ResourceHeader>
-            <ResourceName>Voyager 2 CRS Cruise Mode 6-hour averages</ResourceName>
-            <ReleaseDate>2008-09-15T00:00:00Z</ReleaseDate>
-            <Description>
-                6-hour averages of selected fluxes
-            </Description>
-            <Acknowledgement>
-                Please acknowledge the Voyager CRS team
-            </Acknowledgement>
+            <ResourceName>Voyager 2 CRS Cruise Mode 15-minute averages</ResourceName>
+            <ReleaseDate>2012-02-07T00:00:00Z</ReleaseDate>
+            <Description>15-minute averages of selected fluxes</Description>
+            <Acknowledgement>Please acknowledge the Voyager CRS team</Acknowledgement>
             <Contact>
                 <PersonID>spase://SMWG/Person/Nand.Lal</PersonID>
                 <Role>CoInvestigator</Role>
@@ -20,49 +19,17 @@
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <Name>Readme file at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/crs/six_hour/vy2crs_6h_fmt.txt</URL>
+                <Name>Info at Voyager 2 CRS Team site</Name>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15M.html</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/Voyager/CRS</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>Voyager 2 CRS Team Archive</Name>
-                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT6H</URL>
-            </AccessURL>
-            <AccessURL>
-                <Name>Voyager 2 CRS Team interactive interface</Name>
-                <URL>http://voyager.gsfc.nasa.gov/heliopause/heliopause/archive.html</URL>
-                <Description>Flux Listings of user-selected species, energy band and time span</Description>
-            </AccessURL>
-            <Format>Text</Format>
-        </AccessInformation>
-        <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
-            <Availability>Online</Availability>
-            <AccessRights>Open</AccessRights>
-            <AccessURL>
-                <Name>FTP access to files at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/crs/six_hour/</URL>
-                <Description>In ASCII via FTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager2/particle/crs/six_hour/</URL>
-                <Description>In ASCII via HTTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>FTPBrowser</Name>
-                <URL>http://ftpbrowser.gsfc.nasa.gov/vy2_crs_6h_flux.html</URL>
-                <Description>For subsets, plots and lists</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>Multi Source Spectral Plot</Name>
-                <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
-                <Description>For spectral plots of 6-hour or longer
-                    resolution</Description>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15M</URL>
             </AccessURL>
             <Format>Text</Format>
         </AccessInformation>
@@ -70,34 +37,31 @@
         <MeasurementType>EnergeticParticles</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
-                <StartDate>1977-08-22T00:00:00</StartDate>
-                <StopDate>2011-10-01T00:00:00</StopDate>
+                <StartDate>1977-08-24T00:00:00</StartDate>
+                <StopDate>2011-09-30T00:00:00</StopDate>
             </TimeSpan>
-            <Cadence>PT6H</Cadence>
+            <Cadence>PT15M</Cadence>
         </TemporalDescription>
-        <ObservedRegion>Heliosphere.Inner</ObservedRegion>
+        <ObservedRegion>Heliosphere.Heliosheath</ObservedRegion>
         <ObservedRegion>Heliosphere.Outer</ObservedRegion>
-        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
         <Parameter>
             <Name>Time</Name>
-            <Description>
-                ISO 8601 formatted UT of start of 6 hour interval
-            </Description>
-            <ValidMin>1977-08-22T00:00:00</ValidMin>
-            <ValidMax>2007-10-01T00:00:00</ValidMax>
+            <Description>ISO 8601 formatted UT of start of 15 minute interval</Description>
+            <ValidMin>1977-08-24T00:00:00</ValidMin>
+            <ValidMax>2008-09-01T00:00:00</ValidMax>
             <FillValue>-1.0E31</FillValue>
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity>
             </Support>
         </Parameter>
+
 <!-- parameter section -->
         <Parameter>
             <Name>4.2 - 6 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX1</ParameterKey>
-            <Description>
-                Helium4 flux derived from A-stopping 2 dimensional
-                analysis, high gain data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from A-stopping 2 dimensional
+
+                analysis, high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -126,10 +90,9 @@
         <Parameter>
             <Name>6 - 42 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX2</ParameterKey>
-            <Description>
-                Helium4 flux derived from A-stopping 3 dimensional
-                analysis, high gain data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from A-stopping 3 dimensional
+
+                analysis, high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -158,10 +121,9 @@
         <Parameter>
             <Name>17 - 27 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX3</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, low gain data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, low gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -190,10 +152,9 @@
         <Parameter>
             <Name>30 - 69 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX4</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, low gain data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, low gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -222,10 +183,9 @@
         <Parameter>
             <Name>17 - 27 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX5</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, high gain data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -254,10 +214,9 @@
         <Parameter>
             <Name>30 - 69 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX6</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, high gain data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -286,10 +245,9 @@
         <Parameter>
             <Name>193 - 480 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX7</ParameterKey>
-            <Description>
-                Helium4 flux derived from low gain penetrating mode
-                data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from low gain penetrating mode
+
+                data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -318,10 +276,9 @@
         <Parameter>
             <Name>191 - 475 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX8</ParameterKey>
-            <Description>
-                Helium4 flux derived from high gain penetrating mode
-                data from HET-I
-            </Description>
+            <Description>Helium4 flux derived from high gain penetrating mode
+
+                data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -350,10 +307,9 @@
         <Parameter>
             <Name>4.2 - 6 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX1</ParameterKey>
-            <Description>
-                Proton flux derived from A-stopping 2 dimensional analysis,
-                high gain data from HET-I
-            </Description>
+            <Description>Proton flux derived from A-stopping 2 dimensional analysis,
+
+                high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -382,10 +338,9 @@
         <Parameter>
             <Name>6 - 42 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX2</ParameterKey>
-            <Description>
-                Proton flux derived from A-stopping 3 dimensional analysis,
-                high gain data from HET-I
-            </Description>
+            <Description>Proton flux derived from A-stopping 3 dimensional analysis,
+
+                high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -414,10 +369,9 @@
         <Parameter>
             <Name>17 - 27 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX3</ParameterKey>
-            <Description>
-                Proton flux derived from B-stopping 2 dimensional analysis,
-                high gain data from HET-I
-            </Description>
+            <Description>Proton flux derived from B-stopping 2 dimensional analysis,
+
+                high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -446,10 +400,9 @@
         <Parameter>
             <Name>30 - 69 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX4</ParameterKey>
-            <Description>
-                Proton flux derived from B-stopping 3 dimensional analysis,
-                high gain data from HET-I
-            </Description>
+            <Description>Proton flux derived from B-stopping 3 dimensional analysis,
+
+                high gain data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -478,10 +431,9 @@
         <Parameter>
             <Name>133 - 242 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX5</ParameterKey>
-            <Description>
-                Proton flux derived from high gain penetrating mode
-                data from HET-I
-            </Description>
+            <Description>Proton flux derived from high gain penetrating mode
+
+                data from HET-I</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -510,10 +462,9 @@
         <Parameter>
             <Name>4.2 - 6 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX9</ParameterKey>
-            <Description>
-                Helium4 flux derived from A-stopping 2 dimensional
-                analysis, high gain data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from A-stopping 2 dimensional
+
+                analysis, high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -542,10 +493,9 @@
         <Parameter>
             <Name>6 - 42 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX10</ParameterKey>
-            <Description>
-                Helium4 flux derived from A-stopping 3 dimensional
-                analysis, high gain data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from A-stopping 3 dimensional
+
+                analysis, high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -574,10 +524,9 @@
         <Parameter>
             <Name>17 - 27 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX11</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, low gain data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, low gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -606,10 +555,9 @@
         <Parameter>
             <Name>30 - 69 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX12</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, low gain data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, low gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -638,10 +586,9 @@
         <Parameter>
             <Name>17 - 27 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX13</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 2 dimensional
-                analysis, high gain data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 2 dimensional
+
+                analysis, high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -670,10 +617,9 @@
         <Parameter>
             <Name>30 - 69 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX14</ParameterKey>
-            <Description>
-                Helium4 flux derived from B-stopping 3 dimensional
-                analysis, high gain data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from B-stopping 3 dimensional
+
+                analysis, high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -702,10 +648,9 @@
         <Parameter>
             <Name>193 - 480 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX15</ParameterKey>
-            <Description>
-                Helium4 flux derived from low gain penetrating mode
-                data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from low gain penetrating mode
+
+                data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -734,10 +679,9 @@
         <Parameter>
             <Name>191 - 475 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX16</ParameterKey>
-            <Description>
-                Helium4 flux derived from high gain penetrating mode
-                data from HET-II
-            </Description>
+            <Description>Helium4 flux derived from high gain penetrating mode
+
+                data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -766,10 +710,9 @@
         <Parameter>
             <Name>4.2 - 6 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX6</ParameterKey>
-            <Description>
-                Proton flux derived from A-stopping 2 dimensional analysis,
-                high gain data from HET-II
-            </Description>
+            <Description>Proton flux derived from A-stopping 2 dimensional analysis,
+
+                high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -798,10 +741,9 @@
         <Parameter>
             <Name>6 - 42 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX7</ParameterKey>
-            <Description>
-                Proton flux derived from A-stopping 3 dimensional analysis,
-                high gain data from HET-II
-            </Description>
+            <Description>Proton flux derived from A-stopping 3 dimensional analysis,
+
+                high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -830,10 +772,9 @@
         <Parameter>
             <Name>17 - 27 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX8</ParameterKey>
-            <Description>
-                Proton flux derived from B-stopping 2 dimensional analysis,
-                high gain data from HET-II
-            </Description>
+            <Description>Proton flux derived from B-stopping 2 dimensional analysis,
+
+                high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -862,10 +803,9 @@
         <Parameter>
             <Name>30 - 69 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX9</ParameterKey>
-            <Description>
-                Proton flux derived from B-stopping 3 dimensional analysis,
-                high gain data from HET-II
-            </Description>
+            <Description>Proton flux derived from B-stopping 3 dimensional analysis,
+
+                high gain data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -894,10 +834,9 @@
         <Parameter>
             <Name>133 - 242 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX10</ParameterKey>
-            <Description>
-                Proton flux derived from high gain penetrating mode
-                data from HET-II
-            </Description>
+            <Description>Proton flux derived from high gain penetrating mode
+
+                data from HET-II</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -926,9 +865,7 @@
         <Parameter>
             <Name>1.8 - 3.3 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX11</ParameterKey>
-            <Description>
-                Proton flux derived from 2 dimensional LET-A data
-            </Description>
+            <Description>Proton flux derived from 2 dimensional LET-A data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -957,9 +894,7 @@
         <Parameter>
             <Name>1.8 - 3.3 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX12</ParameterKey>
-            <Description>
-                Proton flux derived from 2 dimensional LET-B data
-            </Description>
+            <Description>Proton flux derived from 2 dimensional LET-B data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -988,9 +923,7 @@
         <Parameter>
             <Name>1.8 - 3.3 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX13</ParameterKey>
-            <Description>
-                Proton flux derived from 2 dimensional LET-C data
-            </Description>
+            <Description>Proton flux derived from 2 dimensional LET-C data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1019,9 +952,7 @@
         <Parameter>
             <Name>1.8 - 3.3 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX14</ParameterKey>
-            <Description>
-                Proton flux derived from 2 dimensional LET-D data
-            </Description>
+            <Description>Proton flux derived from 2 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1050,9 +981,7 @@
         <Parameter>
             <Name>3.3 - 8.1 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX15</ParameterKey>
-            <Description>
-                Proton flux derived from 3 dimensional LET-A data
-            </Description>
+            <Description>Proton flux derived from 3 dimensional LET-A data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1081,9 +1010,7 @@
         <Parameter>
             <Name>3.3 - 8.1 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX16</ParameterKey>
-            <Description>
-                Proton flux derived from 3 dimensional LET-B data
-            </Description>
+            <Description>Proton flux derived from 3 dimensional LET-B data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1112,9 +1039,7 @@
         <Parameter>
             <Name>3.3 - 8.1 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX17</ParameterKey>
-            <Description>
-                Proton flux derived from 3 dimensional LET-C data
-            </Description>
+            <Description>Proton flux derived from 3 dimensional LET-C data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1143,9 +1068,7 @@
         <Parameter>
             <Name>3.3 - 8.1 MeV Proton Flux</Name>
             <ParameterKey>PROTONFLUX18</ParameterKey>
-            <Description>
-                Proton flux derived from 3 dimensional LET-D data
-            </Description>
+            <Description>Proton flux derived from 3 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1174,9 +1097,7 @@
         <Parameter>
             <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX17</ParameterKey>
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1205,9 +1126,7 @@
         <Parameter>
             <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX18</ParameterKey>
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1236,9 +1155,7 @@
         <Parameter>
             <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX19</ParameterKey>
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1267,9 +1184,7 @@
         <Parameter>
             <Name>1.8 - 2.8 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX20</ParameterKey>
-            <Description>
-                Helium4 flux derived from 2 dimensional LET-D data
-            </Description>
+            <Description>Helium4 flux derived from 2 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1298,9 +1213,7 @@
         <Parameter>
             <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX21</ParameterKey>
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-A data
-            </Description>
+            <Description>Helium4 flux derived from 3 dimensional LET-A data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1329,9 +1242,7 @@
         <Parameter>
             <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX22</ParameterKey>
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-B data
-            </Description>
+            <Description>Helium4 flux derived from 3 dimensional LET-B data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1360,9 +1271,7 @@
         <Parameter>
             <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX23</ParameterKey>
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-C data
-            </Description>
+            <Description>Helium4 flux derived from 3 dimensional LET-C data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>
@@ -1391,9 +1300,7 @@
         <Parameter>
             <Name>2.8 - 8.0 MeV/nucleon Helium Flux</Name>
             <ParameterKey>HELIUMFLUX24</ParameterKey>
-            <Description>
-                Helium4 flux derived from 3 dimensional LET-D data
-            </Description>
+            <Description>Helium4 flux derived from 3 dimensional LET-D data</Description>
             <Units>1/(cm^2 s sr MeV)</Units>
             <Structure>
                 <Size>2</Size>

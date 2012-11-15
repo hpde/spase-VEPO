@@ -44,16 +44,6 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>FTP access to files at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/crs/six_hour/</URL>
-                <Description>In ASCII via FTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/crs/six_hour/</URL>
-                <Description>In ASCII via HTTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
                 <Name>FTPBrowser</Name>
                 <URL>http://ftpbrowser.gsfc.nasa.gov/vy1_crs_6h_flux.html</URL>
                 <Description>For subsets, plots and lists</Description>
