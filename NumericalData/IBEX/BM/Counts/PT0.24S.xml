@@ -21,11 +21,13 @@ data files are in ASCII.</Description>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/background_monitor/aa_ts_description.txt</URL>
                 <Description>This file was created by the IBEX team.</Description>
             </InformationURL>
+<!--
             <InformationURL>
                 <Name>Space Science Reviews paper</Name>
                 <URL>http://www.springerlink.com/content/l25320053h3580u2/?p=bcdf150740d943c4a812b0f6be79ca69&amp;pi=5</URL>
                 <Description>Paper is by F. Allegrini and nine co-authors.</Description>
             </InformationURL>
+-->
         </ResourceHeader>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
