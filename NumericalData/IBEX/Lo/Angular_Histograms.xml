@@ -17,7 +17,7 @@ tables (files) for each of several orbits for each of the two
 species categories.</Description>
             <Acknowledgement>The IBEX Team</Acknowledgement>
             <Contact>
-                <PersonID>David.J.McComas</PersonID>
+                <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>

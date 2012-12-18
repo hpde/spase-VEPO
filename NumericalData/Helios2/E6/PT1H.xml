@@ -19,7 +19,7 @@ Data are from the E6 experiment on Helios 2.</Description>
             <Acknowledgement>Please acknowledge the P.I., Horst Kunow at Universitat 
 Kiel</Acknowledgement>
             <Contact>
-                <PersonID>Horst.W.Kunow</PersonID>
+                <PersonID>spase://SMWG/Person/Horst.W.Kunow</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>

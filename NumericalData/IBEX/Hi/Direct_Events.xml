@@ -15,7 +15,7 @@ atoms.  Data files are given for each 8-day orbit and for each
 of the 6 IBEX-Hi energy bands.  The data files are in ASCII.</Description>
             <Acknowledgement>The IBEX Team</Acknowledgement>
             <Contact>
-                <PersonID>David.J.McComas</PersonID>
+                <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>

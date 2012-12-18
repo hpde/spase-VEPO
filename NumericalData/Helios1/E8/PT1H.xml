@@ -14,7 +14,7 @@ included.  Data are from the E8 experiment on Helios 1.</Description>
             <Acknowledgement>Please acknowledge the P.I., Erhard Keppler of Max Planck
 Institure, Lindau</Acknowledgement>
             <Contact>
-                <PersonID>Erhard.Keppler</PersonID>
+                <PersonID>spase://SMWG/Person/Erhard.Keppler</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>

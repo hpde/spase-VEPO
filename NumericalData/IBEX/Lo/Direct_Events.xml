@@ -15,7 +15,7 @@ for each of the 8 IBEX-Lo energy bands.  The data files are in
 ASCII.</Description>
             <Acknowledgement>The IBEX Team</Acknowledgement>
             <Contact>
-                <PersonID>David.J.McComas</PersonID>
+                <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>

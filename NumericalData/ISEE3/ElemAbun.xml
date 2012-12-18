@@ -14,7 +14,7 @@ in the ASCII file to the publication where its derivation is discussed.</Descrip
 publication(s) as mentioned above, and acknowledge Mark Wiedenbeck, the 
 ISEE 3 instrument Principal Investigator.</Acknowledgement>
             <Contact>
-                <PersonID>Mark.E.Wiedenbeck</PersonID>
+                <PersonID>spase://SMWG/Person/Mark.E.Wiedenbeck</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>
