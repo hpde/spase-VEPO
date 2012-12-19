@@ -1,7 +1,7 @@
 <Spase xmlns="http://www.spase-group.org/data/schema">
     <Version>2.2.0</Version>
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/ISEE3_IsotAbun</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/ISEE3/IsotAbun</ResourceID>
         <ResourceHeader>
             <ResourceName>ISEE 3 Isotopic Abundance Ratios</ResourceName>
             <ReleaseDate>2009-05-20T00:00:00</ReleaseDate>

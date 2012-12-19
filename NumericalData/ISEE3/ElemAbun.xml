@@ -1,7 +1,7 @@
 <Spase xmlns="http://www.spase-group.org/data/schema">
     <Version>2.2.0</Version>
     <NumericalData>
-        <ResourceID>spase://VEPO/NumericalData/ISEE3_ElemAbun</ResourceID>
+        <ResourceID>spase://VEPO/NumericalData/ISEE3/ElemAbun</ResourceID>
         <ResourceHeader>
             <ResourceName>ISEE 3 Elemental Abundance Ratios</ResourceName>
             <ReleaseDate>2009-05-20T00:00:00</ReleaseDate>

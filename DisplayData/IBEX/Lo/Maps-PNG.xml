@@ -1,7 +1,7 @@
 <Spase xmlns="http://www.spase-group.org/data/schema">
     <Version>2.2.0</Version>
     <DisplayData>
-        <ResourceID>spase://VEPO/DisplayData/IBEX/Lo/Maps_PNG</ResourceID>
+        <ResourceID>spase://VEPO/DisplayData/IBEX/Lo/Maps-PNG</ResourceID>
         <ResourceHeader>
             <ResourceName>IBEX-Lo maps in PNG display format every 6 months</ResourceName>
             <ReleaseDate>2010-05-19T00:00:00</ReleaseDate>
