@@ -4,6 +4,9 @@
     xsi:schemaLocation="http://www.spase-group.org/data/schema
     http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
     <Version>2.2.1</Version> 
+<!-- Is index subelement of Structure element 0-based? -->
+<!-- Can duplicate Name subelements of Parameter element -->
+<!-- exist in a NumericalData resource --> 
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Voyager2/CRS/FLUX/PT15M</ResourceID> 
         <ResourceHeader>
@@ -25,7 +28,7 @@
                 <URL>http://voyager.gsfc.nasa.gov</URL>
             </InformationURL>
             <InformationURL>
-                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/pt15m.html</URL>
+                <URL>http://voyager.gsfc.nasa.gov/archive/voyager-2/PT15m.html</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -42,7 +45,7 @@
         <TemporalDescription>
             <TimeSpan>
                 <StartDate>1977-08-24T00:00:00</StartDate> 
-                <StopDate>2011-10-01T00:00:00</StopDate> 
+                <StopDate>2012-08-19T00:00:00</StopDate> 
             </TimeSpan>
             <Cadence>PT15M</Cadence> 
         </TemporalDescription>
@@ -55,7 +58,7 @@
                 ISO 8601 formatted UT of start of 15 minute interval
             </Description>
             <ValidMin>1977-08-24T00:00:00</ValidMin>
-            <ValidMax>2011-10-01T00:00:00</ValidMax>
+            <ValidMax>2012-08-19T00:00:00</ValidMax>
             <FillValue>-1.0E31</FillValue> 
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity> 
