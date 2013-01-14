@@ -1,4 +1,6 @@
-<Spase xmlns="http://www.spase-group.org/data/schema">
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
     <Version>2.2.0</Version>
     <DisplayData>
         <ResourceID>spase://VEPO/DisplayData/IBEX/Lo/Maps-PNG</ResourceID>
@@ -14,7 +16,7 @@ in size.  Digital versions of these images in txt format are
 identified by VEPO as a separate data product.</Description>
             <Acknowledgement>The IBEX Team</Acknowledgement>
             <Contact>
-                <PersonID>David.J.McComas</PersonID>
+                <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <InformationURL>
@@ -49,7 +51,7 @@ identified by VEPO as a separate data product.</Description>
         <TemporalDescription>
             <TimeSpan>
                 <StartDate>2008-12-25T00:00:00</StartDate>
-                <StopDate>2009-06-19</StopDate>
+                <StopDate>2009-06-19T00:00:00</StopDate>
                 <Note>Data are planned for 6-month releases.  However,
 				Release_2 contained only IBEX-Hi map data.  Extensions to later times for this data set may be forthcoming in the future.</Note>
             </TimeSpan>
