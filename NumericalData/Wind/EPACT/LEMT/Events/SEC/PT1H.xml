@@ -16,7 +16,7 @@ additional count is given for 5-8 MeV/n He.  As of 10/2011, the data
 cover 39 1997-2006 multi-day intervals that include energetic solar 
 particle events.  ASCII data words are comma-separated.  For a given 
 particle event, there are species-specific files.  File naming uses 
-the convention XX_omn_YYYYMMDD, where XX = H, He2 (2.5-5 MeV/n), 
+the convention XX_sec_YYYYMMDD, where XX = H, He2 (2.5-5 MeV/n), 
 He5 (5-8 MeV/n), O or Fe, and where YYYYMMDD is the day of the first 
 record of the file.  Sectoring is defined with respect to the 
 ecliptic plane projection of the concurrently measured magnetic
