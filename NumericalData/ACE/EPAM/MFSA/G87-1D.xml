@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
-    <ResourceID>spase://VEPO/NumericalData/ACE/EPAM/MFSA/G87-1D</ResourceID>
+    <ResourceID>spase://VEPO/NumericData/ACE/EPAM/MFSA/G87-1D</ResourceID>
     <ResourceHeader>
       <ResourceName>Daily-Averaged Sectored ACE/EPAM LEMS30 MFSA Z>1 Ion Fluxes</ResourceName>
       <AlternateName>EPAM-MFSA-LEMS30-Ion-1d</AlternateName>
@@ -15,7 +16,7 @@
       </Description>
       <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
       <Contact>
-        <PersonID>spase://SMWG/Person/Thomas.P.Armstrong</PersonID>
+        <PersonID>spase://VEPO/person/armstrong@ftecs.com</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>
@@ -29,19 +30,21 @@
         </Description>
       </InformationURL>
       <Association>
-        <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/MFSA/G87-17M</AssociationID>
+        <AssociationID>spase://VEPO/NumericData/ACE/EPAM/MFSA/G87-17M</AssociationID>
+        <AssociationType>Other</AssociationType>
       </Association>
       <Association>
-        <AssociationID>spase://VEPO/NumericalData/ACE/EPAM/MFSA/G87-1H</AssociationID>
+        <AssociationID>spase://VEPO/NumericData/ACE/EPAM/MFSA/G87-1H</AssociationID>
+        <AssociationType>Other</AssociationType>
       </Association>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/FTECS</RepositoryID>
+      <RepositoryID>spase://VEPO/Repository/FTECS</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>ACE EPAM Daily-Averaged</Name>
-        <URL>http://data.ftecs.com/VHO/VEPO/ace_epam/mfsa/P1D/</URL>
+        <URL>http://data.ftecs.com/VHO/VEPO/ace_epam/mfsa/Daily/</URL>
         <Description>
           Parent directory containing the Daily-averaged fluxes for the ACE/EPAM instrument for the entire mission.
         </Description>
@@ -50,7 +53,7 @@
       <Encoding>ASCII</Encoding>
       <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC</Acknowledgement>
     </AccessInformation>
-    <InstrumentID>spase://SMWG/Instrument/ACE/EPAM</InstrumentID>
+    <InstrumentID>spase://VEPO/Instrument/ACE/EPAM</InstrumentID>
     <MeasurementType>EnergeticParticles</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
@@ -395,7 +398,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>329.28</Low>
-            <High>1092.61</High>
+            <High>384.61</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -427,7 +430,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1092.61</Low>
+            <Low>384.61</Low>
             <High>450.01</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
@@ -527,7 +530,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>623.9</Low>
-            <High>1591.46</High>
+            <High>735.46</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -559,7 +562,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1591.46</Low>
+            <Low>735.46</Low>
             <High>869.7</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
@@ -1222,7 +1225,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>329.28</Low>
-            <High>1092.61</High>
+            <High>384.61</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -1254,7 +1257,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1092.61</Low>
+            <Low>384.61</Low>
             <High>450.01</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
@@ -1354,7 +1357,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>623.9</Low>
-            <High>1591.46</High>
+            <High>735.46</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -1386,7 +1389,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1591.46</Low>
+            <Low>735.46</Low>
             <High>869.7</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
@@ -2049,7 +2052,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>329.28</Low>
-            <High>1092.61</High>
+            <High>384.61</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -2081,7 +2084,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1092.61</Low>
+            <Low>384.61</Low>
             <High>450.01</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
@@ -2181,7 +2184,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>623.9</Low>
-            <High>1591.46</High>
+            <High>735.46</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -2213,7 +2216,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1591.46</Low>
+            <Low>735.46</Low>
             <High>869.7</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
@@ -2876,7 +2879,7 @@
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
             <Low>329.28</Low>
-            <High>1092.61</High>
+            <High>384.61</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
           <AzimuthalAngleRange>
@@ -2908,7 +2911,7 @@
           <Qualifier>Average</Qualifier>
           <ParticleQuantity>NumberFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>1092.61</Low>
+            <Low>384.61</Low>
             <High>450.01</High>
             <Units>keV/nuc</Units>
           </EnergyRange>
