@@ -3,12 +3,12 @@
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/AT/Fluxes/PT10M</ResourceID>
         <ResourceHeader>
-            <ResourceName>Ulysses COSPIN/AT Ion 10-Minute Fluxes in ASCII Format</ResourceName>
+            <ResourceName>Ulysses COSPIN/AT Ion 10-Minute Fluxes</ResourceName>
             <AlternateName>COSPIN-AT-Fluxes-PT10M</AlternateName>
             <ReleaseDate>2009-04-17T00:00:00.000</ReleaseDate>
             <Description>10-Minute cadence proton and helium spin-averaged coincidence fluxes from the 
             COSPIN Anisotropy Telescopes (AT1 and AT2). The two telescopes differ only by their orientation 
-            with respect to the spacecraft spin axis. The parameter keys in the parameter-level segments below are specifically relevant to the UDS-accessible versions of the data. </Description>
+            with respect to the spacecraft spin axis. The parameter keys in the parameter-level segments below are specifically relevant to the UFA-accessible versions of the data. </Description>
             <Acknowledgement>Please acknowledge the COSPIN AT lead investigators 
             (AT Group Leader: Dr. Andre Balogh, and Co-Investigator: Dr. Silvia Dalla) </Acknowledgement>
             <Contact>
@@ -27,9 +27,9 @@
             </Contact>
             <InformationURL>
                 <Name>Usernotes file for COSPIN/AT data files</Name>
-                <URL>http://www.rssd.esa.int/helio/archive/cospin_at_un.html</URL>
+                <URL>http://ufa.esac.esa.int/ufa/#instruments</URL>
                 <Description>
-	     The UserNotes file at the Ulysses Data System (UDS) describes the
+	     The UserNotes file at the Ulysses Final Archive (UFA) describes the
 	     format of the ASCII data files containing 10-minute average proton
 	     and helium spin-averaged and sectored fluxes for the 
 	     dual COSPIN Anisotropy Telescopes (AT1 and AT2), and caveats for their use.
@@ -43,12 +43,12 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/UDS</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/ESA/ESAC/UlyssesFinalArchive</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>Ulysses Data System</Name>
-                <URL>ftp://www.rssd.esa.int/pub/ulysses/data/cospin/at/</URL>
+                <Name>Ulysses Final Archive</Name>
+                <URL>http://ufa.esac.esa.int/ufa/#data</URL>
                 <Description>
            Parent directory containing yearly downloadable .zip compressed subdirectories with naming 
            convention cosatNYY.zip.  Here and below N=1 or 2 to identify which of the two identical AT 
@@ -135,33 +135,35 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>CDAWeb Access to AT1 data </Name>
+                <Name>FTP access to AT1 CDFs at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at1/</URL>
+                <Description>AT1 data via ftp in CDF from SPDF.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to AT1 CDFs at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at1/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <Format>CDF</Format>
+            <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
                 <Description>subset, plot, list via CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>CDAWeb Access to AT2 data </Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
-                <Description>subset, plot, list via CDAWeb</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>AT1 data from SPDF FTP area (originally nssdcftp area) </Name>
+                <Name>FTP access to AT1 ASCII files at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at1/10min_new/</URL>
                 <Description>AT1 data via ftp in ASCII from SPDF.</Description>
             </AccessURL>
             <AccessURL>
-                <Name>AT1 data from SPDF HTTP area (originally nssdcftp area)</Name>
+                <Name>HTTP access to AT1 ASCII files at SPDF</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at1/10min_new/</URL>
-                <Description>AT1 data via http in ASCII from SPDF.</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>AT2 data from SPDF FTP area (originally nssdcftp area) </Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at2/10min_new/</URL>
-                <Description>AT2 data via ftp in ASCII from SPDF.</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>AT2 data from SPDF HTTP area (originally nssdcftp area)</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at2/10min_new/</URL>
                 <Description>AT1 data via http in ASCII from SPDF.</Description>
             </AccessURL>
             <Format>Text</Format>
@@ -172,27 +174,39 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>AT1 data from SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at1/</URL>
-                <Description>AT1 data via ftp in CDF from SPDF.</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>AT1 data from SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at1/</URL>
-                <Description>In CDF via HTTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>AT2 data from SPDF FTP area</Name>
+                <Name>FTP access to AT2 CDFs at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at2/</URL>
                 <Description>AT2 data via ftp in CDF from SPDF.</Description>
             </AccessURL>
             <AccessURL>
-                <Name>AT2 data from SPDF HTTP area</Name>
+                <Name>HTTP access to AT2 CDFs at SPDF</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/at2/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
             <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>CDAWeb</Name>
+                <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+                <Description>subset, plot, list via CDAWeb</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>FTP access to AT2 ASCII files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at2/10min_new/</URL>
+                <Description>AT2 data via ftp in ASCII from SPDF.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to AT2 ASCII files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/at2/10min_new/</URL>
+                <Description>AT1 data via http in ASCII from SPDF.</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/AT</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>

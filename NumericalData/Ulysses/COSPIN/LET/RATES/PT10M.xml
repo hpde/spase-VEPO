@@ -3,7 +3,7 @@
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/LET/RATES/PT10M</ResourceID>
         <ResourceHeader>
-            <ResourceName>Ulysses COSPIN/LET Ion and Electron 10-Minute Average Rates Data in ASCII Format</ResourceName>
+            <ResourceName>Ulysses COSPIN/LET Ion and Electron 10-Minute Average Rates Data</ResourceName>
             <AlternateName>COSPIN-LET-RAT-10M</AlternateName>
             <ReleaseDate>2008-12-01T00:00:00Z</ReleaseDate>
             <Description>This data set contains 10-Minute averages of:
@@ -12,7 +12,7 @@
 						(2.6-7.1 and 7.1-39 MeV/n)MeV/n), Z GE 10 nuclei (3.0-9.0 MeV/n), 10 LE Z LE 20 nuclei (9.0-50 MeV/n) and
 						Z GE 20 nuclei (12-75 MeV/n);
 					(b)	8-sectored proton fluxes (1.8-3.8 and 3.8-8.0 MeV);
-					(c)	count rates of electrons (0.3-1.0 MeV) and D1, D2, D3, D4 and D5 single detector sensors.  The parameter keys in the parameter-level segments below are specifically relevant to the UDS-accessible versions of the data.</Description>
+					(c)	count rates of electrons (0.3-1.0 MeV) and D1, D2, D3, D4 and D5 single detector sensors.  The parameter keys in the parameter-level segments below are specifically relevant to the UFA-accessible versions of the data.</Description>
             <Acknowledgement>Please acknowlegde the COSPIN PI (R.B. McKibben), the lead LET CoI (R.G. Marsden) and the UDS and/or NSSDC</Acknowledgement>
             <Contact>
                 <PersonID>spase://SMWG/Person/R.Bruce.McKibben</PersonID>
@@ -28,9 +28,9 @@
             </Contact>
             <InformationURL>
                 <Name>README file for COSPIN/LET data files</Name>
-                <URL>http://www.rssd.esa.int/helio/archive/cospin_let_un.html</URL>
+                <URL>http://ufa.esac.esa.int/ufa/#instruments</URL>
                 <Description>
-           The README file at the Ulysses Data System (UDS) describes the
+           The README file at the Ulysses Final Archive (UFA) describes the
 		   format of the ASCII data files containing 10-minute average ion
 		   and electron fluxes and detector count rates for the COSPIN Low
 		   Energy Telescope (LET), and caveats for their use.
@@ -38,12 +38,12 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/UDS</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/ESA/ESAC/UlyssesFinalArchive</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>Ulysses Data System</Name>
-                <URL>ftp://www.rssd.esa.int/pub/ulysses/data/cospin/let/</URL>
+                <Name>UlyssesFinal Archive</Name>
+                <URL>http://ufa.esac.esa.int/ufa/#data</URL>
                 <Description>
 		   Parent directory containing compressed Ulysses COSPIN/LET 10-minute average rates
 		   data organised in daily ASCII files ucosletrYYDOY.dat (YY and DOY are the two digit
@@ -60,39 +60,39 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
-                <Description>subset, plot, list via CDAWeb</Description>
+                <Name>FTP access to CDFs at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/let/</URL>
+                <Description>In CDF via ftp from SPDF</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF FTP area (originally nssdcftp area)</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/let/10_min/</URL>
-                <Description>via ftp in ASCII from SPDF.</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/let/10_min/</URL>
+                <Name>HTTP access to CDFs at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/let/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
-            <Format>Text</Format>
-            <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
+            <Format>CDF</Format>
+            <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>
         </AccessInformation>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/let/</URL>
-                <Description>via ftp in CDF from SPDF.</Description>
+                <Name>CDAWeb</Name>
+                <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+                <Description>subset, plot, list via CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin_cdaweb/let/</URL>
-                <Description>In CDF via HTTP from SPDF</Description>
+                <Name>FTP access to ASCII files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/let/10_min/</URL>
+                <Description>via ftp in ASCII from SPDF.</Description>
             </AccessURL>
-            <Format>CDF</Format>
-            <Acknowledgement>Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+            <AccessURL>
+                <Name>HTTP access to ASCII files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ulysses/particle/cospin/let/10_min/</URL>
+                <Description>via http in ASCII from SPDF.</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>CDAWeb or nssdcftp, as appropriate, from NASA/GSFC/SPDF</Acknowledgement>
         </AccessInformation>
         <InstrumentID>spase://SMWG/Instrument/Ulysses/COSPIN/LET</InstrumentID>
         <MeasurementType>EnergeticParticles</MeasurementType>
