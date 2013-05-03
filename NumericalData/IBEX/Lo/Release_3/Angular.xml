@@ -1,4 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
     <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/IBEX/Lo/Release_3/Angular</ResourceID>
@@ -34,13 +35,13 @@ of time spans used in an orbit varies from 5 to 38.
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/lo/release3_angulardata/</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/lo/maps/digital_data/release_3/angulardata/</URL>
                 <Description>Directory with orbit-specific arrays of counts</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ibex/lo/release3_angulardata/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/ibex/lo/maps/digital_data/release_3/angulardata/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
