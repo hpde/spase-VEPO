@@ -1,5 +1,5 @@
 <Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>2.2.0</Version>
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/STEREO-B/IMPACT/STE/L1/PT10S</ResourceID>
         <ResourceHeader>
@@ -31,14 +31,15 @@ of UCB</Acknowledgement>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>STB_L1_STE</ProductKey>
                 <Description>With subset, plot and ASCII list functions from CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
+                <Name>FTP access to files at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/stereo/behind/l1/impact/ste/</URL>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
+                <Name>HTTP access to files at SPDF</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/stereo/behind/l1/impact/ste/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>

@@ -1,5 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-    <Version>2.2.1</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Ulysses/COSPIN/LET/RATES/PT10M</ResourceID>
         <ResourceHeader>
@@ -79,6 +79,7 @@
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+                <ProductKey>UY_M0_LET</ProductKey>
                 <Description>subset, plot, list via CDAWeb</Description>
             </AccessURL>
             <AccessURL>

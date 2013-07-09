@@ -51,12 +51,12 @@ IEEE Transactions on Geoscience and Remote Sensing, Vol. 31, No. 3, May 1993</De
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/sampex/combined_cdaweb/pof/</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/sampex</URL>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/sampex/combined_cdaweb/pof/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/sampex</URL>
                 <Description>In CDF via HTTP from CDAWeb</Description>
             </AccessURL>
             <Format>CDF</Format>
@@ -68,15 +68,8 @@ IEEE Transactions on Geoscience and Remote Sensing, Vol. 31, No. 3, May 1993</De
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/</URL>
+                <ProductKey>SX_K0_POF</ProductKey>
                 <Description>Plots, lists and files from CDAWeb.Name of the data resource:SX_K0_POF</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>SPDF FTP area (originally nssdcftp area)</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/sampex/combined/flux_polarcap_avgd_ascii/</URL>
-            </AccessURL>
-            <AccessURL>
-                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/sampex/combined/flux_polarcap_avgd_ascii/</URL>
             </AccessURL>
             <Format>Text</Format>
         </AccessInformation>
