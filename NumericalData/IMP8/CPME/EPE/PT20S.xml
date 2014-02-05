@@ -80,7 +80,7 @@ accessing data from APL.</Acknowledgement>
       </AccessURL>
       <AccessURL>
          <Name>FTPBrowser</Name>
-         <URL>http://ftpbrowser.gsfc.nasa.gov/imp8_cpme.html</URL>
+         <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/imp8_cpme.html</URL>
          <Description>Plots and lists for CPME 20.48s spin-integrated count rates</Description>
       </AccessURL>
       <Format>Text</Format>

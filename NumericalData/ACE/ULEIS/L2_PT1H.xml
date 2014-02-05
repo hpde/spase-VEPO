@@ -55,7 +55,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>Multi-Source Spectral Plots Interface</Name>
-        <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_m.html</URL>
+        <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/flux_spectr_m.html</URL>
         <Description>Multi-source spectral plots (MSSP) of energetic particle fluxes for Z less than 2</Description>
       </AccessURL>
       <Format>CDF</Format>

@@ -38,7 +38,7 @@ and the GSFC Space Physics Data Facility.</Acknowledgement>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>FTPBrowser</Name>
-                <URL>http://ftpbrowser.gsfc.nasa.gov/p11_part_cpi_1h.html</URL>
+                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/p11_part_cpi_1h.html</URL>
             </AccessURL>
             <AccessURL>
                 <Name>SPDF FTP area</Name>

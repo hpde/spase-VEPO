@@ -57,7 +57,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>OMNIWeb-Plus Browser</Name>
-        <URL>http://ftpbrowser.gsfc.nasa.gov/ace_epam_flux_all_1d.html</URL>
+        <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/ace_epam_flux_all_1d.html</URL>
         <Description>
           Plots and lists of flux vs. time for any combination of
           species and energy bins
@@ -65,7 +65,7 @@
       </AccessURL>
       <AccessURL>
         <Name>Multi-Source Spectral Plots (MSSP)</Name>
-        <URL>http://ftpbrowser.gsfc.nasa.gov/flux_spectr_test.html</URL>
+        <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/flux_spectr_test.html</URL>
         <Description>
           Spectral plots of EPAM and other data for user-specified
           intervals
