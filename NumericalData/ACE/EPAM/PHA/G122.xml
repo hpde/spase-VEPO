@@ -63,14 +63,6 @@
           species and energy bins
         </Description>
       </AccessURL>
-      <AccessURL>
-        <Name>Multi-Source Spectral Plots (MSSP)</Name>
-        <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/flux_spectr_test.html</URL>
-        <Description>
-          Spectral plots of EPAM and other data for user-specified
-          intervals
-        </Description>
-      </AccessURL>
       <Format>Text</Format>
       <Encoding>ASCII</Encoding>
       <Acknowledgement>Thomas P. Armstrong, Fundamental Technologies LLC, and GSFC/SPDF</Acknowledgement>
