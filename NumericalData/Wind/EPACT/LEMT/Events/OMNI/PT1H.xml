@@ -1,120 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns="http://www.spase-group.org/data/schema" 
-xsi:schemaLocation="http://www.spase-group.org/data/schema 
-http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-<Version>2.2.1</Version>
-<NumericalData>
-   <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/Events/OMNI/PT1H</ResourceID>
-   <ResourceHeader>
-      <ResourceName>Wind EPACT/LEMT 1-Hr Omnidirectional He,O,Fe Fluxes for Events</ResourceName>
-      <ReleaseDate>2011-12-12T00:00:00</ReleaseDate>
-      <Description>This data set contains hourly-averaged fluxes
-of He, O and Fe nuclei, each in 6 energy bins in the general range
-2-9 MeV/n, for (as of 10/2011) 39 1997-2006 multi-day intervals that
-include energetic solar particle events.  Poisson uncertainties are 
-given for each flux.  ASCII data words are comma-separated.  For a 
-given particle event, there are species-specific files.  File naming 
-uses the convention XX_omn_YYYYMMDD, where XX = He, O or Fe, and 
-where YYYYMMDD is the day of the first record of the file.  Each file 
-starts with a column header which includes (in the flux columns) the 
-range in MeV/n for each of the six bands for the relevant species 
-(although the species is not named within the file) and uncertainties 
-designated as dJn for that associated with the flux of the n'th energy 
-band.  Energy bands for the various species are:
-He: 1.65-2.00, 2.00-2.40, 2.40-3.00, 3.00-3.70, 3.70-4.53, 4.53-6.00 MeV/n
-O:  2.56-3.17, 3.17-3.88, 3.88-4.68, 4.68-6.00, 7.00-7.40, 7.40-9.20 MeV/n
-Fe: 2.40-3.00, 3.00-3.95, 3.95-4.80, 4.80-5.90, 5.90-7.80, 7.80-9.30 MeV/n
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+    <Version>2.2.1</Version>
+    <NumericalData>
+        <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/Events/OMNI/PT1H</ResourceID>
+        <ResourceHeader>
+            <ResourceName>Wind EPACT/LEMT 1-Hr Omnidirectional Fluxes</ResourceName>
+            <ReleaseDate>2014-10-27T00:00:00</ReleaseDate>
+            <Description>
+This dataset contains hourly-averaged omnidirectional fluxes for He, C, O, Ne, Si, and Fe in 
+particles/cm2-sr-s-MeV/nuc in seven energy bins (six for Ne) in the general range of 2-10 MeV/nucleon.  
+The error bars are statistical only, that is, corresponding to sqrt(N), where N is the number of collected ions.  
+For intervals in which zero ions were observed, the error bar corresponds to one ion.  
+ASCII listing generated from this link provide the start-time of the averaging interval as YYYY DD HH, 
+followed by pairs of numbers giving the flux and its uncertainty from the selected intervals.  
+The available energy bins for the species are
++-------------------------------------------------------------------------------------------+
+| He: 2.00-2.40, 2.40-3.00, 3.00-3.70, 3.70-4.53, 4.53-6.00, 6.00-7.40, 7.40-9.64  MeV/nuc  |
+| C:  2.57-3.19, 3.19-3.85, 3.85-4.80, 4.80-5.80, 5.80-7.20, 7.20-9.10, 9.10-13.70 MeV/nuc  |
+| O:  2.56-3.17, 3.17-3.88, 3.88-4.68, 4.68-6.00, 6.00-7.40, 7.40-9.20, 9.20-13.40 MeV/nuc  |
+| Ne: 3.27-3.98, 3.98-4.72, 4.72-5.92, 5.92-7.87, 7.87-9.96, 9.96-12.7 MeV/nuc              |
+| Si: 2.50-3.20, 3.20-4.00, 4.00-4.90, 4.90-6.00, 6.00-7.90, 7.90-9.70, 9.70-13.60 MeV/nuc  |
+| Fe: 2.40-3.00, 3.00-3.95, 3.95-4.80, 4.80-5.90, 5.90-7.80, 7.80-9.30, 9.30-12.50 MeV/nuc  |
++-------------------------------------------------------------------------------------------+ 
 </Description>
-      <Acknowledgement>Dr. Tycho T. Von Rosenvinge</Acknowledgement>
-      <Contact>
-         <PersonID>spase://SMWG/Person/Tycho.T.Von.Rosenvinge</PersonID>
-         <Role>PrincipalInvestigator</Role>
-      </Contact>
-      <Contact>
-         <PersonID>spase://SMWG/Person/Donald.V.Reames</PersonID>
-         <Role>CoInvestigator</Role>
-      </Contact>
-      <Contact>
-         <PersonID>spase://SMWG/Person/Lun.C.Tan</PersonID>
-         <Role>DataProducer</Role>
-      </Contact>
-      <InformationURL>
-         <Name>Readme file</Name>
-         <URL>http://vho.nasa.gov/mission/wind/epact/omni/AA_read_me_first.txt</URL>      
-      </InformationURL>
-   </ResourceHeader>
-   <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/Wind</RepositoryID>
-      <Availability>Online</Availability>
-      <AccessRights>Open</AccessRights>
-      <AccessURL>
-         <Name>Wind repository</Name>
-         <URL>http://vho.nasa.gov/mission/wind/epact/omni/</URL>
-         <Description>File-level access to event-specific, species-specific 
-ASCII files</Description>
-      </AccessURL>
-      <Format>Text</Format>
-      <Acknowledgement>Please acknowledge Principal Investigator 
-T. von Rosenvinge and the Wind EPACT team.</Acknowledgement>
-   </AccessInformation>
-   <ProcessingLevel>Calibrated</ProcessingLevel>
-   <InstrumentID>spase://SMWG/Instrument/Wind/EPACT</InstrumentID>
-   <MeasurementType>EnergeticParticles</MeasurementType>
-   <TemporalDescription>
-      <TimeSpan>
-         <StartDate>1997-11-03T00:00:00</StartDate>
-         <StopDate>2006-12-17T00:00:00</StopDate>
-      </TimeSpan>
-      <Cadence>PT1H</Cadence>
-   </TemporalDescription>
-   <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
-   <Parameter>
-      <Name>Time</Name>
-      <ParameterKey>Column_1-Column_5</ParameterKey>
-      <Description>Universal time at start of hour average</Description>
-      <Cadence>PT1H</Cadence>
-      <Structure>
-         <Size>5</Size>
-         <Description>Year, month, day, hour at start of average, and
-fractional day of year at midpoint of average</Description>
-      </Structure>
-         <Support>
-            <SupportQuantity>Temporal</SupportQuantity>
-         </Support>
-   </Parameter>
-   <Parameter>
-      <Name>Species-specific fluxes and uncertainties</Name>
-      <ParameterKey>Columns_6-17</ParameterKey>
-      <Description>Fluxes and uncertainties in six energy bands,
-for species identified in the file name (He, O, or Fe) and
-associated Poisson uncertainties</Description>
-      <Cadence>PT1H</Cadence>
-      <Units>1/(cm^2 sec ster MeV/n)</Units>
-      <Structure>
-         <Size>6 2</Size>
-         <Description>This is a 6 x 2 matrix, with 6 rows for each
-of the 6 energy windows and 2 columns for flux values and associated
-Poisson uncertainty.  The mapping between matrix elements (i=1-6, j=1-2)
-and parameter key record column numbers (n=6-17) is n = 3+ 2*i + j.
-</Description>
-      </Structure>
-         <Particle>
-            <ParticleType>AlphaParticle</ParticleType>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-            <AtomicNumber>2</AtomicNumber>
-            <AtomicNumber>8</AtomicNumber>
-            <AtomicNumber>26</AtomicNumber>
-            <EnergyRange>
-               <Low>2</Low>
-               <High>9</High>
-               <Units>MeV/n</Units>
-            </EnergyRange>
-         </Particle>
-   </Parameter>
-</NumericalData>
+            <Acknowledgement>Dr. Tycho T. Von Rosenvinge</Acknowledgement>
+            <Contact>
+                <PersonID>spase://SMWG/Person/Tycho.T.Von.Rosenvinge</PersonID>
+                <Role>EPACT Principal Investigator</Role>
+            </Contact>
+            <Contact>
+                <PersonID>spase://SMWG/Person/Donald.V.Reames</PersonID>
+                <Role>EPACT CoInvestigator, LEMT Instrument Scientist</Role>
+            </Contact>
+            <Contact>
+                <PersonID>spase://SMWG/Person/Lun.C.Tan</PersonID>
+                <Role>DataProducer</Role>
+            </Contact>
+            <InformationURL>
+                <Name>Readme file</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/wind/epact/flux_ascii/hourly/aareadme_epact</URL>
+            </InformationURL>
+        </ResourceHeader>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>OMNIWeb Plus Browser</Name>
+                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/wind_epact_flux_all_hr.html</URL>
+                <Description>Web interface for browsing The EPACT/LEMT data</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/wind/epact/flux_ascii/</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/wind/epact/flux_ascii/</URL>
+                <Description>In ascii via HTTP from SPDF</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>Please acknowledge Principal Investigator T. von Rosenvinge
+and the CDAWeb team at NASA/GSFC</Acknowledgement>
+        </AccessInformation>
+        <ProcessingLevel>Calibrated</ProcessingLevel>
+        <InstrumentID>spase://SMWG/Instrument/Wind/EPACT</InstrumentID>
+        <MeasurementType>EnergeticParticles</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>1997-11-03T00:00:00</StartDate>
+                <StopDate>2014-00-07T00:00:00</StopDate>
+            </TimeSpan>
+            <Cadence>PT1H</Cadence>
+        </TemporalDescription>
+        <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    </NumericalData>
 </Spase>
-
-
-
