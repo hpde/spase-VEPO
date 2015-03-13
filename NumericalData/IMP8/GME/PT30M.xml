@@ -37,7 +37,7 @@ coincidence modes.  Proton and alpha particle fluxes, for every other energy bin
             </AccessURL>
             <AccessURL>
                 <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_gme/gme_h0/</URL>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/particles_gme/data/flux/gme_h0/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
