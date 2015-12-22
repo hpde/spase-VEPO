@@ -5,7 +5,7 @@
         <ResourceHeader>
             <ResourceName>Voyager 1 LECP Proton Intensities in ASCII Format hourly</ResourceName>
             <AlternateName>V1-LECP-PROTONFLUX-PT1H</AlternateName>
-            <ReleaseDate>2010-07-09T00:00:00.000</ReleaseDate>
+            <ReleaseDate>2015-12-15T00:00:00</ReleaseDate>
             <Description>Count Rates, Averaged Over All Sectors, Voyager1, LECP, Filtered, Channel, Calibrated, CadencePT1H</Description>
             <Acknowledgement>Please acknowledge the LECP PI (S.M. Krimigis) and the lead LECP CoI (R.B. Decker)</Acknowledgement>
             <Contact>
@@ -44,18 +44,18 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
+                <Name>FTP access to files at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/v1_prot_1hour/</URL>
                 <Description>ftp access to annual ascii files</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
+                <Name>HTTP access to files at SPDF</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/voyager/voyager1/particle/lecp/v1_prot_1hour/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>FTPBrowser</Name>
-                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/v1_lecp_prot_flux_1h.html</URL>
+                <URL>http://omniweb.sci.gsfc.nasa.gov/ftpbrowser/v1_lecp_flux_1h.html</URL>
                 <Description>Plots and lists of 0.57-1.78, 3.40-17.6, 22.0-31.0 MeV proton fluxes</Description>
             </AccessURL>
             <Format>Text</Format>
