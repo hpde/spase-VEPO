@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
     <Version>2.2.3</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/Wind/EPACT/LEMT/Events/OMNI/PT5M</ResourceID>
         <ResourceHeader>
             <ResourceName>Wind EPACT/LEMT 5-min Omnidirectional Fluxes</ResourceName>
-            <ReleaseDate>2015-05-20T00:00:00</ReleaseDate>
+            <ReleaseDate>2017-01-03T00:00:00</ReleaseDate>
             <Description>
 This dataset contains 5-min omnidirectional fluxes for He, C, O, Ne, Si, and Fe in 
 particles/cm2-sr-s-MeV/nuc in seven energy bins (six for Ne) in the general range of 2-10 MeV/nucleon.  
@@ -36,7 +35,7 @@ Fe: 2.40-3.00, 3.00-3.95, 3.95-4.80, 4.80-5.90, 5.90-7.80, 7.80-9.30, 9.30-12.50
             </Contact>
             <InformationURL>
                 <Name>Readme file</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/wind/epact/flux_ascii/5min/aareadme_epact_5min</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/wind/epact/flux_ascii/5min/aareadme_epact_lemt_5min</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -74,5 +73,3 @@ and the CDAWeb team at NASA/GSFC</Acknowledgement>
         <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
     </NumericalData>
 </Spase>
-
-
