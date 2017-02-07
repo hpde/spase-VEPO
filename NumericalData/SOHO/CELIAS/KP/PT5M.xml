@@ -4,7 +4,7 @@
         <ResourceID>spase://VEPO/NumericalData/SOHO/CELIAS/KP/PT5M</ResourceID>
         <ResourceHeader>
             <ResourceName>SOHO CELIAS 5-min Key Parameter Data</ResourceName>
-            <ReleaseDate>2010-08-12T00:00:00</ReleaseDate>
+            <ReleaseDate>2017-02-07T00:00:00</ReleaseDate>
             <Description>Data include 5-min solar wind speed values, heavy ion
 fluxes in energy bands 0.02-1. MeV/q and 0.5-50 keV/q, and solar EUV
 photon fluxes from the CELIAS package on SOHO.  They are key parameter
@@ -34,11 +34,11 @@ of U. Bern</Acknowledgement>
             </AccessURL>
             <AccessURL>
                 <Name>FTP access to files at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/soho/cels</URL>
+                <URL>ftp://spdf.sci.gsfc.nasa.gov/pub/data/soho/celias/k0/</URL>
             </AccessURL>
             <AccessURL>
                 <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/soho/cels</URL>
+                <URL>https://spdf.sci.gsfc.nasa.gov/pub/data/soho/celias/k0/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>

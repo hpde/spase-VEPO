@@ -4,7 +4,7 @@
         <ResourceID>spase://VEPO/NumericalData/SOHO/COSTEP/KP/PT5M</ResourceID>
         <ResourceHeader>
             <ResourceName>SOHO COSTEP Key Parameter Data</ResourceName>
-            <ReleaseDate>2010-08-12T00:00:00</ReleaseDate>
+            <ReleaseDate>2017-02-07T00:00:00</ReleaseDate>            
             <Description>Data include 5-min differential fluxes of protons 
 at seven energies between 0.54 and 47 MeV, of electrons at four energies
 between 0.5 and 7.4 MeV and of alpha particles at four energies between
@@ -33,11 +33,11 @@ of Universitat Kiel</Acknowledgement>
             </AccessURL>
             <AccessURL>
                 <Name>FTP access to files at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/soho/cost</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/soho/costep/k0/</URL>
             </AccessURL>
             <AccessURL>
                 <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/soho/cost</URL>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/soho/costep/k0/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
