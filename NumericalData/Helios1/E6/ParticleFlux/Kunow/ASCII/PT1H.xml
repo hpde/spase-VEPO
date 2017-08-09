@@ -35,7 +35,7 @@ Kiel</Acknowledgement>
             <AccessURL>
                 <Name>FTP access to ASCII files at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/helios/helios1/particle/e6_kunow/</URL>
-                <Description>In ASCII via HTTP from SPDF</Description>
+                <Description>In ASCII via FTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>HTTP access to ASCII files at SPDF</Name>
@@ -45,7 +45,7 @@ Kiel</Acknowledgement>
             <AccessURL>
                 <Name>FTPBrowser</Name>
                 <URL>https://omniweb.sci.gsfc.nasa.gov/ftpbrowser/helios1_e6_1hr.html</URL>
-                <Description>Subset, plot, and/or list fluxes.</Description>
+                <Description>Subset, plot, and/or list fluxes</Description>
             </AccessURL>
             <AccessURL>
                 <Name>Multi-Source Spectral Plot</Name>
