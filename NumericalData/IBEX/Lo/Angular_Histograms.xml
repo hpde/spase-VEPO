@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-    <Version>2.2.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_8.xsd">
+    <Version>2.2.8</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/IBEX/Lo/Angular_Histograms</ResourceID>
         <ResourceHeader>
             <ResourceName>IBEX-Lo Angular Histograms</ResourceName>
-            <ReleaseDate>2010-07-14T00:00:00</ReleaseDate>
+            <ReleaseDate>2017-11-10T00:00:00.000</ReleaseDate>
             <Description>Each table (CSV file) captures the numbers 
 of counts of arriving energetic neutral atoms, as integrated 
 over a full 8-day orbit, for a single IBEX-Lo energy step, 
@@ -24,7 +22,7 @@ species categories.</Description>
             </Contact>
             <InformationURL>
                 <Name>Readme file at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/lo/mass_spectrometer_data/Maps_TOF_description.txt</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/Maps_TOF_description.txt</URL>
                 <Description>This file was created by the IBEX team.</Description>
             </InformationURL>
         </ResourceHeader>
@@ -34,12 +32,12 @@ species categories.</Description>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/lo/mass_spectrometer_data/angular_histograms/</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/angular_histograms/</URL>
                 <Description>Directory with energy-range-specific subdirectories</Description>
             </AccessURL>
             <AccessURL>
                 <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ibex/lo/mass_spectrometer_data/angular_histograms/</URL>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/mass_spectrometer_data/angular_histograms/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>

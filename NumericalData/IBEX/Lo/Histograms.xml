@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-    <Version>2.2.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_8.xsd">
+    <Version>2.2.8</Version>
     <NumericalData>
         <ResourceID>spase://VEPO/NumericalData/IBEX/Lo/Histograms</ResourceID>
         <ResourceHeader>
             <ResourceName>IBEX-Lo Histograms</ResourceName>
-            <ReleaseDate>2010-06-17T00:00:00</ReleaseDate>
+            <ReleaseDate>2017-11-02T00:00:00.000</ReleaseDate>
             <Description>Each record captures the number of arriving ENA's
 of a specific energy band, coincidence type, species (hydrogen or 
 oxygen) and spin phase.  Data for each full ~15s spacecraft spin 
@@ -35,12 +33,12 @@ are in ASCII.</Description>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/lo/time_series/histograms/</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/time_series/histograms/</URL>
                 <Description>Directory with energy-range-specific subdirectories</Description>
             </AccessURL>
             <AccessURL>
                 <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/ibex/lo/time_series/histograms/</URL>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/ibex/release3/lo/time_series/histograms/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
